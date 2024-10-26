@@ -978,8 +978,8 @@ reasons---(1) it uses a non-local variable for computing its output, and
 (2) it creates a side effect in the outside world by modifying a
 variable in that world.
 
-![getId is impure illustration](./images/media/image1.png){width="5.0in"
-height="1.66292760279965in"}
+![getId is impure illustration](./images/image001.png)
+<!-- {width="5.0in" height="1.66292760279965in"} -->
 
 This can be troublesome if we had to debug this code.
 
@@ -1086,8 +1086,8 @@ const sum = (accumulatedSum, arrayItem) =&gt; accumulatedSum + arrayItem
 // 6
 </pre>
 
-![reduce call illustration](./images/image002.png){width="5.0in"
-height="2.616453412073491in"}
+![reduce call illustration](./images/image002.png)
+<!-- {width="5.0in" height="2.616453412073491in"} -->
 
 **Concat**
 
@@ -2347,8 +2347,8 @@ programming, unit test creation, and refactoring.
 **The image below represents a high-level TDD approach toward
 development:**
 
-![TDD](./images/media/image3.png){width="3.0in"
-height="3.607843394575678in"}
+![TDD](./images/image003.png)
+<!-- {width="3.0in" height="3.607843394575678in"} -->
 
 8. Browser APIs and DOM Manipulation:
 
