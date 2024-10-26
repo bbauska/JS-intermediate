@@ -34,7 +34,7 @@
 </ul>
 
 <ol type="1">
-  <li><h2>Advanced Data Types and Manipulation:</h2><br>
+  <li><h2>Advanced Data Types and Manipulation:</h2>
     <ul>
 	  <li>Explore advanced data types like Sets, Maps, and Symbols.</li>
 	  <li>Learn how to manipulate arrays and objects using advanced techniques such as 
@@ -43,7 +43,7 @@
 	    effectively.</li>
     </ul>
   </li>
-  <li><h2>Asynchronous JavaScript:</h2><br>
+  <li><h2>Asynchronous JavaScript:</h2>
     <ul>
 	  <li>Dive into asynchronous programming concepts like callbacks, promises, and 
 	    async/await.</li>
@@ -52,7 +52,7 @@
 	  <li>Understand how to make API calls and handle responses asynchronously.</li>
 	</ul>
   </li>
-  <li><h2>Object-Oriented Programming (OOP):</h2><br>
+  <li><h2>Object-Oriented Programming (OOP):</h2>
     <ul>
 	  <li>Learn about OOP principles like encapsulation, inheritance, and polymorphism.</li>
 	  <li>Explore how to create and use classes, constructors, and prototypes in 
@@ -60,7 +60,7 @@
 	  <li>Understand the concept of "this" and how it behaves in different contexts.</li>
 	</ul>
   </li>
-  <li><h2>Functional Programming:</h2><br>
+  <li><h2>Functional Programming:</h2>
     <p>Functional programming in JavaScript is all about treating your code as a set of 
       independent, reusable functions that operate on data without side effects</p>
 	<ul>
@@ -72,7 +72,7 @@
 	    readability and maintainability.</li>
 	</ul>
   </li>
-  <li><h2>Error Handling and Debugging:</h2><br>
+  <li><h2>Error Handling and Debugging:</h2>
     <ul>
 	  <li>Learn how to handle and throw errors effectively in JavaScript.</li>
 	  <li>Explore debugging techniques using browser developer tools and console statements.</li>
@@ -80,7 +80,7 @@
 	    application crashes.</li>
 	</ul>
   </li>
-  <li><h2>Modules and Bundlers:</h2><br>
+  <li><h2>Modules and Bundlers:</h2>
     <ul>
 	  <li>Learn how to organize your code into modules for better code organization and 
 	    reusability.</li>
@@ -89,7 +89,7 @@
 	    your JavaScript code.</li>
 	</ul>
   </li>
-  <li><h2>Testing and Test-Driven Development (TDD):</h2><br>
+  <li><h2>Testing and Test-Driven Development (TDD):</h2>
     <ul>
 	  <li>Learn how to write unit tests using frameworks like Jest or Mocha.</li>
       <li>Understand the principles of TDD and how to write tests before implementing 
@@ -98,7 +98,7 @@
 	    testing.</li>
 	</ul>
   </li>
-  <li><h2>Browser APIs and DOM Manipulation:</h2><br>
+  <li><h2>Browser APIs and DOM Manipulation:</h2>
     <ul>
 	  <li>Learn how to interact with the Document Object Model (DOM) using JavaScript.</li>
 	  <li>Explore browser APIs like Fetch API, Local Storage, and Geolocation.</li>
@@ -116,7 +116,7 @@ these concepts. Good luck with your intermediate JavaScript education!</p>
 <h3>Here are more details on each of the 8 topics:</h3>
 
 <ol type="1">
-  <li><h2>Advanced Data Types and Manipulation:</h2><br>
+  <li><h2>Advanced Data Types and Manipulation:</h2>
     <ul>
 	  <li>Sets: Learn about the Set data structure, which allows you to store unique 
 	    values of any type.<li>
@@ -126,7 +126,7 @@ these concepts. Good luck with your intermediate JavaScript education!</p>
 	    identifiers.</li>
 	</ul>
   </li>
-  <li><h2>Asynchronous JavaScript:</h2><br>
+  <li><h2>Asynchronous JavaScript:</h2>
     <ul>
 	  <li>Callbacks: Learn how to use callbacks to handle asynchronous operations by 
 	    passing functions as arguments.</li>
@@ -136,7 +136,7 @@ these concepts. Good luck with your intermediate JavaScript education!</p>
 	    synchronous-like way to write asynchronous code.</li>
 	</ul>
   </li>
-  <li><h2>Object-Oriented Programming (OOP):</h2><br>
+  <li><h2>Object-Oriented Programming (OOP):</h2>
     <ul>
 	  <li>Encapsulation: Learn how to encapsulate data and behavior within objects using 
 	    properties and methods.</li>
@@ -146,7 +146,7 @@ these concepts. Good luck with your intermediate JavaScript education!</p>
 	    different classes to be treated as the same type.</li>
 	</ul>
   </li>
-  <li><h2>Functional Programming:</h2><br>
+  <li><h2>Functional Programming:</h2>
     <ul>
 	  <li>igher-Order Functions: Learn how to work with functions as first-class citizens, 
 	    allowing them to be passed as arguments or returned from other functions.</li>
