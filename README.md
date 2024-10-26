@@ -16,18 +16,18 @@
 <h3>Key Concepts:</h3>
 
 <ul>
-  <li>Objects:<br>
+  <li><b>Objects</b>:<br>
     Objects are the fundamental building blocks of JavaScript. They are collections of 
 	key-value pairs, where keys are properties (variables) and values can be any data 
 	type, including functions (methods).</li>
-  <li>Prototypes:<br>
+  <li><b>Prototypes</b>:<br>
     Every object in JavaScript has a prototype, which is another object from which it 
 	inherits properties and methods. This allows for efficient sharing of behavior and 
 	data between objects.</li>
-  <li>Constructors:<br>
+  <li><b>Constructors</b>:<br>
     Constructors are special functions used to create objects with specific properties 
 	and methods. They act as blueprints for objects.</li>
-  <li>Classes (ES6):<br>
+  <li><b>Classes (ES6)</b>:<br>
     Introduced in ECMAScript 2015 (ES6), classes provide a more syntactically familiar 
 	way to define objects and their behavior. However, under the hood, they still 
 	utilize prototypes.</li>
@@ -112,7 +112,6 @@
 coding challenges, and build real-world applications to solidify your understanding of 
 these concepts. Good luck with your intermediate JavaScript education!</p>
 
-
 <h3>Here are more details on each of the 8 topics:</h3>
 
 <ol type="1">
@@ -148,7 +147,7 @@ these concepts. Good luck with your intermediate JavaScript education!</p>
   </li>
   <li><h2>Functional Programming:</h2>
     <ul>
-	  <li>igher-Order Functions: Learn how to work with functions as first-class citizens, 
+	  <li>Higher-Order Functions: Learn how to work with functions as first-class citizens, 
 	    allowing them to be passed as arguments or returned from other functions.</li>
 	  <li>Pure Functions: Understand the concept of pure functions, which always produce 
 	    the same output for the same input and have no side effects.</li>
@@ -180,7 +179,7 @@ these concepts. Good luck with your intermediate JavaScript education!</p>
         bundle your JavaScript modules into a single file, optimizing
         performance and handling dependencies.
 
-7.  [Testing and Test-Driven Development (TDD):]{.mark}
+7.  Testing and Test-Driven Development (TDD):
 
     -   Unit Testing: Learn how to write tests for individual units of
         code to ensure they behave as expected.
@@ -192,7 +191,7 @@ these concepts. Good luck with your intermediate JavaScript education!</p>
         stub functions to isolate dependencies and test specific parts
         of your code.
 
-8.  [Browser APIs and DOM Manipulation:]{.mark}
+8.  Browser APIs and DOM Manipulation:
 
     -   DOM Manipulation: Learn how to access and manipulate HTML
         elements using JavaScript to create dynamic and interactive web
@@ -213,7 +212,7 @@ Symbols. Additionally, I\'ll provide guidance on how to use GitHub for
 managing your code and collaborating on projects related to these
 topics.
 
-[1. Advanced Data Types]{.mark}
+1. Advanced Data Types
 
 **Sets**
 
@@ -238,39 +237,34 @@ topics.
 
 **Example**:
 
-> **javascript**
+<h4>javascript</h4>
 
-const mySet = new Set(\[1, 2, 3, 4\]);
+<pre>
+  const mySet = new Set(&lbrack;1, 2, 3, 4&rbrack;);
+  mySet.add(5);
+  mySet.delete(2);
+  console.log(mySet.has(3)); // true
+  console.log(mySet.size);   // 4
+</pre>
 
-mySet.add(5);
-
-mySet.delete(2);
-
-console.log(mySet.has(3)); // true
-
-console.log(mySet.size); // 4
-
-**Maps**
-
--   **Definition**: A Map is a collection of key-value pairs where keys
-    can be of any type (including objects), and each key must be unique.
-
--   **Key Methods**:
-
-    -   new Map(iterable): Creates a new Map. You can initialize it with
-        an array of key-value pairs.
-
-    -   set(key, value): Adds a new key-value pair to the Map.
-
-    -   get(key): Retrieves the value associated with the key.
-
-    -   delete(key): Removes the key-value pair from the Map.
-
-    -   has(key): Checks if a key exists in the Map.
-
-    -   clear(): Removes all key-value pairs from the Map.
-
-    -   size: Returns the number of key-value pairs in the Map.
+<h5>Maps</h5>
+  <ul>
+    <li><b>Definition</b>: A Map is a collection of key-value pairs where keys can be of 
+    any type (including objects), and each key must be unique.</li>
+    <li><b>Key Methods</b>:
+	<ul>
+      <li>new Map(iterable): Creates a new Map. You can initialize it with
+        an array of key-value pairs.</li>
+	  <li>set(key, value): Adds a new key-value pair to the Map.</li>
+	  <li>get(key): Retrieves the value associated with the key.</li>
+	  <li>delete(key): Removes the key-value pair from the Map.</li>
+	  <li>has(key): Checks if a key exists in the Map.</li>
+	  <li>clear(): Removes all key-value pairs from the Map.</li>
+	  <li>size: Returns the number of key-value pairs in the Map.</li>
+	</ul>
+	</li>
+  </ul>
+	
 
 **Example**:
 
