@@ -31,8 +31,9 @@
     Introduced in ECMAScript 2015 (ES6), classes provide a more syntactically familiar 
 	way to define objects and their behavior. However, under the hood, they still 
 	utilize prototypes.</li>
+</ul>
 
-<ol>
+<ol type="1">
   <li><h2>Advanced Data Types and Manipulation:</h2><br>
     <ul>
 	  <li>Explore advanced data types like Sets, Maps, and Symbols.</li>
@@ -114,7 +115,6 @@ these concepts. Good luck with your intermediate JavaScript education!</p>
 
 <h3>Here are more details on each topic:</h3>
 
-<ol>
 1.  Advanced Data Types and Manipulation:
 
     -   Sets: Learn about the Set data structure, which allows you to
