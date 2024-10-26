@@ -1,4 +1,8 @@
 <h1>JS Intermediate JS</h1>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ readme.md of js-intermediate-js ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 align="center">JS Intermediate JS</h3>
 
 <h2>Intermediate/advanced material - 8 categories</h2>
 
@@ -977,8 +981,15 @@ This is also an impure function, and that too for a couple of
 reasons---(1) it uses a non-local variable for computing its output, and
 (2) it creates a side effect in the outside world by modifying a
 variable in that world.
-
-![getId is impure illustration](./images/image001.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. getid is impure illustration (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+<img  src="./images/image001.png?raw=true"
+  alt="getId is impure illustrations."
+  title="getId is impure illustrations"
+  style="width:50%;" />
+</p>
+<!-- ![getId is impure illustration](./images/image001.png) -->
 <!-- {width="5.0in" height="1.66292760279965in"} -->
 
 This can be troublesome if we had to debug this code.
@@ -1085,8 +1096,15 @@ const sum = (accumulatedSum, arrayItem) =&gt; accumulatedSum + arrayItem
 &lbrack;1, 2, 3&rbrack;.reduce(sum);
 // 6
 </pre>
-
-![reduce call illustration](./images/image002.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. reduce call illustration (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+<img  src="./images/image002.png?raw=true"
+  alt="Reduce call illustrations."
+  title="Reduce call illustrations"
+  style="width:50%;" />
+</p>
+<!-- ![reduce call illustration](./images/image002.png) -->
 <!-- {width="5.0in" height="2.616453412073491in"} -->
 
 **Concat**
@@ -2346,8 +2364,15 @@ programming, unit test creation, and refactoring.
 
 **The image below represents a high-level TDD approach toward
 development:**
-
-![TDD](./images/image003.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 03. tdd (0#) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+<img  src="./images/image003.png?raw=true"
+  alt="."
+  title=" "
+  style="width:30%;" />
+</p>
+<!-- ![TDD](./images/image003.png) -->
 <!-- {width="3.0in" height="3.607843394575678in"} -->
 
 8. Browser APIs and DOM Manipulation:
