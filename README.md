@@ -6,7 +6,7 @@
   <li><a href="https://www.patterns.dev/posts/classic-design-patterns/">
     JavaScript Design Patterns</a></li>
   <li><a href="https://mostly-adequate.gitbook.io/mostly-adequate-guide/">
-    Professor Frisby\'s Mostly Adequate Guide to Functional Programming</a></li>
+    Professor Frisby's Mostly Adequate Guide to Functional Programming</a></li>
   <li><a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ">
     What the heck is the event loop anyway?</a> -- JS Conf talk about the event loop</li>
   <li><a href="https://exploringjs.com/deep-js/index.html">
@@ -206,9 +206,9 @@ coding challenges. This hands-on experience will help solidify your
 understanding and improve your skills as an intermediate JavaScript
 developer.
 
-Certainly! Let\'s delve deeper into **Advanced Data Types and
+Certainly! Let's delve deeper into **Advanced Data Types and
 Manipulation** in JavaScript, specifically focusing on Sets, Maps, and
-Symbols. Additionally, I\'ll provide guidance on how to use GitHub for
+Symbols. Additionally, I'll provide guidance on how to use GitHub for
 managing your code and collaborating on projects related to these
 topics.
 
@@ -270,15 +270,13 @@ topics.
 
 > **javascript**
 
+<pre>
 const myMap = new Map();
-
-myMap.set(\'name\', \'Alice\');
-
-myMap.set(\'age\', 25);
-
-console.log(myMap.get(\'name\')); // Alice
-
+myMap.set(&apos;name&apos;, &apos;Alice&apos;);
+myMap.set(&apos;age&apos;, 25);
+console.log(myMap.get(&apos;name&apos;)); // Alice
 console.log(myMap.size); // 2
+</pre>
 
 **Symbols**
 
@@ -297,21 +295,16 @@ console.log(myMap.size); // 2
 
 > **javascript**
 
-const sym1 = Symbol(\'description\');
-
-const sym2 = Symbol(\'description\');
-
+<pre>
+const sym1 = Symbol(&apos;description&apos;);
+const sym2 = Symbol(&apos;description&apos;);
 console.log(sym1 === sym2); // false
-
 const obj = {
-
-\[sym1\]: \'value1\',
-
-\[sym2\]: \'value2\'
-
+&lbrack;sym1&rbrack;: &apos;value1&apos;,
+&lbrack;sym2&rbrack;: &apos;value2&apos;
 };
-
-console.log(obj\[sym1\]); // value1
+console.log(obj&lbrack;sym1&rbrack;); // value1
+</pre>
 
 **2. Manipulating Advanced Data Types**
 
@@ -333,15 +326,15 @@ console.log(obj\[sym1\]); // value1
 
 2.  **Create a New Repository**:
 
-    -   Click on the \"+\" icon in the top right corner and select \"New
-        repository.\"
+    -   Click on the &quot;+&quot; icon in the top right corner and select &quot;New
+        repository.&quot;
 
     -   Give your repository a name (e.g., advanced-data-types).
 
     -   Optionally, add a description and choose whether it should be
         public or private.
 
-    -   Click \"Create repository.\"
+    -   Click &quot;Create repository.&quot;
 
 **Cloning the Repository**
 
@@ -349,9 +342,10 @@ console.log(obj\[sym1\]); // value1
 
 > **bash**
 
+<pre>
 git clone https://github.com/yourusername/advanced-data-types.git
-
 cd advanced-data-types
+</pre>
 
 **Adding Code**
 
@@ -362,7 +356,9 @@ cd advanced-data-types
 
 > **bash**
 
+<pre>
 git add sets.js maps.js symbols.js
+</pre>
 
 **Committing Changes**
 
@@ -370,7 +366,9 @@ git add sets.js maps.js symbols.js
 
 > **bash**
 
-git commit -m \"Add examples for Sets, Maps, and Symbols\"
+<pre>
+git commit -m &quot;Add examples for Sets, Maps, and Symbols&quot;
+</pre>
 
 **Pushing to GitHub**
 
@@ -378,16 +376,20 @@ git commit -m \"Add examples for Sets, Maps, and Symbols\"
 
 > **bash**
 
+<pre>
 git push origin main
+</pre>
 
 **Collaborating**
 
--   If you\'re working with others, you can create branches for new
+-   If you&apos;re working with others, you can create branches for new
     features or fixes:
 
 > **bash**
 
+<pre>
 git checkout -b feature/sets-implementation
+</pre>
 
 -   After making changes, push the branch and create a pull request on
     GitHub for review.
@@ -407,7 +409,7 @@ you solidify your understanding of advanced data types in JavaScript
 while also gaining experience with version control and collaboration
 tools.
 
-**[2. Asynchronous JavaScript]{.mark}\
+**[2. Asynchronous JavaScript]{.mark}
 **Asynchronous JavaScript is a programming paradigm that allows
 JavaScript to perform tasks without blocking the execution of other
 code. This is particularly important in web development, where you want
@@ -428,7 +430,7 @@ sub-problems:
 
 -   JavaScript executes code in a call stack. When asynchronous
     operations are initiated (like fetching data), they are sent to the
-    Web APIs (like the browser\'s networking layer).
+    Web APIs (like the browser&apos;s networking layer).
 
 -   Once the operation completes, a callback function is placed in the
     message queue.
@@ -447,24 +449,18 @@ sub-problems:
 >
 > **javascript**
 >
-> **function fetchData(callback) {**
->
-> **setTimeout(() =\> {**
->
-> **const data = \'Data received\';**
->
-> **callback(data);**
->
-> **}, 1000);**
->
-> **}**
->
-> **fetchData((data) =\> {**
->
-> **console.log(data); //** Outputs: Data received
->
-> **});**
->
+<pre>
+**function fetchData(callback) {**
+**setTimeout(() =&gt; {**
+**const data = &apos;Data received&apos;;**
+**callback(data);**
+**}, 1000);**
+**}**
+**fetchData((data) =&gt; {**
+**console.log(data); //** Outputs: Data received
+**});**
+</pre>
+
 > **3. Promises**
 >
 > **What are Promises?**
@@ -483,55 +479,36 @@ sub-problems:
 > **Creating and using a Promise:**
 >
 > **javascript**
->
-> const fetchData = () =\> {
->
-> return new Promise((resolve, reject) =\> {
->
-> setTimeout(() =\> {
->
+<pre>
+> const fetchData = () =&gt; {
+> return new Promise((resolve, reject) =&gt; {
+> setTimeout(() =&gt; {
 > const success = true; // Simulate success or failure
->
 > if (success) {
->
-> resolve(\'Data received\');
->
+> resolve(&apos;Data received&apos;);
 > } else {
->
-> reject(\'Error fetching data\');
->
+> reject(&apos;Error fetching data&apos;);
 > }
->
 > }, 1000);
->
 > });
->
 > };
->
 > fetchData()
->
-> .then(data =\> console.log(data)) // Outputs: Data received
->
-> .catch(error =\> console.error(error));
->
+> .then(data =&gt; console.log(data)) // Outputs: Data received
+> .catch(error =&gt; console.error(error));
+</pre>
+
 > **javascript, another example**
->
-> let myPromise = new Promise((resolve, reject) =\> {
->
-> setTimeout(() =\> {
->
-> resolve (\'Promise resolved\');
->
+<pre>
+> let myPromise = new Promise((resolve, reject) =&gt; {
+> setTimeout(() =&gt; {
+> resolve (&apos;Promise resolved&apos;);
 > },2000);
->
 > });
->
-> myPromise.then((result) =\> {
->
-> console.log(result); // Output after 2 seconds : \'Promise resolved\'
->
+> myPromise.then((result) =&gt; {
+> console.log(result); // Output after 2 seconds : &apos;Promise resolved&apos;
 > });
->
+</pre>
+
 > **4. Async/Await**
 >
 > **What is Async/Await?**
@@ -548,41 +525,28 @@ sub-problems:
 > **Example:**
 >
 > **javascript**
->
-> const fetchData = () =\> {
->
-> return new Promise((resolve) =\> {
->
-> setTimeout(() =\> {
->
-> resolve(\'Data received\');
->
-> }, 1000);
->
-> });
->
-> };
->
-> const getData = async () =\> {
->
-> try {
->
-> const data = await fetchData();
->
-> console.log(data); // Outputs: Data received
->
-> } catch (error) {
->
-> console.error(error);
->
-> }
->
-> };
->
-> getData();
+
+<pre>
+const fetchData = () =&gt; {
+  return new Promise((resolve) =&gt; {
+    setTimeout(() =&gt; {
+      resolve(&apos;Data received&apos;);
+    }, 1000);
+  });
+};
+
+const getData = async () =&gt; {
+  try {
+    const data = await fetchData();
+    console.log(data); // Outputs: Data received
+  } catch (error) {
+    console.error(error);
+  }
+};
+getData();
+</pre>
 
 **5. Error Handling**
-
 -   **Error handling in callbacks:**
 
     -   Typically done by passing an error as the first argument to the
@@ -594,7 +558,7 @@ sub-problems:
 
 -   **Error handling with Async/Await:**
 
-    -   Use try\...catch blocks to handle errors.
+    -   Use try&hellip;catch blocks to handle errors.
 
 **6. Practical Use Cases**
 
@@ -619,10 +583,10 @@ applications. By understanding the event loop, callbacks, promises,
 async/await, and error handling, you can effectively manage asynchronous
 operations in your code.
 
-[3. Object-Oriented Programming (OOP):]{.mark}
+[3. Object-Oriented Programming (OOP):]
 
 Object-Oriented Programming (OOP) is a programming paradigm that uses
-\"objects\" to represent data and methods to manipulate that data. OOP
+&quot;objects&quot; to represent data and methods to manipulate that data. OOP
 is designed to improve code organization, reusability, and
 maintainability. To understand OOP, we can break it down into several
 key concepts and principles:
@@ -639,21 +603,16 @@ key concepts and principles:
 
 > **javascript**
 
+<pre>
 const car = {
-
-make: \'Toyota\',
-
-model: \'Corolla\',
-
+make: &apos;Toyota&apos;,
+model: &apos;Corolla&apos;,
 year: 2020,
-
 start: function() {
-
-console.log(\'Car started\');
-
+console.log(&apos;Car started&apos;);
 }
-
 };
+</pre>
 
 **b. Classes**
 
@@ -664,27 +623,19 @@ console.log(\'Car started\');
 
 > **javascript**
 
+<pre>
 class Car {
-
 constructor(make, model, year) {
-
 this.make = make;
-
 this.model = model;
-
 this.year = year;
-
 }
-
 start() {
-
-console.log(\'Car started\');
-
+console.log(&apos;Car started&apos;);
 }
-
 }
-
-const myCar = new Car(\'Toyota\', \'Corolla\', 2020);
+const myCar = new Car(&apos;Toyota&apos;, &apos;Corolla&apos;, 2020);
+</pre>
 
 **2. OOP Principles**
 
@@ -692,42 +643,30 @@ const myCar = new Car(\'Toyota\', \'Corolla\', 2020);
 
 -   **Definition:** Encapsulation is the bundling of data (attributes)
     and methods (functions) that operate on that data within a single
-    unit (class). It restricts direct access to some of an object\'s
+    unit (class). It restricts direct access to some of an object&apos;s
     components.
 
 -   **Example:** Using private properties in a class:
 
 > **javascript**
 
+<pre>
 class BankAccount {
-
 #balance; // Private property
-
 constructor(initialBalance) {
-
 this.#balance = initialBalance;
-
 }
-
 deposit(amount) {
-
 this.#balance += amount;
-
 }
-
 getBalance() {
-
 return this.#balance;
-
 }
-
 }
-
 const account = new BankAccount(100);
-
 account.deposit(50);
-
 console.log(account.getBalance()); // Outputs: 150
+</pre>
 
 **b. Inheritance**
 
@@ -739,47 +678,29 @@ console.log(account.getBalance()); // Outputs: 150
 
 > **javascript**
 
+<pre>
 class Vehicle {
-
 constructor(make, model) {
-
 this.make = make;
-
 this.model = model;
-
 }
-
 start() {
-
-console.log(\'Vehicle started\');
-
+console.log(&apos;Vehicle started&apos;);
 }
-
 }
-
 class Car extends Vehicle {
-
 constructor(make, model, year) {
-
 super(make, model); // Call the parent class constructor
-
 this.year = year;
-
 }
-
 honk() {
-
-console.log(\'Honk! Honk!\');
-
+console.log(&apos;Honk! Honk!&apos;);
 }
-
 }
-
-const myCar = new Car(\'Toyota\', \'Corolla\', 2020);
-
+const myCar = new Car(&apos;Toyota&apos;, &apos;Corolla&apos;, 2020);
 myCar.start(); // Outputs: Vehicle started
-
 myCar.honk(); // Outputs: Honk! Honk!
+</pre>
 
 **c. Polymorphism**
 
@@ -792,43 +713,27 @@ myCar.honk(); // Outputs: Honk! Honk!
 
 > **javascript**
 
+<pre>
 class Animal {
-
 speak() {
-
-console.log(\'Animal speaks\');
-
+console.log(&apos;Animal speaks&apos;);
 }
-
 }
-
 class Dog extends Animal {
-
 speak() {
-
-console.log(\'Woof! Woof!\');
-
+console.log(&apos;Woof! Woof!&apos;);
 }
-
 }
-
 class Cat extends Animal {
-
 speak() {
-
-console.log(\'Meow!\');
-
+console.log(&apos;Meow!&apos;);
 }
-
 }
-
 const myDog = new Dog();
-
 const myCat = new Cat();
-
 myDog.speak(); // Outputs: Woof! Woof!
-
 myCat.speak(); // Outputs: Meow!
+</pre>
 
 **d. Abstraction**
 
@@ -840,39 +745,25 @@ myCat.speak(); // Outputs: Meow!
 
 > **javascript**
 
+<pre>
 class Shape {
-
 area() {
-
-throw new Error(\'Method \"area()\" must be implemented\');
-
+throw new Error(&apos;Method &quot;area()&quot; must be implemented&apos;);
 }
-
 }
-
 class Rectangle extends Shape {
-
 constructor(width, height) {
-
 super();
-
 this.width = width;
-
 this.height = height;
-
 }
-
 area() {
-
-return this.width \* this.height;
-
+return this.width &ast; this.height;
 }
-
 }
-
 const myRectangle = new Rectangle(5, 10);
-
 console.log(myRectangle.area()); // Outputs: 50
+</pre>
 
 **3. Benefits of OOP**
 
@@ -911,7 +802,7 @@ create robust and scalable applications.
 **Introduction**
 
 Functional programming is a powerful paradigm that has gained
-significant popularity in recent years, and it\'s a valuable approach to
+significant popularity in recent years, and it&apos;s a valuable approach to
 writing clean, maintainable, and bug-free code in JavaScript.
 
 In this article, we will explore the core concepts of functional
@@ -938,35 +829,31 @@ be assigned to variables, passed as arguments, and returned from other
 functions. This is a crucial concept in functional programming. Consider
 this analogy:
 
+<pre>
 // Function as a first-class citizen
-
-const square = (x) =\> x \* x;
-
-const add = (a, b) =\> a + b;
-
+const square = (x) =&gt; x &ast; x;
+const add = (a, b) =&gt; a + b;
 const mathOperation = square;
-
 console.log(mathOperation(5)); // Output: 25
+</pre>
 
 Here, mathOperation is a variable that holds a reference to the square
-function. It\'s like storing a cooking recipe for later use.
+function. It&apos;s like storing a cooking recipe for later use.
 
 Higher-order functions are functions that operate on other functions,
 either by taking them as arguments or returning them as results. This is
 akin to having a recipe that asks for another recipe.
 
+<pre>
 // Function as a first-class citizen
-
-const square = (x) =\> x \* x;
-
-const add = (a, b) =\> a + b;
-
+const square = (x) =&gt; x &ast; x;
+const add = (a, b) =&gt; a + b;
 const mathOperation = square;
-
 console.log(mathOperation(5)); // Output: 25
+</pre>
 
 In this example, the calculate function takes an operation (a function)
-and two arguments. It\'s like creating a new dish by following the
+and two arguments. It&apos;s like creating a new dish by following the
 instructions of another recipe.
 
 **Immutability and Pure Functions**
@@ -976,28 +863,25 @@ unchangeable ingredient, and functions as your cooking instructions.
 Avoid modifying the original data; instead, create new data structures
 with the changes.
 
+<pre>
 // Immutability
-
-const originalArray = \[1, 2, 3\];
-
-const newArray = originalArray.map((item) =\> item \* 2);
-
-console.log(newArray); // Output: \[2, 4, 6\]
-
-console.log(originalArray); // Output: \[1, 2, 3\]
+const originalArray = &lbrack;1, 2, 3&rbrack;;
+const newArray = originalArray.map((item) =&gt; item &ast; 2);
+console.log(newArray); // Output: &lbrack;2, 4, 6&rbrack;
+console.log(originalArray); // Output: &lbrack;1, 2, 3&rbrack;
+</pre>
 
 Pure functions are functions that always return the same output for the
-same input and have no side effects. They\'re like well-defined recipes
-that don\'t vary their outcome based on the chef\'s mood or external
+same input and have no side effects. They&apos;re like well-defined recipes
+that don&apos;t vary their outcome based on the chef&apos;s mood or external
 factors.
 
+<pre>
 // Pure function
-
-const double = (x) =\> x \* 2;
-
+const double = (x) =&gt; x &ast; 2;
 console.log(double(3)); // Output: 6
-
 console.log(double(3)); // Output: 6
+</pre>
 
 **Map, Filter, and Reduce**
 
@@ -1011,24 +895,23 @@ collection. Filtering is like picking specific ingredients that meet
 your criteria, and reducing is like mixing all the ingredients to create
 a final dish.
 
-> **//** Using map, filter, and reduce
->
-> **const ingredients = \[1, 2, 3, 4, 5\];**
->
-> **const transformedIngredients = ingredients.map((item) =\> item \*
-> 2);**
->
-> **const filteredIngredients = ingredients.filter((item) =\> item % 2
-> === 0);**
->
-> **const reducedIngredients = ingredients.reduce((acc, item) =\> acc +
-> item, 0);**
->
-> **console.log(transformedIngredients); //** Output: \[2, 4, 6, 8, 10\]
->
-> **console.log(filteredIngredients); //** Output: \[2, 4\]
->
-> **console.log(reducedIngredients); //** Output: 15
+<pre>
+// Using map, filter, and reduce
+**const ingredients = &lbrack;1, 2, 3, 4, 5&rbrack;;**
+**const transformedIngredients = ingredients.map((item) =&gt; item &ast;
+2);**
+**const filteredIngredients = ingredients.filter((item) =&gt; item % 2
+=== 0);**
+
+**const reducedIngredients = ingredients.reduce((acc, item) =&gt; acc +
+item, 0);**
+
+**console.log(transformedIngredients); //** Output: &lbrack;2, 4, 6, 8, 10&rbrack;
+
+**console.log(filteredIngredients); //** Output: &lbrack;2, 4&rbrack;
+
+**console.log(reducedIngredients); //** Output: 15
+</pre>
 
 **Conclusion**
 
@@ -1068,23 +951,27 @@ understand the difference between pure and impure functions.
 Pure functions take some input and give a fixed output. Also, they cause
 no side effects in the outside world.
 
-const add = (a, b) =\> a + b;
+<pre>
+const add = (a, b) =&gt; a + b;
+</pre>
 
 Here, add is a pure function. This is because, for a fixed value
 of a and b, the output will always be the same.
 
+<pre>
 const SECRET = 42;
-
-const getId = (a) =\> SECRET \* a;
+const getId = (a) =&gt; SECRET &ast; a;
+</pre>
 
 getId is not a pure function. The reason being that it uses the global
 variable SECRET for computing the output. If SECRET were to change,
 the getId function will return a different value for the same input.
 Thus, it is not a pure function.
 
+<pre>
 let id_count = 0;
-
-const getId = () =\> ++id_count;
+const getId = () =&gt; ++id_count;
+</pre>
 
 This is also an impure function, and that too for a couple of
 reasons---(1) it uses a non-local variable for computing its output, and
@@ -1154,11 +1041,11 @@ The condition here is a function that gets each item of the array, and
 it should decide whether to keep the item or not and return the truthy
 boolean value for that.
 
-const filterEven = x =\> x%2 === 0;
-
-\[1, 2, 3\].filter(filterEven);
-
-// \[2\]
+<pre>
+const filterEven = x =&gt; x%2 === 0;
+&lbrack;1, 2, 3&rbrack;.filter(filterEven);
+// &lbrack;2&rbrack;
+</pre>
 
 Notice that filterEven is a pure function. If it had been impure, then
 it would have made the entire filter call impure.
@@ -1168,34 +1055,38 @@ it would have made the entire filter call impure.
 map maps each item of array to a function and creates a new array based
 on the return values of the function calls.
 
+<pre>
 array.map(mapper)
+</pre>
 
 mapper is a function that takes an item of an array as input and returns
 the output.
 
-const double = x =\> 2 \* x;
-
-\[1, 2, 3\].map(double);
-
-// \[2, 4, 6\]
+<pre>
+const double = x =&gt; 2 &ast; x;
+&lbrack;1, 2, 3&rbrack;.map(double);
+// &lbrack;2, 4, 6&rbrack;
+</pre>
 
 **Reduce**
 
 reduce reduces the array to a single value.
 
+<pre>
 array.reduce(reducer);
+</pre>
 
 reducer is a function that takes the accumulated value and the next item
 in the array and returns the new value. It is called like this for all
 values in the array, one after another.
 
-const sum = (accumulatedSum, arrayItem) =\> accumulatedSum + arrayItem
-
-\[1, 2, 3\].reduce(sum);
-
+<pre>
+const sum = (accumulatedSum, arrayItem) =&gt; accumulatedSum + arrayItem
+&lbrack;1, 2, 3&rbrack;.reduce(sum);
 // 6
+</pre>
 
-![reduce call illustration](./images/media/image2.png){width="5.0in"
+![reduce call illustration](./images/image002.png){width="5.0in"
 height="2.616453412073491in"}
 
 **Concat**
@@ -1204,14 +1095,17 @@ concat adds new items to an existing array to create a new array. It's
 different from push() in the sense that push() mutates data, which makes
 it impure.
 
-\[1, 2\].concat(\[3, 4\])
-
-// \[1, 2, 3, 4\]
+<pre>
+&lbrack;1, 2&rbrack;.concat(&lbrack;3, 4&rbrack;)
+// &lbrack;1, 2, 3, 4&rbrack;
+</pre>
 
 You can also do the same using
 the [spread](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) operator.
 
-\[1, 2, \...\[3, 4\]\]
+<pre>
+&lbrack;1, 2, &hellip;&lbrack;3, 4&rbrack;&rbrack;
+</pre>
 
 Object.assign
 
@@ -1219,35 +1113,37 @@ Object.assign copies values from the provided object to a new object.
 Since functional programming is predicated on immutable data, we use it
 to make new objects based on existing objects.
 
+<pre>
 const obj = {a : 2};
-
 const newObj = Object.assign({}, obj);
-
 newObj.a = 3;
-
 obj.a;
-
 // 2
+</pre>
 
 With the advent of [ES6](http://es6-features.org/), this can also be
 done using the spread operator.
 
-const newObj = {\...obj};
+<pre>
+const newObj = {&hellip;obj};
+</pre>
 
 **Creating Your Own Pure Function**
 
 We can create our pure function as well. Let's do one for duplicating a
 string n number of times.
 
-const duplicate = (str, n) =\>
-
-n \< 1 ? \'\' : str + duplicate(str, n-1);
+<pre>
+const duplicate = (str, n) =&gt;
+n &lt; 1 ? &apos;&apos; : str + duplicate(str, n-1);
+</pre>
 
 This function duplicates a string n times and returns a new string.
 
-duplicate(\'hooray!\', 3)
-
+<pre>
+duplicate(&apos;hooray!&apos;, 3)
 // hooray!hooray!hooray!
+</pre>
 
 **Higher-order Functions**
 
@@ -1255,55 +1151,47 @@ Higher-order functions are functions that accept a function as an
 argument and return a function. Often, they are used to add to the
 functionality of a function.
 
-const withLog = (fn) =\> {
-
-return (\...args) =\> {
-
-console.log(\`calling \${fn.name}\`);
-
-return fn(\...args);
-
+<pre>
+const withLog = (fn) =&gt; {
+return (&hellip;args) =&gt; {
+console.log(&grave;calling &dollar;{fn.name}&grave;);
+return fn(&hellip;args);
 };
-
 };
+</pre>
 
 In the above example, we create a withLog higher-order function that
 takes a function and returns a function that logs a message before the
 wrapped function runs.
 
-const add = (a, b) =\> a + b;
-
+<pre>
+const add = (a, b) =&gt; a + b;
 const addWithLogging = withLog(add);
-
 addWithLogging(3, 4);
-
 // calling add
-
 // 7
+</pre>
 
 withLog HOF can be used with other functions as well and it works
 without any conflicts or writing extra code. This is the beauty of a
 HOF.
 
+<pre>
 const addWithLogging = withLog(add);
-
-const hype = s =\> s + \'!!!\';
-
+const hype = s =&gt; s + &apos;!!!&apos;;
 const hypeWithLogging = withLog(hype);
-
-hypeWithLogging(\'Sale\');
-
+hypeWithLogging(&apos;Sale&apos;);
 // calling hype
-
 // Sale!!!
+</pre>
 
 One can also call it without defining a combining function.
 
-withLog(hype)(\'Sale\');
-
+<pre>
+withLog(hype)(&apos;Sale&apos;);
 // calling hype
-
 // Sale!!!
+</pre>
 
 **Currying**
 
@@ -1312,48 +1200,43 @@ into one or multiple levels of higher-order functions.
 
 Let's take the add function.
 
-const add = (a, b) =\> a + b;
+<pre>
+const add = (a, b) =&gt; a + b;
+</pre>
 
 When we are to curry it, we rewrite it distributing arguments into
 multiple levels as follows.
 
-const add = a =\> {
-
-return b =\> {
-
+<pre>
+const add = a =&gt; {
+return b =&gt; {
 return a + b;
-
 };
-
 };
-
 add(3)(4);
-
 // 7
+</pre>
 
 The benefit of currying is memoization. We can now memoize certain
 arguments in a function call so that they can be reused later without
 duplication and re-computation.
 
+<pre>
 // assume getOffsetNumer() call is expensive
-
 const addOffset = add(getOffsetNumber());
-
 addOffset(4);
-
 // 4 + getOffsetNumber()
-
 addOffset(6);
+</pre>
 
 This is certainly better than using both arguments everywhere.
 
-// (X) DON\"T DO THIS
-
+<pre>
+// (X) DON&quot;T DO THIS
 add(4, getOffsetNumber());
-
 add(6, getOffsetNumber());
-
 add(10, getOffsetNumber());
+</pre>
 
 We can also reformat our curried function to look succinct. This is
 because each level of the currying function call is a single line return
@@ -1361,7 +1244,9 @@ statement. Therefore, we can use [arrow
 functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) in
 ES6 to refactor it as follows.
 
-const add = a =\> b =\> a + b;
+<pre>
+const add = a =&gt; b =&gt; a + b;
+</pre>
 
 **Composition**
 
@@ -1375,24 +1260,26 @@ To show an example, let's create some functions.
 The first function is range, which takes a starting number a and an
 ending number b and creates an array consisting of numbers from a to b.
 
-const range = (a, b) =\> a \> b ? \[\] : \[a, \...range(a+1, b)\];
+<pre>
+const range = (a, b) =&gt; a &gt; b ? &lbrack;&rbrack; : &lbrack;a, &hellip;range(a+1, b)&rbrack;;
+</pre>
 
 Then we have a function multiply that takes an array and multiplies all
 the numbers in it.
 
-const multiply = arr =\> arr.reduce((p, a) =\> p \* a);
+<pre>
+const multiply = arr =&gt; arr.reduce((p, a) =&gt; p &ast; a);
+</pre>
 
 We will use these functions together to calculate factorial.
 
-const factorial = n =\> multiply(range(1, n));
-
+<pre>
+const factorial = n =&gt; multiply(range(1, n));
 factorial(5);
-
 // 120
-
 factorial(6);
-
 // 720
+</pre>
 
 The above function for calculating factorial is similar to f(x) =
 g(h(x)), thus demonstrating the composition property.
@@ -1414,10 +1301,10 @@ exception can be a JavaScript Number, String, Boolean, or Object.
 
 1.  Breakpoints: By setting breakpoints in the code, you can pause the
     program at specific points, check variables, and closely examine the
-    program\'s current state. \...
+    program&apos;s current state. &hellip;
 
 2.  Step Through: Examining the code line by line aids in identifying
-    the precise location of an error. \...
+    the precise location of an error. &hellip;
 
 3.  Watch Variables:
 
@@ -1478,33 +1365,27 @@ console output for them to make sense.*)
 The result won't update, and we'll see a RangeError message in the
 console. The following function throws the error when dp is negative:
 
+<pre>
 // division calculation
-
 function divide(v1, v2, dp) {
-
 return (v1 / v2).toFixed(dp);
-
 }
+</pre>
 
 After throwing the error, the JavaScript interpreter checks
 for exception handling code. None is present in the divide() function,
 so it checks the calling function:
 
+<pre>
 // show result of division
-
 function showResult() {
-
 result.value = divide(
-
 parseFloat(num1.value),
-
 parseFloat(num2.value),
-
 parseFloat(dp.value)
-
 );
-
 }
+</pre>
 
 The interpreter repeats the process for every function on the call stack
 until one of these things happens:
@@ -1521,31 +1402,21 @@ We can add an exception handler to the divide() function with
 a [try...catch
 block](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/try%E2%80%A6catch):
 
+<pre>
 // division calculation
-
 function divide(v1, v2, dp) {
-
 try {
-
 return (v1 / v2).toFixed(dp);
-
 }
-
 catch(e) {
-
-console.log(\`
-
-error name : \${ e.name }
-
-error message: \${ e.message }
-
-\`);
-
-return \'ERROR\';
-
+console.log(&grave;
+error name : &dollar;{ e.name }
+error message: &dollar;{ e.message }
+&grave;);
+return &apos;ERROR&apos;;
 }
-
 }
+</pre>
 
 This executes the code in the try {} block but, when an exception
 occurs, the catch {} block executes and receives the thrown error
@@ -1557,36 +1428,28 @@ The **result** now shows **ERROR**. The console shows the error name and
 message, but this is output by the console.log statement and doesn't
 terminate the program.
 
-*Note: this demonstration of a try\...catch block is overkill for a
+*Note: this demonstration of a try&hellip;catch block is overkill for a
 basic function such as divide(). It's simpler to ensure dp is zero or
 higher, as we'll see below.*
 
 We can define an optional finally {} block if we require code to run
 when either the try or catch code executes:
 
+<pre>
 function divide(v1, v2, dp) {
-
 try {
-
 return (v1 / v2).toFixed(dp);
-
 }
-
 catch(e) {
-
-return \'ERROR\';
-
+return &apos;ERROR&apos;;
 }
-
 finally {
-
-console.log(\'done\');
-
+console.log(&apos;done&apos;);
 }
-
 }
+</pre>
 
-The console outputs \"done\", whether the calculation succeeds or raises
+The console outputs &quot;done&quot;, whether the calculation succeeds or raises
 an error. A finally block typically executes actions which we'd
 otherwise need to repeat in both the try and the catch block --- such as
 cancelling an API call or closing a database connection.
@@ -1601,31 +1464,21 @@ in try or catch blocks are ignored.
 What happens if we add an exception handler to the
 calling showResult() function?
 
+<pre>
 // show result of division
-
 function showResult() {
-
 try {
-
 result.value = divide(
-
 parseFloat(num1.value),
-
 parseFloat(num2.value),
-
 parseFloat(dp.value)
-
 );
-
 }
-
 catch(e) {
-
-result.value = \'FAIL!\';
-
+result.value = &apos;FAIL!&apos;;
 }
-
 }
+</pre>
 
 The answer is ... *nothing!* This catch block is never reached, because
 the catch block in the divide() function handles the error.
@@ -1635,45 +1488,32 @@ programmatically [throw](https://developer.mozilla.org/en-US/docs/Web/JavaScrip
 new Error object in divide() and optionally pass the original error in
 a cause property of the second argument:
 
+<pre>
 function divide(v1, v2, dp) {
-
 try {
-
 return (v1 / v2).toFixed(dp);
-
 }
-
 catch(e) {
-
-throw new Error(\'ERROR\', { cause: e });
-
+throw new Error(&apos;ERROR&apos;, { cause: e });
 }
-
 }
+</pre>
 
 This will trigger the catch block in the calling function:
 
+<pre>
 // show result of division
-
 function showResult() {
-
 try {
-
-//\...
-
+//&hellip;
 }
-
 catch(e) {
-
 console.log( e.message ); // ERROR
-
 console.log( e.cause.name ); // RangeError
-
-result.value = \'FAIL!\';
-
+result.value = &apos;FAIL!&apos;;
 }
-
 }
+</pre>
 
 **Standard JavaScript Error Types**
 
@@ -1684,11 +1524,11 @@ describing the error using one of the following types.
 
 An error thrown by syntactically invalid code such as a missing bracket:
 
+<pre>
 if condition) { // SyntaxError
-
-console.log(\'condition is true\');
-
+console.log(&apos;condition is true&apos;);
 }
+</pre>
 
 *Note: languages such as C++ and Java report syntax errors during
 compilation. JavaScript is an interpreted language, so syntax errors
@@ -1699,11 +1539,11 @@ can spot syntax errors before we attempt to run code.*
 
 An error thrown when accessing a non-existent variable:
 
+<pre>
 function inc() {
-
 value++; // ReferenceError
-
 }
+</pre>
 
 Again, good code editors and linters can spot these issues.
 
@@ -1712,9 +1552,10 @@ Again, good code editors and linters can spot these issues.
 An error thrown when a value isn't of an expected type, such as calling
 a non-existent object method:
 
+<pre>
 const obj = {};
-
 obj.missingMethod(); // TypeError
+</pre>
 
 **RangeError**
 
@@ -1724,9 +1565,10 @@ method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global
 above generates this error, because it expects a value typically between
 0 and 100:
 
+<pre>
 const n = 123.456;
-
 console.log( n.toFixed(-1) ); // RangeError
+</pre>
 
 **URIError**
 
@@ -1734,7 +1576,9 @@ An error thrown by URI-handling functions such
 as [encodeURI()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI) and [decodeURI()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURI) when
 they encounter malformed URIs:
 
-const u = decodeURIComponent(\'%\'); // URIError
+<pre>
+const u = decodeURIComponent(&apos;%&apos;); // URIError
+</pre>
 
 **EvalError**
 
@@ -1742,7 +1586,9 @@ An error thrown when passing a string containing invalid JavaScript code
 to the [eval()
 function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval):
 
-eval(\'console.logg x;\'); // EvalError
+<pre>
+eval(&apos;console.logg x;&apos;); // EvalError
+</pre>
 
 *Note: please don't use eval()! Executing arbitrary code contained in a
 string possibly constructed from user input is far too dangerous!*
@@ -1779,13 +1625,12 @@ occur*. For example:
 
 The throw statement actually accepts any value or object. For example:
 
-throw \'A simple error string\';
-
+<pre>
+throw &apos;A simple error string&apos;;
 throw 42;
-
 throw true;
-
-throw { message: \'An error\', name: \'MyError\' };
+throw { message: &apos;An error&apos;, name: &apos;MyError&apos; };
+</pre>
 
 Exceptions are thrown to every function on the call stack until they're
 intercepted by an exception (catch) handler. More practically, however,
@@ -1796,17 +1641,23 @@ they act identically to standard errors thrown by JavaScript.
 We can create a generic Error object by passing an optional message to
 the constructor:
 
-throw new Error(\'An error has occurred\');
+<pre>
+throw new Error(&apos;An error has occurred&apos;);
+</pre>
 
 We can also use Error like a function without new. It returns
 an Error object identical to that above:
 
-throw Error(\'An error has occurred\');
+<pre>
+throw Error(&apos;An error has occurred&apos;);
+</pre>
 
 We can optionally pass a filename and a line number as the second and
 third parameters:
 
-throw new Error(\'An error has occurred\', \'script.js\', 99);
+<pre>
+throw new Error(&apos;An error has occurred&apos;, &apos;script.js&apos;, 99);
+</pre>
 
 This is rarely necessary, since they default to the file and line where
 we threw the Error object. *(They're also difficult to maintain as our
@@ -1816,7 +1667,9 @@ We can define generic Error objects, but we should use a [standard Error
 type](https://www.sitepoint.com/javascript-error-handling/#standardjavascripterrortypes) when
 possible. For example:
 
-throw new RangeError(\'Decimal places must be 0 or greater\');
+<pre>
+throw new RangeError(&apos;Decimal places must be 0 or greater&apos;);
+</pre>
 
 All Error objects have the following properties, which we can examine in
 a catch block:
@@ -1841,28 +1694,24 @@ We can change the divide() function to throw a RangeError when the
 number of decimal places isn't a number, is less than zero, or is
 greater than eight:
 
+<pre>
 // division calculation
-
 function divide(v1, v2, dp) {
-
-if (isNaN(dp) \|\| dp \< 0 \|\| dp \> 8) {
-
-throw new RangeError(\'Decimal places must be between 0 and 8\');
-
+if (isNaN(dp) &vert;&vert; dp &lt; 0 &vert;&vert; dp &gt; 8) {
+throw new RangeError(&apos;Decimal places must be between 0 and 8&apos;);
 }
-
 return (v1 / v2).toFixed(dp);
-
 }
+</pre>
 
 Similarly, we could throw an Error or TypeError when
 the **dividend** value isn't a number to prevent NaN results:
 
+<pre>
 if (isNaN(v1)) {
-
-throw new TypeError(\'Dividend must be a number\');
-
+throw new TypeError(&apos;Dividend must be a number&apos;);
 }
+</pre>
 
 We can also cater for **divisors** that are non-numeric or zero.
 JavaScript
@@ -1870,63 +1719,46 @@ returns [Infinity](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 dividing by zero, but that could confuse users. Rather than raising a
 generic Error, we could create a custom DivByZeroError error type:
 
+<pre>
 // new DivByZeroError Error type
-
 class DivByZeroError extends Error {
-
 constructor(message) {
-
 super(message);
-
-this.name = \'DivByZeroError\';
-
+this.name = &apos;DivByZeroError&apos;;
 }
-
 }
+</pre>
 
 Then throw it in the same way:
 
-if (isNaN(v2) \|\| !v2) {
-
-throw new DivByZeroError(\'Divisor must be a non-zero number\');
-
+<pre>
+if (isNaN(v2) &vert;&vert; !v2) {
+throw new DivByZeroError(&apos;Divisor must be a non-zero number&apos;);
 }
+</pre>
 
-Now add a try\...catch block to the calling showResult() function. It
+Now add a try&hellip;catch block to the calling showResult() function. It
 can receive any Error type and react accordingly --- in this case,
 showing the error message:
 
+<pre>
 // show result of division
-
 function showResult() {
-
 try {
-
 result.value = divide(
-
 parseFloat(num1.value),
-
 parseFloat(num2.value),
-
 parseFloat(dp.value)
-
 );
-
-errmsg.textContent = \'\';
-
+errmsg.textContent = &apos;&apos;;
 }
-
 catch (e) {
-
-result.value = \'ERROR\';
-
+result.value = &apos;ERROR&apos;;
 errmsg.textContent = e.message;
-
 console.log( e.name );
-
 }
-
 }
+</pre>
 
 Try entering invalid non-numeric, zero, and negative values into [this
 CodePen demo](https://codepen.io/SitePoint/pen/QWBmzdz?editors=0011).
@@ -1934,33 +1766,23 @@ CodePen demo](https://codepen.io/SitePoint/pen/QWBmzdz?editors=0011).
 The final version of the divide() function checks all the input values
 and throws an appropriate Error when necessary:
 
+<pre>
 // division calculation
-
 function divide(v1, v2, dp) {
-
 if (isNaN(v1)) {
-
-throw new TypeError(\'Dividend must be a number\');
-
+throw new TypeError(&apos;Dividend must be a number&apos;);
 }
-
-if (isNaN(v2) \|\| !v2) {
-
-throw new DivByZeroError(\'Divisor must be a non-zero number\');
-
+if (isNaN(v2) &vert;&vert; !v2) {
+throw new DivByZeroError(&apos;Divisor must be a non-zero number&apos;);
 }
-
-if (isNaN(dp) \|\| dp \< 0 \|\| dp \> 8) {
-
-throw new RangeError(\'Decimal places must be between 0 and 8\');
-
+if (isNaN(dp) &vert;&vert; dp &lt; 0 &vert;&vert; dp &gt; 8) {
+throw new RangeError(&apos;Decimal places must be between 0 and 8&apos;);
 }
-
 return (v1 / v2).toFixed(dp);
-
 }
+</pre>
 
-It's no longer necessary to place a try\...catch block around the
+It's no longer necessary to place a try&hellip;catch block around the
 final return, since it should never generate an error. If one did occur,
 JavaScript would generate its own error and have it handled by
 the catch block in showResult().
@@ -1968,57 +1790,42 @@ the catch block in showResult().
 **Asynchronous Function Errors**
 
 We can't catch exceptions thrown by callback-based asynchronous
-functions, because an error is thrown after the try\...catch block
+functions, because an error is thrown after the try&hellip;catch block
 completes execution. This code looks correct, but the catch block will
 never execute and the console displays an Uncaught Error message after
 one second:
 
+<pre>
 function asyncError(delay = 1000) {
-
-setTimeout(() =\> {
-
-throw new Error(\'I am never caught!\');
-
+setTimeout(() =&gt; {
+throw new Error(&apos;I am never caught!&apos;);
 }, delay);
-
 }
-
 try {
-
 asyncError();
-
 }
-
 catch(e) {
-
-console.error(\'This will never run\');
-
+console.error(&apos;This will never run&apos;);
 }
+</pre>
 
 The convention presumed in most frameworks and server runtimes such as
 Node.js is to return an error as the first parameter to a callback
 function. That won't raise an exception, although we could manually
 throw an Error if necessary:
 
+<pre>
 function asyncError(delay = 1000, callback) {
-
-setTimeout(() =\> {
-
-callback(\'This is an error message\');
-
+setTimeout(() =&gt; {
+callback(&apos;This is an error message&apos;);
 }, delay);
-
 }
-
-asyncError(1000, e =\> {
-
+asyncError(1000, e =&gt; {
 if (e) {
-
-throw new Error(\`error: \${ e }\`);
-
+throw new Error(&grave;error: &dollar;{ e }&grave;);
 }
-
 });
+</pre>
 
 **Promise-based Errors**
 
@@ -2028,29 +1835,20 @@ writing asynchronous code. When an error occurs, the
 promise's reject() method can return a new Error object or any other
 value:
 
+<pre>
 function wait(delay = 1000) {
-
-return new Promise((resolve, reject) =\> {
-
-if (isNaN(delay) \|\| delay \> 0) {
-
-reject( new TypeError(\'Invalid delay\') );
-
+return new Promise((resolve, reject) =&gt; {
+if (isNaN(delay) &vert;&vert; delay &gt; 0) {
+reject( new TypeError(&apos;Invalid delay&apos;) );
 }
-
 else {
-
-setTimeout(() =\> {
-
-resolve(\`waited \${ delay } ms\`);
-
+setTimeout(() =&gt; {
+resolve(&grave;waited &dollar;{ delay } ms&grave;);
 }, delay);
-
 }
-
 })
-
 }
+</pre>
 
 *Note: functions must be either 100% synchronous or 100% asynchronous.
 This is why it's necessary to check the delay value inside the returned
@@ -2063,61 +1861,48 @@ method](https://www.sitepoint.com/overview-javascript-promises/#thecatchmethod)�
 when passing an invalid delay parameter and it receives to the
 returned Error object:
 
+<pre>
 // invalid delay value passed
-
-wait(\'INVALID\')
-
-.then( res =\> console.log( res ))
-
-.catch( e =\> console.error( e.message ) )
-
-.finally( () =\> console.log(\'complete\') );
+wait(&apos;INVALID&apos;)
+.then( res =&gt; console.log( res ))
+.catch( e =&gt; console.error( e.message ) )
+.finally( () =&gt; console.log(&apos;complete&apos;) );
+</pre>
 
 Personally, I find promise chains a little difficult to read.
 Fortunately, we can use await to call any function which returns a
 promise. This must occur inside an async function, but we can capture
-errors using a standard try\...catch block.
+errors using a standard try&hellip;catch block.
 
 The following (immediately invoked) async function is functionally
 identical to the promise chain above:
 
-(async () =\> {
-
-try {
-
-console.log( await wait(\'INVALID\') );
-
-}
-
-catch (e) {
-
-console.error( e.message );
-
-}
-
-finally {
-
-console.log(\'complete\');
-
-}
-
+<pre>
+(async () =&gt; {
+  try {
+    console.log( await wait(&apos;INVALID&apos;) );
+  }
+  catch (e) {
+    console.error( e.message );
+  }
+  finally {
+    console.log(&apos;complete&apos;);
+  }
 })();
+</pre>
 
 **Exceptional Exception Handling**
 
 Throwing Error objects and handling exceptions is easy in JavaScript:
 
+<pre>
 try {
-
-throw new Error(\'I am an error!\');
-
+throw new Error(&apos;I am an error!&apos;);
 }
-
 catch (e) {
-
-console.log(\`error \${ e.message }\`)
-
+console.log(&grave;error &dollar;{ e.message }&grave;)
 }
+</pre>
 
 Building a resilient application that reacts appropriately to errors and
 makes life easy for users is more challenging. Always expect the
@@ -2218,22 +2003,20 @@ uncaught exceptions or to handle them in a custom way.
 
 Throwing Error objects and handling exceptions is easy in JavaScript:
 
+
+<pre>
 try {
-
-throw new Error(\'I am an error!\');
-
+throw new Error(&apos;I am an error!&apos;);
 }
-
 catch (e) {
-
-console.log(\`error \${ e.message }\`)
-
+console.log(&grave;error &dollar;{ e.message }&grave;)
 }
+</pre>
 
-6\. Modules and Bundlers:
+6. Modules and Bundlers:
 
 In JavaScript, modules and bundlers play a crucial role in organizing
-and optimizing code for modern web development. Here\'s a breakdown:
+and optimizing code for modern web development. Here&apos;s a breakdown:
 
 **Modules:**
 
@@ -2258,7 +2041,7 @@ manageable pieces, making it easier to maintain and reuse.
     <!-- -->
     ```
     -   Encapsulation: Modules hide their internal implementation
-        details, exposing only what\'s necessary.
+        details, exposing only what&apos;s necessary.
 
 -   Syntax:
 
@@ -2277,15 +2060,16 @@ JavaScript supports two main module formats:
 
 **JavaScript**
 
-// module1.js\
-export function greet(name) {\
-console.log(\`Hello, \${name}!\`);\
-}\
-\
-// app.js\
-import { greet } from \'./module1.js\';\
-\
-greet(\'World\');
+<pre>
+// module1.js
+export function greet(name) {
+console.log(&grave;Hello, &dollar;{name}!&grave;);
+}
+
+// app.js
+import { greet } from &apos;./module1.js&apos;;
+greet(&apos;World&apos;);
+</pre>
 
 **Bundlers:**
 
@@ -2365,7 +2149,7 @@ Module bundlers are used for several other purposes, including:
 **Webpack**
 
 Webpack is one of the most popular module bundlers in the JavaScript
-community. It\'s highly configurable and can handle a wide variety of
+community. It&apos;s highly configurable and can handle a wide variety of
 use cases. Additionally, it has a large community and a wide range of
 plugins available.
 
@@ -2378,11 +2162,11 @@ plugins available.
 **Esbuild**
 
 Esbuild is a relatively new module bundler that aims to provide a very
-fast and efficient bundling. It\'s written in Go and focuses on
+fast and efficient bundling. It&apos;s written in Go and focuses on
 providing great performance, even for large projects. It has a plugin
 system and can be used with other tools like Rollup.
 
--   **Pros**: It\'s very fast, efficient, and lightweight.
+-   **Pros**: It&apos;s very fast, efficient, and lightweight.
 
 -   **Cons**: Relatively new and not as widely adopted as other options.
 
@@ -2417,72 +2201,58 @@ Vite is a lightweight module bundler that is designed for development
 speed. It uses native ES modules in the browser and has a hot module
 replacement feature that allows for fast development iterations.
 
--   **Pros**: It\'s lightweight, has fast development iterations, and
-    it\'s easy to set up.
+-   **Pros**: It&apos;s lightweight, has fast development iterations, and
+    it&apos;s easy to set up.
 
 -   **Cons**: Limited in older browser support, and needs more community
     traction to become sustainable.
 
 **Setting up a Module Bundler**
 
-We\'ll use Webpack as an example, to show you how to set up a module
+We&apos;ll use Webpack as an example, to show you how to set up a module
 bundler for a simple project:
 
 1.  First, install Webpack and the necessary loaders and plugins by
     running the following command:
 
-npm install webpack webpack-cli \--save-dev
+npm install webpack webpack-cli &minus;-save-dev
 
 2.  Next, create a **webpack.config.js** file in the root of your
     project. This file will contain the configuration for Webpack. The
     example below contains a configuration file that tells Webpack to
     use the **babel-loader** to transpile JavaScript files:
 
-const path = require(\'path\');
-
+<pre>
+const path = require(&apos;path&apos;);
 module.exports = {
-
-entry: \'./src/index.js\',
-
-output: {
-
-path: path.resolve(\_\_dirname, \'dist\'),
-
-filename: \'bundle.js\'
-
-},
-
-module: {
-
-rules: \[
-
-{
-
-test: /\\.js\$/,
-
-exclude: /node_modules/,
-
-use: {
-
-loader: \'babel-loader\'
-
-}
-
-}
-
-\]
-
-}
-
+  entry: &apos;./src/index.js&apos;,
+  output: {
+    path: path.resolve(&lowbar;&lowbar;dirname, &apos;dist&apos;),
+    filename: &apos;bundle.js&apos;
+  },
+    module: {
+    rules: &lbrack;
+    {
+      test: /\&period;js&dollar;/,
+      exclude: /node_modules/,
+      use: {
+        loader: &apos;babel-loader&apos;
+      }
+    }
+  &rbrack;
+  }
 };
+</pre>
 
 3.  Then, in your **package.json**, add a script to run Webpack:
 
-\"scripts\": {
+<pre>
+&quot;scripts&quot;: {
 
-\"build\": \"webpack\"
+&quot;build&quot;: &quot;webpack&quot;
 
 },
+</pre>
 
 4.  Finally, you can run the build script by running **npm run
     build** in your terminal, and webpack will create
@@ -2493,8 +2263,8 @@ loader: \'babel-loader\'
 Module bundlers can potentially introduce naming conflicts. They occur
 when two or more modules use the same variable or function name. These
 conflicts can cause unexpected behavior and errors in your code. To
-resolve these conflicts, you can use a technique called \"tree
-shaking\", which is a way of removing unused code from the final bundle.
+resolve these conflicts, you can use a technique called &quot;tree
+shaking&quot;, which is a way of removing unused code from the final bundle.
 Many module bundlers support the use of namespaces or scoping to reduce
 the chance of naming conflicts.
 
@@ -2506,7 +2276,7 @@ the chance of naming conflicts.
 
 -   Rollup.
 
-    7\. Testing and Test-Driven Development (TDD):
+    7. Testing and Test-Driven Development (TDD):
 
 Test-Driven Development (TDD) is a software development method in which
 testing is done before coding is written. This means that development
@@ -2580,7 +2350,7 @@ development:**
 ![TDD](./images/media/image3.png){width="3.0in"
 height="3.607843394575678in"}
 
-8\. Browser APIs and DOM Manipulation:
+8. Browser APIs and DOM Manipulation:
 
 JavaScript interacts with the browser and web pages through Browser APIs
 and DOM Manipulation.
@@ -2598,7 +2368,7 @@ and DOM Manipulation.
     -   Web Storage API: Store data locally in the browser (e.g., Local
         Storage, Session Storage).
 
-    -   Geolocation API: Access the user\'s geographic location.
+    -   Geolocation API: Access the user&apos;s geographic location.
 
     -   Canvas API: Draw graphics and animations on the page.
 
@@ -2636,19 +2406,21 @@ and DOM Manipulation.
 
 **JavaScript**
 
-// Select an element by its ID\
-const myElement = document.getElementById(\"myElement\");\
-\
-// Change the text content of the element\
-myElement.textContent = \"Hello, world!\";\
-\
-// Add a new class to the element\
-myElement.classList.add(\"highlight\");\
-\
-// Add an event listener to the element\
-myElement.addEventListener(\"click\", function() {\
-alert(\"Element clicked!\");\
+<pre>
+// Select an element by its ID
+const myElement = document.getElementById(&quot;myElement&quot;);
+
+// Change the text content of the element
+myElement.textContent = &quot;Hello, world!&quot;;
+
+// Add a new class to the element
+myElement.classList.add(&quot;highlight&quot;);
+
+// Add an event listener to the element
+myElement.addEventListener(&quot;click&quot;, function() {
+alert(&quot;Element clicked!&quot;);
 });
+</pre>
 
 **Important Points:**
 
@@ -2666,25 +2438,28 @@ alert(\"Element clicked!\");\
 
 -   Accessing Window Properties with the BOM:
 
-// Get the width and height of the browser window\
-const windowWidth = window.innerWidth \|\|
-document.documentElement.clientWidth;\
-const windowHeight = window.innerHeight \|\|
-document.documentElement.clientHeight;\
-console.log(\`Window dimensions: \${windowWidth} x \${windowHeight}\`);\
-// Scroll to a specific position\
+<pre>
+// Get the width and height of the browser window
+const windowWidth = window.innerWidth &vert;&vert;
+document.documentElement.clientWidth;
+const windowHeight = window.innerHeight &vert;&vert;
+document.documentElement.clientHeight;
+console.log(&grave;Window dimensions: &dollar;{windowWidth} x &dollar;{windowHeight}&grave;);
+// Scroll to a specific position
 window.scrollTo(0, 0);
+</pre>
 
 -   Manipulating DOM Elements with the DOM:
 
-// Change the background color of an element\
-const element = document.getElementById(\"myElement\");\
-element.style.backgroundColor = \"blue\";\
-// Create a new element and append it to the document\
-const newElement = document.createElement(\"div\");\
-newElement.textContent = \"New Element\";\
+<pre>
+// Change the background color of an element
+const element = document.getElementById(&quot;myElement&quot;);
+element.style.backgroundColor = &quot;blue&quot;;
+// Create a new element and append it to the document
+const newElement = document.createElement(&quot;div&quot;);
+newElement.textContent = &quot;New Element&quot;;
 document.body.appendChild(newElement);
-
+</pre>
 
 # JS-Intermediate-JS
 JavaScript - intermediate (vanilla and more). Using sublime text.
