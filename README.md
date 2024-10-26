@@ -113,55 +113,50 @@ coding challenges, and build real-world applications to solidify your understand
 these concepts. Good luck with your intermediate JavaScript education!</p>
 
 
-<h3>Here are more details on each topic:</h3>
+<h3>Here are more details on each of the 8 topics:</h3>
 
-1.  Advanced Data Types and Manipulation:
-
-    -   Sets: Learn about the Set data structure, which allows you to
-        store unique values of any type.
-
-    -   Maps: Explore the Map data structure, which stores key-value
-        pairs and provides efficient lookup and manipulation.
-
-    -   Symbols: Understand the Symbol data type, which is used to
-        create unique identifiers.
-
-2.  Asynchronous JavaScript:
-
-    -   Callbacks: Learn how to use callbacks to handle asynchronous
-        operations by passing functions as arguments.
-
-    -   Promises: Understand the concept of promises, which represent
-        the eventual completion or failure of an asynchronous operation.
-
-    -   Async/Await: Explore the async/await syntax, which provides a
-        more readable and synchronous-like way to write asynchronous
-        code.
-
-3.  Object-Oriented Programming (OOP):
-
-    -   Encapsulation: Learn how to encapsulate data and behavior within
-        objects using properties and methods.
-
-    -   Inheritance: Understand how to create class hierarchies and
-        inherit properties and methods from parent classes.
-
-    -   Polymorphism: Explore the concept of polymorphism, which allows
-        objects of different classes to be treated as the same type.
-
-4.  Functional Programming:
-
-    -   Higher-Order Functions: Learn how to work with functions as
-        first-class citizens, allowing them to be passed as arguments or
-        returned from other functions.
-
-    -   Pure Functions: Understand the concept of pure functions, which
-        always produce the same output for the same input and have no
-        side effects.
-
-    -   Immutability: Explore the benefits of immutability, where data
-        cannot be changed once created, leading to more predictable and
-        maintainable code.
+<ol type="1">
+  <li><h2>Advanced Data Types and Manipulation:</h2><br>
+    <ul>
+	  <li>Sets: Learn about the Set data structure, which allows you to store unique 
+	    values of any type.<li>
+	  <li>Maps: Explore the Map data structure, which stores key-value pairs and 
+	    provides efficient lookup and manipulation.</li>
+	  <li>Symbols: Understand the Symbol data type, which is used to create unique 
+	    identifiers.</li>
+	</ul>
+  </li>
+  <li><h2>Asynchronous JavaScript:</h2><br>
+    <ul>
+	  <li>Callbacks: Learn how to use callbacks to handle asynchronous operations by 
+	    passing functions as arguments.</li>
+	  <li>Promises: Understand the concept of promises, which represent the eventual 
+	    completion or failure of an asynchronous operation.</li>
+      <li>Async/Await: Explore the async/await syntax, which provides a more readable and 
+	    synchronous-like way to write asynchronous code.</li>
+	</ul>
+  </li>
+  <li><h2>Object-Oriented Programming (OOP):</h2><br>
+    <ul>
+	  <li>Encapsulation: Learn how to encapsulate data and behavior within objects using 
+	    properties and methods.</li>
+	  <li>Inheritance: Understand how to create class hierarchies and inherit properties 
+	    and methods from parent classes.</li>
+	  <li>Polymorphism: Explore the concept of polymorphism, which allows objects of 
+	    different classes to be treated as the same type.</li>
+	</ul>
+  </li>
+  <li><h2>Functional Programming:</h2><br>
+    <ul>
+	  <li>igher-Order Functions: Learn how to work with functions as first-class citizens, 
+	    allowing them to be passed as arguments or returned from other functions.</li>
+	  <li>Pure Functions: Understand the concept of pure functions, which always produce 
+	    the same output for the same input and have no side effects.</li>
+	  <li>Immutability: Explore the benefits of immutability, where data cannot be changed 
+	    once created, leading to more predictable and maintainable code.</li>
+	</ul>
+  </li>
+</ol>
 
 5.  Error Handling and Debugging:
 
