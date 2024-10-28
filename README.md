@@ -121,82 +121,82 @@ these concepts. Good luck with your intermediate JavaScript education!</p>
 <ol type="1">
   <li><h2>Advanced Data Types and Manipulation:</h2>
     <ul>
-	  <li>Sets: Learn about the Set data structure, which allows you to store unique 
-	    values of any type.<li>
-	  <li>Maps: Explore the Map data structure, which stores key-value pairs and 
+	  <li><b>Sets</b>: Learn about the Set data structure, which allows you to store unique 
+	    values of any type.</li>
+	  <li><b>Maps</b>: Explore the Map data structure, which stores key-value pairs and 
 	    provides efficient lookup and manipulation.</li>
-	  <li>Symbols: Understand the Symbol data type, which is used to create unique 
+	  <li><b>Symbols</b>: Understand the Symbol data type, which is used to create unique 
 	    identifiers.</li>
 	</ul>
   </li>
   <li><h2>Asynchronous JavaScript:</h2>
     <ul>
-	  <li>Callbacks: Learn how to use callbacks to handle asynchronous operations by 
+	  <li><b>Callbacks</b>: Learn how to use callbacks to handle asynchronous operations by 
 	    passing functions as arguments.</li>
-	  <li>Promises: Understand the concept of promises, which represent the eventual 
+	  <li><b>Promises</b>: Understand the concept of promises, which represent the eventual 
 	    completion or failure of an asynchronous operation.</li>
-      <li>Async/Await: Explore the async/await syntax, which provides a more readable and 
+      <li><b>Async/Await</b>: Explore the async/await syntax, which provides a more readable and 
 	    synchronous-like way to write asynchronous code.</li>
 	</ul>
   </li>
   <li><h2>Object-Oriented Programming (OOP):</h2>
     <ul>
-	  <li>Encapsulation: Learn how to encapsulate data and behavior within objects using 
+	  <li><b>Encapsulation</b>: Learn how to encapsulate data and behavior within objects using 
 	    properties and methods.</li>
-	  <li>Inheritance: Understand how to create class hierarchies and inherit properties 
+	  <li><b>Inheritance</b>: Understand how to create class hierarchies and inherit properties 
 	    and methods from parent classes.</li>
-	  <li>Polymorphism: Explore the concept of polymorphism, which allows objects of 
+	  <li><b>Polymorphism</b>: Explore the concept of polymorphism, which allows objects of 
 	    different classes to be treated as the same type.</li>
 	</ul>
   </li>
   <li><h2>Functional Programming:</h2>
     <ul>
-	  <li>Higher-Order Functions: Learn how to work with functions as first-class citizens, 
+	  <li><b>Higher-Order Functions</b>: Learn how to work with functions as first-class citizens, 
 	    allowing them to be passed as arguments or returned from other functions.</li>
-	  <li>Pure Functions: Understand the concept of pure functions, which always produce 
+	  <li><b>Pure Functions</b>: Understand the concept of pure functions, which always produce 
 	    the same output for the same input and have no side effects.</li>
-	  <li>Immutability: Explore the benefits of immutability, where data cannot be changed 
+	  <li><b>Immutability</b>: Explore the benefits of immutability, where data cannot be changed 
 	    once created, leading to more predictable and maintainable code.</li>
 	</ul>
   </li>
   <li><h2>Error Handling and Debugging:</h2>
     <ul>
-	  <li>Throwing Errors: Learn how to throw custom errors using
+	  <li><b>Throwing Errors</b>: Learn how to throw custom errors using
         the throw keyword and handle them using try-catch blocks.</li>
-	  <li>Debugging Techniques: Explore techniques like console logging,
+	  <li><b>Debugging Techniques</b>: Explore techniques like console logging,
         breakpoints, and stepping through code to identify and fix
         issues.</li>
-	  <li>Error Handling Best Practices: Understand how to handle errors
+	  <li><b>Error Handling Best Practices</b>: Understand how to handle errors
         gracefully and provide meaningful error messages to users.</li>
 	</ul>
   </li>
   <li><h2>Modules and Bundlers:</h2>
     <ul>
-      <li>Modules: Learn how to organize your code into separate files and
+      <li><b>Modules</b>: Learn how to organize your code into separate files and
         export/import functionality using module systems like CommonJS
         or ES modules.</li>
-	  <li>Bundlers: Understand how bundlers like Webpack or Rollup can
+	  <li><b>Bundlers</b>: Understand how bundlers like Webpack or Rollup can
         bundle your JavaScript modules into a single file, optimizing
         performance and handling dependencies.</li>
 	</ul>
   </li>
   <li><h2>Testing and Test-Driven Development (TDD):</h2>
     <ul>
-	  <li>Unit Testing: Learn how to write tests for individual units of
+	  <li><b>Unit Testing</b>: Learn how to write tests for individual units of
         code to ensure they behave as expected.</li>
-      <li>Test Frameworks: Explore popular test frameworks like Jest or
+      <li><b>Test Frameworks</b>: Explore popular test frameworks like Jest or
         Mocha, which provide utilities for writing and running tests.</li>
-	  <li>Mocking and Stubbing: Understand how to create mock objects or
+	  <li><b>Mocking and Stubbing</b>: Understand how to create mock objects or
         stub functions to isolate dependencies and test specific parts
         of your code.</li>
 	</ul>
   </li>
   <li><h2>Browser APIs and DOM Manipulation:</h2>
     <ul>
-	  <li>DOM Manipulation: Learn how to access and manipulate HTML
+	  <li><b>DOM Manipulation</b>: Learn how to access and manipulate HTML
         elements using JavaScript to create dynamic and interactive web
         pages.</li>
-	  <li>Browser APIs: Explore various browser APIs like Fetch API for
+	  <li><b>Browser APIs</b>: Explore various browser APIs like Fetch API for
         making HTTP requests, Local Storage for client-side data
         storage, and Geolocation for retrieving user location.</li>
 	</ul>
@@ -213,7 +213,6 @@ Manipulation** in JavaScript, specifically focusing on Sets, Maps, and
 Symbols. Additionally, I'll provide guidance on how to use GitHub for
 managing your code and collaborating on projects related to these
 topics.</p>
-
 
 1. Advanced Data Types
 
