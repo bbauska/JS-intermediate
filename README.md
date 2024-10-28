@@ -421,8 +421,8 @@ To understand asynchronous JavaScript, we can break it down into several
 sub-problems:
 
 > **1. Understanding the Event Loop**
-
-**What is the Event Loop?**
+>
+> **What is the Event Loop?**
 
 -   The event loop is a mechanism that allows JavaScript to perform
     non-blocking operations by using a single-threaded model.
@@ -440,7 +440,7 @@ sub-problems:
     queue, executing the callback when the call stack is empty.
 
 > **2. Callback Functions**
-
+>
 > **What are callbacks?**
 
 -   A callback is a function passed as an argument to another function,
@@ -479,7 +479,6 @@ fetchData((data) =&gt; {
 -   Rejected: The operation failed.
 
 > **Creating and using a Promise:**
->
 
 <h4>javascript</h4>
 
@@ -516,14 +515,14 @@ myPromise.then((result) =&gt; {
 });
 </pre>
 
-**4. Async/Await**
-
-<h4>What is Async/Await?</h4>
+> **4. Async/Await**
+>
+> **What is Async/Await?**
 
 -   Async/Await is a syntactic sugar built on top of Promises that
     allows you to write asynchronous code in a more synchronous fashion.
 
-<h4>How to use Async/Await:</h4>
+> **How to use Async/Await:**
 
 -   You define a function with the async keyword, and within that
     function, you can use the await keyword to pause execution until the
@@ -553,35 +552,35 @@ const getData = async () =&gt; {
 getData();
 </pre>
 
-**5. Error Handling**
--   **Error handling in callbacks:**
+> **5. Error Handling**
+> -  **Error handling in callbacks:**
 
     -   Typically done by passing an error as the first argument to the
         callback.
 
--   **Error handling in Promises:**
+> -  **Error handling in Promises:**
 
     -   Use .catch() to handle errors.
 
--   **Error handling with Async/Await:**
+> -  **Error handling with Async/Await:**
 
-    -   Use try&hellip;catch blocks to handle errors.
+    -  Use try&hellip;catch blocks to handle errors.
 
-**6. Practical Use Cases**
+> **6. Practical Use Cases**
 
--   **Fetching data from APIs:**
+> -   **Fetching data from APIs:**
 
-    -   Use fetch() or libraries like Axios to make HTTP requests.
+    -  Use fetch() or libraries like Axios to make HTTP requests.
 
--   **Handling user interactions:**
+> -   **Handling user interactions:**
 
-    -   Use asynchronous code to respond to user actions without
-        blocking the UI.
+    -  Use asynchronous code to respond to user actions without
+       blocking the UI.
 
--   **Working with timers and intervals:**
+> -   **Working with timers and intervals:**
 
-    -   Use setTimeout and setInterval for delayed or repeated
-        execution.
+    -  Use setTimeout and setInterval for delayed or repeated
+       execution.
 
 <h4>Conclusion</h4>
 
