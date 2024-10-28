@@ -214,7 +214,7 @@ Symbols. Additionally, I'll provide guidance on how to use GitHub for
 managing your code and collaborating on projects related to these
 topics.</p>
 
-1. Advanced Data Types
+<h3>1. Advanced Data Types</h3>
 
 <h4>Sets</h4>
 
@@ -299,15 +299,15 @@ console.log(myMap.size); // 2
 <pre>
 const sym1 = Symbol(&apos;description&apos;);
 const sym2 = Symbol(&apos;description&apos;);
-console.log(sym1 === sym2); // false
+console.log(sym1 === sym2); // <i>false</i>
 const obj = {
-&lbrack;sym1&rbrack;: &apos;value1&apos;,
-&lbrack;sym2&rbrack;: &apos;value2&apos;
+  &lbrack;sym1&rbrack;: &apos;value1&apos;,
+  &lbrack;sym2&rbrack;: &apos;value2&apos;
 };
-console.log(obj&lbrack;sym1&rbrack;); // value1
+console.log(obj&lbrack;sym1&rbrack;); // <i>value1</i>
 </pre>
 
-<h4>2. Manipulating Advanced Data Types</h4>
+<h3>2. Manipulating Advanced Data Types</h3>
 
 -   **Using Sets**: You can perform operations like union, intersection,
     and difference by combining Sets.
@@ -318,7 +318,7 @@ console.log(obj&lbrack;sym1&rbrack;); // value1
 -   **Using Symbols**: Symbols can be used to create private properties
     in objects, enhancing encapsulation.
 
-<h4>3. Using GitHub for Code Management</h4>
+<h3>3. Using GitHub for Code Management</h3>
 
 <h4>Creating a Repository</h4>
 
@@ -395,7 +395,7 @@ git checkout -b feature/sets-implementation
 -   After making changes, push the branch and create a pull request on
     GitHub for review.
 
-<h4>4. Resources for Learning</h4>
+<h3>4. Resources for Learning</h3>
 
 -   **MDN Web Docs**: Comprehensive documentation
     on [Sets](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set), [Maps](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map),
