@@ -1,6 +1,6 @@
 <h1>JS Intermediate JS</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ readme.md of js-intermediate-js ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ readme.md of js-intermediate-javascript ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 align="center">JS Intermediate JS</h3>
 
@@ -246,8 +246,8 @@ topics.</p>
   const mySet = new Set(&lbrack;1, 2, 3, 4&rbrack;);
   mySet.add(5);
   mySet.delete(2);
-  console.log(mySet.has(3)); // true
-  console.log(mySet.size);   // 4
+  console.log(mySet.has(3)); // <i>true</i>
+  console.log(mySet.size);   // <i>4</i>
 </pre>
 
 <h5>Maps</h5>
@@ -1083,7 +1083,7 @@ const double = x =&gt; 2 &ast; x;
 // &lbrack;2, 4, 6&rbrack;
 </pre>
 
-**Reduce**
+<h4>Reduce</h4>
 
 reduce reduces the array to a single value.
 
@@ -1104,7 +1104,7 @@ const sum = (accumulatedSum, arrayItem) =&gt; accumulatedSum + arrayItem
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. reduce call illustration (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img  src="./images/image002.png?raw=true"
-  alt="Reduce call illustrations."
+  alt="Reduce call illustrations. Reduce reduces the array to a single value."
   title="Reduce call illustrations"
   style="width:50%;" />
 </p>
@@ -1127,6 +1127,7 @@ the [spread](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
 
 <pre>
 &lbrack;1, 2, &hellip;&lbrack;3, 4&rbrack;&rbrack;
+Object.assign
 </pre>
 
 Object.assign
@@ -1157,14 +1158,14 @@ string n number of times.
 
 <pre>
 const duplicate = (str, n) =&gt;
-n &lt; 1 ? &apos;&apos; : str + duplicate(str, n-1);
+  n &lt; 1 ? &apos;&apos; : str + duplicate(str, n-1);
 </pre>
 
 This function duplicates a string n times and returns a new string.
 
 <pre>
 duplicate(&apos;hooray!&apos;, 3)
-// hooray!hooray!hooray!
+// <i>hooray!hooray!hooray!</i>
 </pre>
 
 <h4>Higher-order Functions</h4>
@@ -1175,10 +1176,10 @@ functionality of a function.
 
 <pre>
 const withLog = (fn) =&gt; {
-return (&hellip;args) =&gt; {
-console.log(&grave;calling &dollar;{fn.name}&grave;);
-return fn(&hellip;args);
-};
+  return (&hellip;args) =&gt; {
+    console.log(&grave;calling &dollar;{fn.name}&grave;);
+    return fn(&hellip;args);
+  };
 };
 </pre>
 
@@ -1190,8 +1191,8 @@ wrapped function runs.
 const add = (a, b) =&gt; a + b;
 const addWithLogging = withLog(add);
 addWithLogging(3, 4);
-// calling add
-// 7
+// <i>calling add</i>
+// <i>7</i>
 </pre>
 
 withLog HOF can be used with other functions as well and it works
@@ -1203,16 +1204,16 @@ const addWithLogging = withLog(add);
 const hype = s =&gt; s + &apos;!!!&apos;;
 const hypeWithLogging = withLog(hype);
 hypeWithLogging(&apos;Sale&apos;);
-// calling hype
-// Sale!!!
+// <i>calling hype</i>
+// <i>Sale!!!</i>
 </pre>
 
 One can also call it without defining a combining function.
 
 <pre>
 withLog(hype)(&apos;Sale&apos;);
-// calling hype
-// Sale!!!
+// <i>calling hype</i>
+// <i>Sale!!!</i>
 </pre>
 
 <h4>Currying</h4>
@@ -1231,12 +1232,12 @@ multiple levels as follows.
 
 <pre>
 const add = a =&gt; {
-return b =&gt; {
-return a + b;
-};
+  return b =&gt; {
+    return a + b;
+  };
 };
 add(3)(4);
-// 7
+// <i>7</i>
 </pre>
 
 The benefit of currying is memoization. We can now memoize certain
@@ -1244,17 +1245,18 @@ arguments in a function call so that they can be reused later without
 duplication and re-computation.
 
 <pre>
-// assume getOffsetNumer() call is expensive
+// <i>assume getOffsetNumer() call is expensive</i>
 const addOffset = add(getOffsetNumber());
 addOffset(4);
-// 4 + getOffsetNumber()
+
+// <i>4 + getOffsetNumber()</i>
 addOffset(6);
 </pre>
 
 <p>This is certainly better than using both arguments everywhere.</p>
 
 <pre>
-// (X) DON&quot;T DO THIS
+// <i>(X) DON&quot;T DO THIS</i>
 add(4, getOffsetNumber());
 add(6, getOffsetNumber());
 add(10, getOffsetNumber());
@@ -1296,9 +1298,10 @@ const multiply = arr =&gt; arr.reduce((p, a) =&gt; p &ast; a);
 <pre>
 const factorial = n =&gt; multiply(range(1, n));
 factorial(5);
-// 120
+// <i>120</i>
+
 factorial(6);
-// 720
+// <i>720</i>
 </pre>
 
 <p>The above function for calculating factorial is similar to f(x) = g(h(x)), thus 
@@ -1383,9 +1386,9 @@ The result won't update, and we'll see a RangeError message in the
 console. The following function throws the error when dp is negative:
 
 <pre>
-// division calculation
+// <i>division calculation</i>
 function divide(v1, v2, dp) {
-return (v1 / v2).toFixed(dp);
+  return (v1 / v2).toFixed(dp);
 }
 </pre>
 
@@ -1393,7 +1396,7 @@ return (v1 / v2).toFixed(dp);
 code. None is present in the divide() function, so it checks the calling function:</p>
 
 <pre>
-// show result of division
+// <i>show result of division</i>
 function showResult() {
   result.value = divide (
     parseFloat(num1.value),
@@ -1418,7 +1421,7 @@ these things happens:</p>
 try...catch block</a>:</p>
 
 <pre>
-// division calculation
+// <i>division calculation</i>
 function divide(v1, v2, dp) {
   try {
     return (v1 / v2).toFixed(dp);
@@ -1426,7 +1429,7 @@ function divide(v1, v2, dp) {
 
   catch(e) {
     console.log(&grave;
-    error name : &dollar;{ e.name }
+    error name   : &dollar;{ e.name }
     error message: &dollar;{ e.message }
     &grave;);
     return &apos;ERROR&apos;;
@@ -1481,7 +1484,7 @@ What happens if we add an exception handler to the
 calling showResult() function?
 
 <pre>
-// show result of division
+// <i>show result of division</i>
 function showResult() {
   try {
     result.value = divide(
@@ -1518,10 +1521,10 @@ function divide(v1, v2, dp) {
 This will trigger the catch block in the calling function:
 
 <pre>
-// show result of division
+// <i>show result of division</i>
   function showResult() {
     try {
-      //&hellip;
+      // <i>&hellip;</i>
     }
 
   catch(e) {
@@ -1593,7 +1596,7 @@ encodeURI()</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/Java
 decodeURI()</a> when they encounter malformed URIs:</p>
 
 <pre>
-const u = decodeURIComponent(&apos;%&apos;); // URIError
+const u = decodeURIComponent(&apos;%&apos;); // <i>URIError</i>
 </pre>
 
 <h4>EvalError</h4>
@@ -1602,7 +1605,7 @@ const u = decodeURIComponent(&apos;%&apos;); // URIError
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval">eval() function</a>:</p>
 
 <pre>
-eval(&apos;console.logg x;&apos;); // EvalError
+eval(&apos;console.logg x;&apos;); // <i>EvalError</i>
 </pre>
 
 <p><b>Note: please don't use eval()! Executing arbitrary code contained in a
@@ -1710,7 +1713,7 @@ number of decimal places isn't a number, is less than zero, or is
 greater than eight:
 
 <pre>
-// division calculation
+// <i>division calculation</i>
 function divide(v1, v2, dp) {
   if (isNaN(dp) &vert;&vert; dp &lt; 0 &vert;&vert; dp &gt; 8) {
     throw new RangeError(&apos;Decimal places must be between 0 and 8&apos;);
@@ -1735,12 +1738,12 @@ dividing by zero, but that could confuse users. Rather than raising a
 generic Error, we could create a custom DivByZeroError error type:
 
 <pre>
-// new DivByZeroError Error type
+// <i>new DivByZeroError Error type</i>
 class DivByZeroError extends Error {
-constructor(message) {
-super(message);
-this.name = &apos;DivByZeroError&apos;;
-}
+  constructor(message) {
+    super(message);
+    this.name = &apos;DivByZeroError&apos;;
+  }
 }
 </pre>
 
@@ -1748,7 +1751,7 @@ Then throw it in the same way:
 
 <pre>
 if (isNaN(v2) &vert;&vert; !v2) {
-throw new DivByZeroError(&apos;Divisor must be a non-zero number&apos;);
+  throw new DivByZeroError(&apos;Divisor must be a non-zero number&apos;);
 }
 </pre>
 
@@ -1757,21 +1760,21 @@ can receive any Error type and react accordingly --- in this case,
 showing the error message:
 
 <pre>
-// show result of division
+// <i>show result of division</i>
 function showResult() {
-try {
-result.value = divide(
-parseFloat(num1.value),
-parseFloat(num2.value),
-parseFloat(dp.value)
-);
-errmsg.textContent = &apos;&apos;;
-}
-catch (e) {
-result.value = &apos;ERROR&apos;;
-errmsg.textContent = e.message;
-console.log( e.name );
-}
+  try {
+    result.value = divide(
+      parseFloat(num1.value),
+      parseFloat(num2.value),
+      parseFloat(dp.value)
+    );
+    errmsg.textContent = &apos;&apos;;
+  }
+  catch (e) {
+    result.value = &apos;ERROR&apos;;
+    errmsg.textContent = e.message;
+    console.log( e.name );
+  }
 }
 </pre>
 
@@ -1782,18 +1785,18 @@ The final version of the divide() function checks all the input values
 and throws an appropriate Error when necessary:
 
 <pre>
-// division calculation
+// <i>division calculation</i>
 function divide(v1, v2, dp) {
-if (isNaN(v1)) {
-throw new TypeError(&apos;Dividend must be a number&apos;);
-}
-if (isNaN(v2) &vert;&vert; !v2) {
-throw new DivByZeroError(&apos;Divisor must be a non-zero number&apos;);
-}
-if (isNaN(dp) &vert;&vert; dp &lt; 0 &vert;&vert; dp &gt; 8) {
-throw new RangeError(&apos;Decimal places must be between 0 and 8&apos;);
-}
-return (v1 / v2).toFixed(dp);
+  if (isNaN(v1)) {
+    throw new TypeError(&apos;Dividend must be a number&apos;);
+  }
+  if (isNaN(v2) &vert;&vert; !v2) {
+    throw new DivByZeroError(&apos;Divisor must be a non-zero number&apos;);
+  }
+  if (isNaN(dp) &vert;&vert; dp &lt; 0 &vert;&vert; dp &gt; 8) {
+    throw new RangeError(&apos;Decimal places must be between 0 and 8&apos;);
+  }
+  return (v1 / v2).toFixed(dp);
 }
 </pre>
 
@@ -1812,15 +1815,16 @@ one second:
 
 <pre>
 function asyncError(delay = 1000) {
-setTimeout(() =&gt; {
-throw new Error(&apos;I am never caught!&apos;);
-}, delay);
+  setTimeout(() =&gt; {
+    throw new Error(&apos;I am never caught!&apos;);
+  }, delay);
 }
+
 try {
-asyncError();
+  asyncError();
 }
 catch(e) {
-console.error(&apos;This will never run&apos;);
+  console.error(&apos;This will never run&apos;);
 }
 </pre>
 
@@ -1831,14 +1835,15 @@ throw an Error if necessary:
 
 <pre>
 function asyncError(delay = 1000, callback) {
-setTimeout(() =&gt; {
-callback(&apos;This is an error message&apos;);
-}, delay);
+  setTimeout(() =&gt; {
+    callback(&apos;This is an error message&apos;);
+  }, delay);
 }
+
 asyncError(1000, e =&gt; {
-if (e) {
-throw new Error(&grave;error: &dollar;{ e }&grave;);
-}
+  if (e) {
+    throw new Error(&grave;error: &dollar;{ e }&grave;);
+  }
 });
 </pre>
 
@@ -1852,16 +1857,16 @@ value:
 
 <pre>
 function wait(delay = 1000) {
-return new Promise((resolve, reject) =&gt; {
-if (isNaN(delay) &vert;&vert; delay &gt; 0) {
-reject( new TypeError(&apos;Invalid delay&apos;) );
-}
-else {
-setTimeout(() =&gt; {
-resolve(&grave;waited &dollar;{ delay } ms&grave;);
-}, delay);
-}
-})
+  return new Promise((resolve, reject) =&gt; {
+    if (isNaN(delay) &vert;&vert; delay &gt; 0) {
+      reject( new TypeError(&apos;Invalid delay&apos;) );
+    }
+    else {
+      setTimeout(() =&gt; {
+        resolve(&grave;waited &dollar;{ delay } ms&grave;);
+      }, delay);
+    }
+  })
 }
 </pre>
 
@@ -1877,11 +1882,11 @@ when passing an invalid delay parameter and it receives to the
 returned Error object:
 
 <pre>
-// invalid delay value passed
+// <i>invalid delay value passed</i>
 wait(&apos;INVALID&apos;)
-.then( res =&gt; console.log( res ))
-.catch( e =&gt; console.error( e.message ) )
-.finally( () =&gt; console.log(&apos;complete&apos;) );
+  .then( res =&gt; console.log( res ))
+  .catch( e =&gt; console.error( e.message ) )
+  .finally( () =&gt; console.log(&apos;complete&apos;) );
 </pre>
 
 Personally, I find promise chains a little difficult to read.
@@ -2065,12 +2070,12 @@ JavaScript supports two main module formats:
 <h4>JavaScript</h4>
 
 <pre>
-// module1.js
+// <i>module1.js</i>
 export function greet(name) {
 console.log(&grave;Hello, &dollar;{name}!&grave;);
 }
 
-// app.js
+// <i>app.js</i>
 import { greet } from &apos;./module1.js&apos;;
 greet(&apos;World&apos;);
 </pre>
@@ -2404,16 +2409,16 @@ and DOM Manipulation.
 <h4>JavaScript</h4>
 
 <pre>
-// Select an element by its ID
+// <i>Select an element by its ID</i>
 const myElement = document.getElementById(&quot;myElement&quot;);
 
-// Change the text content of the element
+// <i>Change the text content of the element</i>
 myElement.textContent = &quot;Hello, world!&quot;;
 
-// Add a new class to the element
+// <i>Add a new class to the element</i>
 myElement.classList.add(&quot;highlight&quot;);
 
-// Add an event listener to the element
+// <i>Add an event listener to the element</i>
 myElement.addEventListener(&quot;click&quot;, function() {
 alert(&quot;Element clicked!&quot;);
 });
@@ -2436,23 +2441,23 @@ alert(&quot;Element clicked!&quot;);
 -   Accessing Window Properties with the BOM:
 
 <pre>
-// Get the width and height of the browser window
+// <i>Get the width and height of the browser window</i>
 const windowWidth = window.innerWidth &vert;&vert;
 document.documentElement.clientWidth;
 const windowHeight = window.innerHeight &vert;&vert;
 document.documentElement.clientHeight;
 console.log(&grave;Window dimensions: &dollar;{windowWidth} x &dollar;{windowHeight}&grave;);
-// Scroll to a specific position
+// <i>Scroll to a specific position</i>
 window.scrollTo(0, 0);
 </pre>
 
 -   Manipulating DOM Elements with the DOM:
 
 <pre>
-// Change the background color of an element
+// <i>Change the background color of an element</i>
 const element = document.getElementById(&quot;myElement&quot;);
 element.style.backgroundColor = &quot;blue&quot;;
-// Create a new element and append it to the document
+// <i>Create a new element and append it to the document</i>
 const newElement = document.createElement(&quot;div&quot;);
 newElement.textContent = &quot;New Element&quot;;
 document.body.appendChild(newElement);
