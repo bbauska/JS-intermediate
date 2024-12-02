@@ -13,38 +13,43 @@
 <ul>
   <li>Objects: Objects are the fundamental building blocks of JavaScript. They are 
     collections of key-value pairs, where keys are properties (variables) and values 
-	can be any data type, including functions (methods).</li>
+    can be any data type, including functions (methods).</li>
   <li>Prototypes: Every object in JavaScript has a prototype, which is another object 
     from which it inherits properties and methods. This allows for efficient sharing 
-	of behavior and data between objects.</li>
+    of behavior and data between objects.</li>
   <li>Constructors: Constructors are special functions used to create objects with 
     specific properties and methods. They act as blueprints for objects.</li>
   <li>Classes (ES6): Introduced in ECMAScript 2015 (ES6), classes provide a more 
     syntactically familiar way to define objects and their behavior. However, under 
-	the hood, they still utilize prototypes.</li>
+    the hood, they still utilize prototypes.</li>
 </ul>
 
-<h3>1.	Advanced Data Types and Manipulation:</h3>
+<h3 id="ch1">1. Advanced Data Types and Manipulation:</h3>
 <ul>
   <li>Explore advanced data types like Sets, Maps, and Symbols.</li>
   <li>Learn how to manipulate arrays and objects using advanced techniques such as 
     destructuring, spreading, and rest parameters.</li>
   <li>Understand how to use the Array methods like map, filter, reduce, and forEach 
     effectively.</li>
+</ul>
 
-<h3>2.	Asynchronous JavaScript:</h3>
+<h3 id="ch2">2. Asynchronous JavaScript:</h3>
+<ul>
   <li>Dive into asynchronous programming concepts like callbacks, promises, and 
     async/await.</li>
   <li>Learn how to handle asynchronous operations using techniques like chaining 
     promises and error handling.</li>
   <li>Understand how to make API calls and handle responses asynchronously.</li>
+</ul>
 
-<h3>3.	Object-Oriented Programming (OOP):</h3>
+<h3 id="ch3">3. Object-Oriented Programming (OOP):</h3>
+<ul>
   <li>Learn about OOP principles like encapsulation, inheritance, and polymorphism.</li>
   <li>Explore how to create and use classes, constructors, and prototypes in JavaScript.</li>
   <li>Understand the concept of "this" and how it behaves in different contexts.</li>
+</ul>
 
-<h3>4.	Functional Programming:</h3>
+<h3 id="ch4">4. Functional Programming:</h3>
 <p>Functional programming in JavaScript is all about treating your code as a set of independent, 
 reusable functions that operate on data without side effects</p>
 
@@ -57,27 +62,28 @@ reusable functions that operate on data without side effects</p>
     code readability and maintainability.</li>
 </ul>
 
-<h3>5.	Error Handling and Debugging:</h3>
+<h3 id="ch5">5. Error Handling and Debugging:</h3>
 <ul>
   <li>Learn how to handle and throw errors effectively in JavaScript.</li>
   <li>Explore debugging techniques using browser developer tools and console statements.</li>
   <li>Understand how to use try-catch blocks to handle exceptions and prevent application crashes.</li>
 </ul>
 
-<h3>6.	Modules and Bundlers:</h3>
+<h3 id="ch6">6. Modules and Bundlers:</h3>
 <ul>
   <li>Learn how to organize your code into modules for better code organization and reusability.</li>
   <li>Explore popular module systems like CommonJS and ES modules.</li>
   <li>Understand how to use bundlers like Webpack or Rollup to bundle and optimize your JavaScript code.</li>
+</ul>
 
-<h3>7.	Testing and Test-Driven Development (TDD):</h3>
+<h3 id="ch7">7. Testing and Test-Driven Development (TDD):</h3>
 <ul>
   <li>Learn how to write unit tests using frameworks like Jest or Mocha.</li>
   <li>Understand the principles of TDD and how to write tests before implementing functionality.</li>
   <li>Explore techniques like mocking and stubbing to isolate dependencies during testing.</li>
 </ul>
 
-<h3>8.	Browser APIs and DOM Manipulation:</h3>
+<h3 id="ch8">8. Browser APIs and DOM Manipulation:</h3>
 <ul>
   <li>Learn how to interact with the Document Object Model (DOM) using JavaScript.</li>
   <li>Explore browser APIs like Fetch API, Local Storage, and Geolocation.</li>
@@ -86,60 +92,80 @@ reusable functions that operate on data without side effects</p>
 
 <p>Remember, practice is key to mastering JavaScript. Work on small projects, solve 
 coding challenges, and build real-world applications to solidify your understanding 
-of these concepts. Good luck with your intermediate JavaScript education!<br/>
-Here are more details on each topic:</p>
+of these concepts. Good luck with your intermediate JavaScript education!</p>
 
-1.	Advanced Data Types and Manipulation:
-•	Sets: Learn about the Set data structure, which allows you to store unique values of any type.
-•	Maps: Explore the Map data structure, which stores key-value pairs and provides efficient lookup and manipulation.
-•	Symbols: Understand the Symbol data type, which is used to create unique identifiers.
+<h3>Here are more details on each topic:</h3>
+<ol type="1">
+  <li>Advanced Data Types and Manipulation:
+    <ul>
+      <li>Sets: Learn about the Set data structure, which allows you to store unique values of any type.</li>
+      <li>Maps: Explore the Map data structure, which stores key-value pairs and provides efficient lookup and manipulation.</li>
+    <li>Symbols: Understand the Symbol data type, which is used to create unique identifiers.</li>
+  </ul>
+  </li>
 
-2.	Asynchronous JavaScript:
-•	Callbacks: Learn how to use callbacks to handle asynchronous operations by passing functions as arguments.
-•	Promises: Understand the concept of promises, which represent the eventual completion or failure of an asynchronous operation.
-•	Async/Await: Explore the async/await syntax, which provides a more readable and synchronous-like way to write asynchronous code.
-
-3.	Object-Oriented Programming (OOP):
-•	Encapsulation: Learn how to encapsulate data and behavior within objects using properties and methods.
-•	Inheritance: Understand how to create class hierarchies and inherit properties and methods from parent classes.
-•	Polymorphism: Explore the concept of polymorphism, which allows objects of different classes to be treated as the same type.
-
-4.	Functional Programming:
-•	Higher-Order Functions: Learn how to work with functions as first-class citizens, allowing them to be passed as arguments or returned from other functions.
-•	Pure Functions: Understand the concept of pure functions, which always produce the same output for the same input and have no side effects.
-•	Immutability: Explore the benefits of immutability, where data cannot be changed once created, leading to more predictable and maintainable code.
-
-5.	Error Handling and Debugging:
-•	Throwing Errors: Learn how to throw custom errors using the throw keyword and handle them using try-catch blocks.
-•	Debugging Techniques: Explore techniques like console logging, breakpoints, and stepping through code to identify and fix issues.
-•	Error Handling Best Practices: Understand how to handle errors gracefully and provide meaningful error messages to users.
-
-6.	Modules and Bundlers:
-•	Modules: Learn how to organize your code into separate files and export/import functionality using module systems like CommonJS or ES modules.
-•	Bundlers: Understand how bundlers like Webpack or Rollup can bundle your JavaScript modules into a single file, optimizing performance and handling dependencies.
-
-7.	Testing and Test-Driven Development (TDD):
-•	Unit Testing: Learn how to write tests for individual units of code to ensure they behave as expected.
-•	Test Frameworks: Explore popular test frameworks like Jest or Mocha, which provide utilities for writing and running tests.
-•	Mocking and Stubbing: Understand how to create mock objects or stub functions to isolate dependencies and test specific parts of your code.
-
-8.	Browser APIs and DOM Manipulation:
-•	DOM Manipulation: Learn how to access and manipulate HTML elements using JavaScript to create dynamic and interactive web pages.
-•	Browser APIs: Explore various browser APIs like Fetch API for making HTTP requests, Local Storage for client-side data storage, and Geolocation for retrieving user location.
+  <li>Asynchronous JavaScript:
+    <ul>
+	  <li>Callbacks: Learn how to use callbacks to handle asynchronous operations by passing functions as arguments.</li>
+	  <li>Promises: Understand the concept of promises, which represent the eventual completion or failure of an asynchronous operation.</li>
+	  <li>Async/Await: Explore the async/await syntax, which provides a more readable and synchronous-like way to write asynchronous code.</li>
+	</ul>
+  </li>
+  <li>Object-Oriented Programming (OOP):
+    <ul>
+      <li>Encapsulation: Learn how to encapsulate data and behavior within objects using properties and methods.</li>
+      <li>Inheritance: Understand how to create class hierarchies and inherit properties and methods from parent classes.</li>
+	  <li>Polymorphism: Explore the concept of polymorphism, which allows objects of different classes to be treated as the same type.</li>
+	</ul>
+  </li>
+  <li>Functional Programming:
+    <ul>
+      <li>Higher-Order Functions: Learn how to work with functions as first-class citizens, allowing them to be passed as arguments or returned from other functions.</li>
+      <li>Pure Functions: Understand the concept of pure functions, which always produce the same output for the same input and have no side effects.</li>
+      <li>Immutability: Explore the benefits of immutability, where data cannot be changed once created, leading to more predictable and maintainable code.</li>
+	</ul>
+  </li>
+  <li>Error Handling and Debugging:
+    <ul>
+      <li>Throwing Errors: Learn how to throw custom errors using the throw keyword and handle them using try-catch blocks.</li>
+      <li>Debugging Techniques: Explore techniques like console logging, breakpoints, and stepping through code to identify and fix issues.</li>
+      <li>Error Handling Best Practices: Understand how to handle errors gracefully and provide meaningful error messages to users.</li>
+    </ul>
+  </li>
+  <li>Modules and Bundlers:
+    <ul>
+	  <li>Modules: Learn how to organize your code into separate files and export/import functionality using module systems like CommonJS or ES modules.</li>
+      <li>Bundlers: Understand how bundlers like Webpack or Rollup can bundle your JavaScript modules into a single file, optimizing performance and handling dependencies.</li>
+	</ul>
+  </li>
+  <li>Testing and Test-Driven Development (TDD):
+    <ul>
+      <li>Unit Testing: Learn how to write tests for individual units of code to ensure they behave as expected.</li>
+	  <li>Test Frameworks: Explore popular test frameworks like Jest or Mocha, which provide utilities for writing and running tests.</li>
+	  <li>Mocking and Stubbing: Understand how to create mock objects or stub functions to isolate dependencies and test specific parts of your code.</li>
+    </ul>
+  </li>
+  <li>Browser APIs and DOM Manipulation:
+    <ul>
+	  <li>DOM Manipulation: Learn how to access and manipulate HTML elements using JavaScript to create dynamic and interactive web pages.</li>
+      <li>Browser APIs: Explore various browser APIs like Fetch API for making HTTP requests, Local Storage for client-side data storage, and Geolocation for retrieving user location.</li>
+	</ul>
+  </li>
+</ol>
 
 Remember to practice each topic by building small projects or solving coding challenges. This hands-on experience will help solidify your understanding and improve your skills as an intermediate JavaScript developer.
 Certainly! Let's delve deeper into Advanced Data Types and Manipulation in JavaScript, specifically focusing on Sets, Maps, and Symbols. Additionally, I'll provide guidance on how to use GitHub for managing your code and collaborating on projects related to these topics.
 
 1. Advanced Data Types
 Sets
-•	Definition: A Set is a collection of values where each value must be unique. It can store any type of data (primitive values or object references).
-•	Key Methods:
-•	new Set(iterable): Creates a new Set. You can initialize it with an array or another iterable.
-•	add(value): Adds a new element to the Set.
-•	delete(value): Removes an element from the Set.
-•	has(value): Checks if a value exists in the Set.
-•	clear(): Removes all elements from the Set.
-•	size: Returns the number of elements in the Set.
+•    Definition: A Set is a collection of values where each value must be unique. It can store any type of data (primitive values or object references).
+•    Key Methods:
+•    new Set(iterable): Creates a new Set. You can initialize it with an array or another iterable.
+•    add(value): Adds a new element to the Set.
+•    delete(value): Removes an element from the Set.
+•    has(value): Checks if a value exists in the Set.
+•    clear(): Removes all elements from the Set.
+•    size: Returns the number of elements in the Set.
 
 
 <h2>Example:</h2>
@@ -154,15 +180,15 @@ console.log(mySet.size); // 4
 ```
 
 <h3>Maps</h3>
-•	Definition: A Map is a collection of key-value pairs where keys can be of any type (including objects), and each key must be unique.
-•	Key Methods:
-•	new Map(iterable): Creates a new Map. You can initialize it with an array of key-value pairs.
-•	set(key, value): Adds a new key-value pair to the Map.
-•	get(key): Retrieves the value associated with the key.
-•	delete(key): Removes the key-value pair from the Map.
-•	has(key): Checks if a key exists in the Map.
-•	clear(): Removes all key-value pairs from the Map.
-•	size: Returns the number of key-value pairs in the Map.
+•    Definition: A Map is a collection of key-value pairs where keys can be of any type (including objects), and each key must be unique.
+•    Key Methods:
+•    new Map(iterable): Creates a new Map. You can initialize it with an array of key-value pairs.
+•    set(key, value): Adds a new key-value pair to the Map.
+•    get(key): Retrieves the value associated with the key.
+•    delete(key): Removes the key-value pair from the Map.
+•    has(key): Checks if a key exists in the Map.
+•    clear(): Removes all key-value pairs from the Map.
+•    size: Returns the number of key-value pairs in the Map.
 
 Example:
 
@@ -176,11 +202,11 @@ console.log(myMap.size); // 2
 ```
 
 Symbols
-•	Definition: A Symbol is a unique and immutable primitive value that can be used as an identifier for object properties.
-•	Key Characteristics:
-•	Symbols are created using the Symbol() function.
-•	Each Symbol is unique, even if they have the same description.
-•	They are often used to avoid name clashes in object properties.
+•    Definition: A Symbol is a unique and immutable primitive value that can be used as an identifier for object properties.
+•    Key Characteristics:
+•    Symbols are created using the Symbol() function.
+•    Each Symbol is unique, even if they have the same description.
+•    They are often used to avoid name clashes in object properties.
 
 Example:
 
@@ -197,21 +223,21 @@ console.log(obj[sym1]); // value1
 ```
 
 2. Manipulating Advanced Data Types
-•	Using Sets: You can perform operations like union, intersection, and difference by combining Sets.
-•	Using Maps: Maps can be used to create dictionaries or associative arrays, allowing for efficient data retrieval.
-•	Using Symbols: Symbols can be used to create private properties in objects, enhancing encapsulation.
+•    Using Sets: You can perform operations like union, intersection, and difference by combining Sets.
+•    Using Maps: Maps can be used to create dictionaries or associative arrays, allowing for efficient data retrieval.
+•    Using Symbols: Symbols can be used to create private properties in objects, enhancing encapsulation.
 
 3. Using GitHub for Code Management
 Creating a Repository
 
-1.	Sign in to GitHub: Go to GitHub and sign in or create an account.
-2.	Create a New Repository:
-•	Click on the "+" icon in the top right corner and select "New repository."
-•	Give your repository a name (e.g., advanced-data-types).
-•	Optionally, add a description and choose whether it should be public or private.
-•	Click "Create repository."
+1.    Sign in to GitHub: Go to GitHub and sign in or create an account.
+2.    Create a New Repository:
+•    Click on the "+" icon in the top right corner and select "New repository."
+•    Give your repository a name (e.g., advanced-data-types).
+•    Optionally, add a description and choose whether it should be public or private.
+•    Click "Create repository."
 Cloning the Repository
-•	Use Git to clone the repository to your local machine:
+•    Use Git to clone the repository to your local machine:
 
 bash
 ```
@@ -220,36 +246,36 @@ cd advanced-data-types
 ```
 
 Adding Code
-•	Create a new JavaScript file (e.g., sets.js, maps.js, symbols.js) and implement examples of Sets, Maps, and Symbols.
-•	Use git add to stage your changes:
+•    Create a new JavaScript file (e.g., sets.js, maps.js, symbols.js) and implement examples of Sets, Maps, and Symbols.
+•    Use git add to stage your changes:
 
 bash
 ```
 git add sets.js maps.js symbols.js
 ```
 Committing Changes
-•	Commit your changes with a meaningful message:
+•    Commit your changes with a meaningful message:
 bash
 ```
 git commit -m "Add examples for Sets, Maps, and Symbols"
 ```
 Pushing to GitHub
-•	Push your changes to the remote repository:
+•    Push your changes to the remote repository:
 bash
 ```
 git push origin main
 ```
 Collaborating
-•	If you're working with others, you can create branches for new features or fixes:
+•    If you're working with others, you can create branches for new features or fixes:
 bash
 ```
 git checkout -b feature/sets-implementation
 ```
-•	After making changes, push the branch and create a pull request on GitHub for review.
+•    After making changes, push the branch and create a pull request on GitHub for review.
 
 4. Resources for Learning
-•	MDN Web Docs: Comprehensive documentation on Sets, Maps, and Symbols.
-•	JavaScript.info: A great resource for in-depth tutorials on advanced JavaScript topics.
+•    MDN Web Docs: Comprehensive documentation on Sets, Maps, and Symbols.
+•    JavaScript.info: A great resource for in-depth tutorials on advanced JavaScript topics.
 By using GitHub to manage your code, you can easily track changes, collaborate with others, and showcase your work. This approach will help you solidify your understanding of advanced data types in JavaScript while also gaining experience with version control and collaboration tools.
 
 5. Asynchronous JavaScript
@@ -258,15 +284,15 @@ To understand asynchronous JavaScript, we can break it down into several sub-pro
 
 6. Understanding the Event Loop
 What is the Event Loop?
-•	The event loop is a mechanism that allows JavaScript to perform non-blocking operations by using a single-threaded model.
+•    The event loop is a mechanism that allows JavaScript to perform non-blocking operations by using a single-threaded model.
 How does it work?
-•	JavaScript executes code in a call stack. When asynchronous operations are initiated (like fetching data), they are sent to the Web APIs (like the browser's networking layer).
-•	Once the operation completes, a callback function is placed in the message queue.
-•	The event loop continuously checks the call stack and the message queue, executing the callback when the call stack is empty.
+•    JavaScript executes code in a call stack. When asynchronous operations are initiated (like fetching data), they are sent to the Web APIs (like the browser's networking layer).
+•    Once the operation completes, a callback function is placed in the message queue.
+•    The event loop continuously checks the call stack and the message queue, executing the callback when the call stack is empty.
 
 7. Callback Functions
 What are callbacks?
-•	A callback is a function passed as an argument to another function, which is then executed after some operation has been completed.
+•    A callback is a function passed as an argument to another function, which is then executed after some operation has been completed.
 Example of a callback:
 javascript
 ```
@@ -283,11 +309,11 @@ fetchData((data) => {
 
 3. Promises
 What are Promises?
-•	A Promise is an object representing the eventual completion (or failure) of an asynchronous operation and its resulting value.
+•    A Promise is an object representing the eventual completion (or failure) of an asynchronous operation and its resulting value.
 States of a Promise:
-•	Pending: The initial state, neither fulfilled nor rejected.
-•	Fulfilled: The operation completed successfully.
-•	Rejected: The operation failed.
+•    Pending: The initial state, neither fulfilled nor rejected.
+•    Fulfilled: The operation completed successfully.
+•    Rejected: The operation failed.
 Creating and using a Promise:
 ```
 javascript
@@ -323,9 +349,9 @@ myPromise.then((result) => {
 4. Async/Await
 
 What is Async/Await?
-•	Async/Await is a syntactic sugar built on top of Promises that allows you to write asynchronous code in a more synchronous fashion.
+•    Async/Await is a syntactic sugar built on top of Promises that allows you to write asynchronous code in a more synchronous fashion.
 How to use Async/Await:
-•	You define a function with the async keyword, and within that function, you can use the await keyword to pause execution until the Promise is resolved.
+•    You define a function with the async keyword, and within that function, you can use the await keyword to pause execution until the Promise is resolved.
 Example:
 javascript
 ```
@@ -349,21 +375,21 @@ getData();
 
 5. Error Handling
 
-•	Error handling in callbacks:
-•	Typically done by passing an error as the first argument to the callback.
-•	Error handling in Promises:
-•	Use .catch() to handle errors.
-•	Error handling with Async/Await:
-•	Use try...catch blocks to handle errors.
+•    Error handling in callbacks:
+•    Typically done by passing an error as the first argument to the callback.
+•    Error handling in Promises:
+•    Use .catch() to handle errors.
+•    Error handling with Async/Await:
+•    Use try...catch blocks to handle errors.
 
 6. Practical Use Cases
 
-•	Fetching data from APIs:
-•	Use fetch() or libraries like Axios to make HTTP requests.
-•	Handling user interactions:
-•	Use asynchronous code to respond to user actions without blocking the UI.
-•	Working with timers and intervals:
-•	Use setTimeout and setInterval for delayed or repeated execution.
+•    Fetching data from APIs:
+•    Use fetch() or libraries like Axios to make HTTP requests.
+•    Handling user interactions:
+•    Use asynchronous code to respond to user actions without blocking the UI.
+•    Working with timers and intervals:
+•    Use setTimeout and setInterval for delayed or repeated execution.
 
 Conclusion
 
@@ -376,8 +402,8 @@ Object-Oriented Programming (OOP) is a programming paradigm that uses "objects" 
 
 a. Objects
 
-•	Definition: An object is an instance of a class that contains properties (attributes) and methods (functions) that define its behavior.
-•	Example:
+•    Definition: An object is an instance of a class that contains properties (attributes) and methods (functions) that define its behavior.
+•    Example:
 javascript
 ```
 const car = {
@@ -391,8 +417,8 @@ const car = {
 ```
 
 b. Classes
-•	Definition: A class is a blueprint for creating objects. It defines properties and methods that the created objects will have.
-•	Example:
+•    Definition: A class is a blueprint for creating objects. It defines properties and methods that the created objects will have.
+•    Example:
 
 javascript
 ```
@@ -413,8 +439,8 @@ const myCar = new Car('Toyota', 'Corolla', 2020);
 
 2. OOP Principles
 a. Encapsulation
-•	Definition: Encapsulation is the bundling of data (attributes) and methods (functions) that operate on that data within a single unit (class). It restricts direct access to some of an object's components.
-•	Example: Using private properties in a class:
+•    Definition: Encapsulation is the bundling of data (attributes) and methods (functions) that operate on that data within a single unit (class). It restricts direct access to some of an object's components.
+•    Example: Using private properties in a class:
 javascript
 ```
 class BankAccount {
@@ -435,8 +461,8 @@ console.log(account.getBalance()); // Outputs: 150
 ```
 
 b. Inheritance
-•	Definition: Inheritance allows a class (child class) to inherit properties and methods from another class (parent class). This promotes code reusability.
-•	Example:
+•    Definition: Inheritance allows a class (child class) to inherit properties and methods from another class (parent class). This promotes code reusability.
+•    Example:
 
 javascript
 ```
@@ -466,8 +492,8 @@ myCar.honk();  // Outputs: Honk! Honk!
 ```
 
 c. Polymorphism
-•	Definition: Polymorphism allows methods to do different things based on the object it is acting upon. It can be achieved through method overriding (inherited classes can provide a specific implementation of a method).
-•	Example:
+•    Definition: Polymorphism allows methods to do different things based on the object it is acting upon. It can be achieved through method overriding (inherited classes can provide a specific implementation of a method).
+•    Example:
 javascript
 ```
 class Animal {
@@ -496,8 +522,8 @@ myCat.speak(); // Outputs: Meow!
 ```
 
 d. Abstraction
-•	Definition: Abstraction is the concept of hiding the complex implementation details and showing only the essential features of an object. It can be achieved through abstract classes or interfaces.
-•	Example:
+•    Definition: Abstraction is the concept of hiding the complex implementation details and showing only the essential features of an object. It can be achieved through abstract classes or interfaces.
+•    Example:
 javascript
 ```
 class Shape {
@@ -522,16 +548,16 @@ console.log(myRectangle.area()); // Outputs: 50
 
 3. Benefits of OOP
 
-•	Modularity: Code is organized into classes and objects, making it easier to manage.
-•	Reusability: Classes can be reused across different parts of an application or in different projects.
-•	Maintainability: Changes to a class can be made without affecting other parts of the code.
-•	Flexibility: OOP allows for the creation of more flexible and adaptable code through inheritance and polymorphism.
+•    Modularity: Code is organized into classes and objects, making it easier to manage.
+•    Reusability: Classes can be reused across different parts of an application or in different projects.
+•    Maintainability: Changes to a class can be made without affecting other parts of the code.
+•    Flexibility: OOP allows for the creation of more flexible and adaptable code through inheritance and polymorphism.
 
 4. Practical Use Cases
 
-•	Game Development: OOP is widely used in game development to represent entities like players, enemies, and items.
-•	Web Development: Frameworks like React and Angular use OOP principles to create reusable components.
-•	Software Engineering: OOP is used in designing complex software systems, making them easier to understand and maintain.
+•    Game Development: OOP is widely used in game development to represent entities like players, enemies, and items.
+•    Web Development: Frameworks like React and Angular use OOP principles to create reusable components.
+•    Software Engineering: OOP is used in designing complex software systems, making them easier to understand and maintain.
 Conclusion
 Object-Oriented Programming is a powerful paradigm that helps in organizing code, promoting reusability, and enhancing maintainability. By understanding the key concepts and principles of OOP, developers can create robust and scalable applications.
 
@@ -617,9 +643,9 @@ Because of these reasons, we only use pure functions in functional programming.
 Another benefit of pure functions is that they can be parallelized and memoized. Have a look at the previous two functions. It’s impossible to parallelize or memoize them. This helps in creating performant code.
 The Tenets of Functional Programming
 So far, we have learned that functional programming is dependent on a few rules. They are as follows.
-1.	Don’t mutate data
-2.	Use pure functions: fixed output for fixed inputs, and no side effects
-3.	Use expressions and declarations
+1.    Don’t mutate data
+2.    Use pure functions: fixed output for fixed inputs, and no side effects
+3.    Use expressions and declarations
 When we satisfy these conditions, we can say our code is functional.
 Functional Programming in JavaScript
 JavaScript already has some functions that enable functional programming. Example: String.prototype.slice, Array.protoype.filter, Array.prototype.join.
@@ -684,7 +710,7 @@ We can create our pure function as well. Let’s do one for duplicating a string
 
 ```
 const duplicate = (str, n) =>  
-	n < 1 ? '' : str + duplicate(str, n-1);
+    n < 1 ? '' : str + duplicate(str, n-1);
 ```
 
 This function duplicates a string n times and returns a new string.
@@ -699,10 +725,10 @@ Higher-order functions are functions that accept a function as an argument and r
 
 ```
 const withLog = (fn) => {  
-	return (...args) => {  
-		console.log(`calling ${fn.name}`);  
-		return fn(...args);  
-	};  
+    return (...args) => {  
+        console.log(`calling ${fn.name}`);  
+        return fn(...args);  
+    };  
 };
 
 ```
@@ -747,9 +773,9 @@ When we are to curry it, we rewrite it distributing arguments into multiple leve
 
 ```
 const add = a => {
-	return b => {
-		return a + b;
-	};
+    return b => {
+        return a + b;
+    };
 };
 add(3)(4);  
 // 7
@@ -801,16 +827,16 @@ When any error occurs, JavaScript will stop and generate an error message. The t
 
 Debugging Techniques in Programming:
 
-1.	Breakpoints: By setting breakpoints in the code, you can pause the program at specific points, check variables, and closely examine the program's current state. ...
-2.	Step Through: Examining the code line by line aids in identifying the precise location of an error. ...
-3.	Watch Variables:
+1.    Breakpoints: By setting breakpoints in the code, you can pause the program at specific points, check variables, and closely examine the program's current state. ...
+2.    Step Through: Examining the code line by line aids in identifying the precise location of an error. ...
+3.    Watch Variables:
 There are three main types of errors that can occur while compiling a JavaScript program: syntax errors, runtime errors, and logical errors. The most common type of errors are syntax errors, in which something incorrect in the syntax of the program body raises this error.
 One of the simplest ways to debug JavaScript code is by using console. log() statements to output variable values or messages to the console. This can help you identify the point at which your code starts to break down or behave unexpectedly. console.
 Expert developers expect the unexpected. If something can go wrong, it will go wrong — typically, the moment the first user accesses your new web system.
 We can avoid some web application errors like so:
-•	A good editor or linter can catch syntax errors.
-•	Good validation can catch user input errors.
-•	Robust test processes can spot logic errors.
+•    A good editor or linter can catch syntax errors.
+•    Good validation can catch user input errors.
+•    Robust test processes can spot logic errors.
 Yet errors remain. Browsers may fail or not support an API we’re using. Servers can fail or take too long to respond. Network connectivity can fail or become unreliable. Issues may be temporary, but we can’t code our way around such problems. However, we can anticipate problems, take remedial actions, and make our application more resilient.
 Showing an Error Message is the Last Resort
 Ideally, users should never see error messages.
@@ -838,8 +864,8 @@ function showResult() {
 }
 ```
 The interpreter repeats the process for every function on the call stack until one of these things happens:
-•	it finds an exception handler
-•	it reaches the top level of code (which causes the program to terminate and show an error in the console, as demonstrated in the CodePen example above)
+•    it finds an exception handler
+•    it reaches the top level of code (which causes the program to terminate and show an error in the console, as demonstrated in the CodePen example above)
 Catching Exceptions
 We can add an exception handler to the divide() function with a try…catch block:
 ```
@@ -963,9 +989,9 @@ Error
 Finally, there is a generic Error object which is most often used when implementing our own exceptions … which we’ll cover next.
 Throwing Our Own Exceptions
 We can throw our own exceptions when an error occurs — or should occur. For example:
-•	our function isn’t passed valid parameters
-•	an Ajax request fails to return expected data
-•	a DOM update fails because a node doesn’t exist
+•    our function isn’t passed valid parameters
+•    an Ajax request fails to return expected data
+•    a DOM update fails because a node doesn’t exist
 The throw statement actually accepts any value or object. For example:
 throw 'A simple error string';
 throw 42;
@@ -982,13 +1008,13 @@ This is rarely necessary, since they default to the file and line where we threw
 We can define generic Error objects, but we should use a standard Error type when possible. For example:
 throw new RangeError('Decimal places must be 0 or greater');
 All Error objects have the following properties, which we can examine in a catch block:
-•	.name: the name of the Error type — such as Error or RangeError
-•	.message: the error message
+•    .name: the name of the Error type — such as Error or RangeError
+•    .message: the error message
 The following non-standard properties are also supported in Firefox:
-•	.fileName: the file where the error occurred
-•	.lineNumber: the line number where the error occurred
-•	.columnNumber: the column number on the line where the error occurred
-•	.stack: a stack trace listing the function calls made before the error occurred
+•    .fileName: the file where the error occurred
+•    .lineNumber: the line number where the error occurred
+•    .columnNumber: the column number on the line where the error occurred
+•    .stack: a stack trace listing the function calls made before the error occurred
 We can change the divide() function to throw a RangeError when the number of decimal places isn’t a number, is less than zero, or is greater than eight:
 ```
 // Division calculation
@@ -1135,9 +1161,9 @@ catch (e) {
 }
 Building a resilient application that reacts appropriately to errors and makes life easy for users is more challenging. Always expect the unexpected.
 Further information:
-•	MDN Control Flow and Error Handling
-•	MDN try…catch
-•	MDN Error object
+•    MDN Control Flow and Error Handling
+•    MDN try…catch
+•    MDN Error object
 Frequently Asked Questions (FAQs) on JavaScript Error Handling
 What are the different types of errors in JavaScript?
 JavaScript has three types of errors: Syntax Errors, Runtime Errors, and Logical Errors. Syntax Errors occur when there is an issue with the structure of your code, such as a missing bracket or semicolon. Runtime Errors happen when the code is syntactically correct but fails to execute due to unforeseen circumstances like referencing an undefined variable. Logical Errors are the most challenging to debug as they occur when the code runs without crashing, but it doesn’t produce the expected outcome.
@@ -1169,16 +1195,16 @@ catch (e) {
 6. Modules and Bundlers:
 In JavaScript, modules and bundlers play a crucial role in organizing and optimizing code for modern web development. Here's a breakdown:
 Modules:
-•	What they are:
+•    What they are:
 Modules are self-contained units of code that encapsulate functionality. They allow you to break down your code into smaller, manageable pieces, making it easier to maintain and reuse.
-•	Benefits:
-•	Organization: Modules help you organize your code by separating concerns into logical units.
-•	Reusability: You can easily reuse modules across different parts of your application or even in other projects.
-•	Encapsulation: Modules hide their internal implementation details, exposing only what's necessary.
-•	Syntax:
+•    Benefits:
+•    Organization: Modules help you organize your code by separating concerns into logical units.
+•    Reusability: You can easily reuse modules across different parts of your application or even in other projects.
+•    Encapsulation: Modules hide their internal implementation details, exposing only what's necessary.
+•    Syntax:
 JavaScript supports two main module formats:
-•	CommonJS: Used primarily in Node.js, it uses require to import modules and module.exports to export them.
-•	ES Modules: The standard module format in modern JavaScript, it uses import and export statements.
+•    CommonJS: Used primarily in Node.js, it uses require to import modules and module.exports to export them.
+•    ES Modules: The standard module format in modern JavaScript, it uses import and export statements.
 Example (ES Modules):
 JavaScript
 // module1.js
@@ -1189,51 +1215,51 @@ export function greet(name) {
 import { greet } from './module1.js';
 greet('World');
 Bundlers:
-•	What they are:
+•    What they are:
 Bundlers are tools that take multiple JavaScript modules and combine them into a single file (or a few files) that can be efficiently loaded by a browser.
-•	Benefits:
-•	Reduced network requests: Browsers have limitations on the number of simultaneous requests they can make. Bundling reduces the number of files to be fetched, improving performance.
-•	Dependency management: Bundlers automatically resolve dependencies between modules, ensuring that all required code is included in the final bundle.
-•	Code transformations: Bundlers can perform transformations like transpiling (e.g., Babel for converting modern JavaScript to older versions) and minification (reducing file size).
-•	Popular Bundlers:
-•	Webpack: A powerful and flexible bundler with a wide range of features and plugins.
-•	Rollup: A fast and efficient bundler focused on producing small, optimized bundles.
-•	Parcel: A zero-configuration bundler that aims to be simple and easy to use.
-•	Vite: A fast development server and build tool that leverages native ES modules for lightning-fast development. 
+•    Benefits:
+•    Reduced network requests: Browsers have limitations on the number of simultaneous requests they can make. Bundling reduces the number of files to be fetched, improving performance.
+•    Dependency management: Bundlers automatically resolve dependencies between modules, ensuring that all required code is included in the final bundle.
+•    Code transformations: Bundlers can perform transformations like transpiling (e.g., Babel for converting modern JavaScript to older versions) and minification (reducing file size).
+•    Popular Bundlers:
+•    Webpack: A powerful and flexible bundler with a wide range of features and plugins.
+•    Rollup: A fast and efficient bundler focused on producing small, optimized bundles.
+•    Parcel: A zero-configuration bundler that aims to be simple and easy to use.
+•    Vite: A fast development server and build tool that leverages native ES modules for lightning-fast development. 
 What are Module Bundlers used for?
 Module bundlers are used for several other purposes, including:
-•	Transpiling, minifying, and optimizing code to improve performance.
-•	Resolving naming conflicts and removing unused code via tree shaking.
-•	Enabling the use of new JavaScript features, even if the targeted browser does not yet support them.
-•	Providing a development environment with features such as live reloading and hot module replacement for faster development iterations.
-•	Supporting the use of modern JavaScript features such as ES modules and JSX.
-•	Enabling the creation of libraries and frameworks that can be easily distributed and used in other projects.
+•    Transpiling, minifying, and optimizing code to improve performance.
+•    Resolving naming conflicts and removing unused code via tree shaking.
+•    Enabling the use of new JavaScript features, even if the targeted browser does not yet support them.
+•    Providing a development environment with features such as live reloading and hot module replacement for faster development iterations.
+•    Supporting the use of modern JavaScript features such as ES modules and JSX.
+•    Enabling the creation of libraries and frameworks that can be easily distributed and used in other projects.
 Popular Module Bundlers
 Webpack
 Webpack is one of the most popular module bundlers in the JavaScript community. It's highly configurable and can handle a wide variety of use cases. Additionally, it has a large community and a wide range of plugins available.
-•	Pros: Highly configurable, a wide range of plugins available, large community.
-•	Cons: May be difficult to set up and configure and can produce large bundle sizes.
+•    Pros: Highly configurable, a wide range of plugins available, large community.
+•    Cons: May be difficult to set up and configure and can produce large bundle sizes.
 Esbuild
 Esbuild is a relatively new module bundler that aims to provide a very fast and efficient bundling. It's written in Go and focuses on providing great performance, even for large projects. It has a plugin system and can be used with other tools like Rollup.
-•	Pros: It's very fast, efficient, and lightweight.
-•	Cons: Relatively new and not as widely adopted as other options.
+•    Pros: It's very fast, efficient, and lightweight.
+•    Cons: Relatively new and not as widely adopted as other options.
 Rollup
 Rollup is particularly well-suited for library development. It produces smaller bundle sizes than some other bundlers, which can be beneficial for libraries that are intended to be distributed widely. Additionally, Rollup has a plugin-based architecture that allows for a high degree of customization.
-•	Pros: Well-suited for library development, produces smaller bundle sizes.
-•	Cons: May not be as well-suited for large, complex projects.
+•    Pros: Well-suited for library development, produces smaller bundle sizes.
+•    Cons: May not be as well-suited for large, complex projects.
 Parcel
 Parcel is a relatively new module bundler that aims to provide a simple and easy-to-use experience. It has a minimal configuration and can handle most common use cases out of the box. Moreover, Parcel has a built-in development server, which can be useful for testing and debugging.
-•	Pros: Minimal configuration, built-in development server.
-•	Cons: May fall short for some advanced use cases.
+•    Pros: Minimal configuration, built-in development server.
+•    Cons: May fall short for some advanced use cases.
 Vite
 Vite is a lightweight module bundler that is designed for development speed. It uses native ES modules in the browser and has a hot module replacement feature that allows for fast development iterations.
-•	Pros: It's lightweight, has fast development iterations, and it's easy to set up.
-•	Cons: Limited in older browser support, and needs more community traction to become sustainable.
+•    Pros: It's lightweight, has fast development iterations, and it's easy to set up.
+•    Cons: Limited in older browser support, and needs more community traction to become sustainable.
 Setting up a Module Bundler
 We'll use Webpack as an example, to show you how to set up a module bundler for a simple project:
-1.	First, install Webpack and the necessary loaders and plugins by running the following command:
+1.    First, install Webpack and the necessary loaders and plugins by running the following command:
 npm install webpack webpack-cli --save-dev
-2.	Next, create a webpack.config.js file in the root of your project. This file will contain the configuration for Webpack. The example below contains a configuration file that tells Webpack to use the babel-loader to transpile JavaScript files:
+2.    Next, create a webpack.config.js file in the root of your project. This file will contain the configuration for Webpack. The example below contains a configuration file that tells Webpack to use the babel-loader to transpile JavaScript files:
 const path = require('path');
 
 module.exports = {
@@ -1254,12 +1280,12 @@ module.exports = {
         ]
     }
 };
-3.	Then, in your package.json, add a script to run Webpack:
+3.    Then, in your package.json, add a script to run Webpack:
 "scripts": {
     "build": "webpack"
   },
 
-  4.	Finally, you can run the build script by running npm run build in your terminal, and webpack will create a bundle.js file in the dist directory.
+  4.    Finally, you can run the build script by running npm run build in your terminal, and webpack will create a bundle.js file in the dist directory.
 Naming Conflicts
 Module bundlers can potentially introduce naming conflicts. They occur when two or more modules use the same variable or function name. These conflicts can cause unexpected behavior and errors in your code. To resolve these conflicts, you can use a technique called "tree shaking", which is a way of removing unused code from the final bundle. Many module bundlers support the use of namespaces or scoping to reduce the chance of naming conflicts.
 Popular Module Bundlers
@@ -1270,18 +1296,18 @@ Popular Module Bundlers
   7. Testing and Test-Driven Development (TDD):
 Test-Driven Development (TDD) is a software development method in which testing is done before coding is written. This means that development begins with writing tests that define how a particular function or module should work.
 In layman’s terms, Test Driven Development (TDD) is a software development practice that focuses on creating unit test cases before developing the actual code. It is an iterative approach combining programming, unit test creation, and refactoring.
-•	The TDD approach originates from the Agile manifesto principles and Extreme programming.
-•	As the name suggests, the test process drives software development.
-•	Moreover, it’s a structuring practice that enables developers and testers to obtain optimized code that proves resilient in the long term.
-•	In TDD, developers create small test cases for every feature based on their initial understanding. The primary intention of this technique is to modify or write new code only if the tests fail. This prevents duplication of test scripts.
+•    The TDD approach originates from the Agile manifesto principles and Extreme programming.
+•    As the name suggests, the test process drives software development.
+•    Moreover, it’s a structuring practice that enables developers and testers to obtain optimized code that proves resilient in the long term.
+•    In TDD, developers create small test cases for every feature based on their initial understanding. The primary intention of this technique is to modify or write new code only if the tests fail. This prevents duplication of test scripts.
 Test Driven Development (TDD) Examples
-1.	Calculator Function: When building a calculator function, a TDD approach would involve writing a test case for the “add” function and then writing the code for the process to pass that test. Once the “add” function is working correctly, additional test cases would be written for other functions such as “subtract”, “multiply” and “divide”.
-2.	User Authentication: When building a user authentication system, a TDD approach would involve writing a test case for the user login functionality and then writing the code for the login process to pass that test. Once the login functionality works correctly, additional test cases will be written for registration, password reset, and account verification.
-3.	E-commerce Website: When building an e-commerce website, a TDD approach would involve writing test cases for various features such as product listings, shopping cart functionality, and checkout process. Tests would be written to ensure the system works correctly at each process stage, from adding items to the cart to completing the purchase.
+1.    Calculator Function: When building a calculator function, a TDD approach would involve writing a test case for the “add” function and then writing the code for the process to pass that test. Once the “add” function is working correctly, additional test cases would be written for other functions such as “subtract”, “multiply” and “divide”.
+2.    User Authentication: When building a user authentication system, a TDD approach would involve writing a test case for the user login functionality and then writing the code for the login process to pass that test. Once the login functionality works correctly, additional test cases will be written for registration, password reset, and account verification.
+3.    E-commerce Website: When building an e-commerce website, a TDD approach would involve writing test cases for various features such as product listings, shopping cart functionality, and checkout process. Tests would be written to ensure the system works correctly at each process stage, from adding items to the cart to completing the purchase.
 Three Phases of Test Driven Development
-1.	Create precise tests: Developers need to create exact unit tests to verify the functionality of specific features. They must ensure that the test compiles so that it can execute. In most cases, the test is bound to fail. This is a meaningful failure as developers create compact tests based on their assumptions of how the feature will behave.
-2.	Correcting the Code: Once a test fails, developers must make the minimal changes required to update the code to run successfully when re-executed.
-3.	Refactor the Code: Once the test runs successfully, check for redundancy or any possible code optimizations to enhance overall performance. Ensure that refactoring does not affect the external behavior of the program.
+1.    Create precise tests: Developers need to create exact unit tests to verify the functionality of specific features. They must ensure that the test compiles so that it can execute. In most cases, the test is bound to fail. This is a meaningful failure as developers create compact tests based on their assumptions of how the feature will behave.
+2.    Correcting the Code: Once a test fails, developers must make the minimal changes required to update the code to run successfully when re-executed.
+3.    Refactor the Code: Once the test runs successfully, check for redundancy or any possible code optimizations to enhance overall performance. Ensure that refactoring does not affect the external behavior of the program.
 The image below represents a high-level TDD approach toward development:
  
   8. Browser APIs and DOM Manipulation:
@@ -1289,23 +1315,23 @@ The image below represents a high-level TDD approach toward development:
 JavaScript interacts with the browser and web pages through Browser APIs and DOM Manipulation.
 Browser APIs:
   - These are built-in interfaces provided by the browser that allow you to access various functionalities like:
-	- DOM API: Manipulate the structure, content, and style of a web page (more details below).
-	- Fetch API: Make network requests to retrieve data from servers.
-	- Web Storage API: Store data locally in the browser (e.g., Local Storage, Session Storage).
-	- Geolocation API: Access the user's geographic location.
-	- Canvas API: Draw graphics and animations on the page.
-	- Web Audio API: Work with audio data in the browser.
-	- WebRTC API: Enable real-time communication (e.g., video calls).
+    - DOM API: Manipulate the structure, content, and style of a web page (more details below).
+    - Fetch API: Make network requests to retrieve data from servers.
+    - Web Storage API: Store data locally in the browser (e.g., Local Storage, Session Storage).
+    - Geolocation API: Access the user's geographic location.
+    - Canvas API: Draw graphics and animations on the page.
+    - Web Audio API: Work with audio data in the browser.
+    - WebRTC API: Enable real-time communication (e.g., video calls).
 
 <h3>DOM Manipulation:</h3>
   - The Document Object Model (DOM) represents the HTML structure of a web page as a tree-like structure, where each HTML element is a node in the tree.
   - JavaScript can use the DOM API to:
-	* Select elements: Access specific elements using methods like getElementById, querySelector, and querySelectorAll.
-	* Modify content: Change the text content of an element using properties like innerText or textContent.
-	* Manipulate attributes: Add, remove, or modify attributes of elements (e.g., src, class, id).
-	* Change styles: Modify the visual appearance of elements by manipulating their CSS styles.
-	* Add/remove elements: Dynamically create new elements and insert them into the DOM, or remove existing elements.
-	* Handle events: Respond to user interactions like clicks, mouse movements, and keyboard presses.
+    * Select elements: Access specific elements using methods like getElementById, querySelector, and querySelectorAll.
+    * Modify content: Change the text content of an element using properties like innerText or textContent.
+    * Manipulate attributes: Add, remove, or modify attributes of elements (e.g., src, class, id).
+    * Change styles: Modify the visual appearance of elements by manipulating their CSS styles.
+    * Add/remove elements: Dynamically create new elements and insert them into the DOM, or remove existing elements.
+    * Handle events: Respond to user interactions like clicks, mouse movements, and keyboard presses.
 
 <h2>Example:</h2>
 
