@@ -1,61 +1,63 @@
-JS Intermediate JavaScript
-(JS-Int-JavaScript)
+<h1>JS Intermediate JavaScript</h1>
+<p><small><small>(JS-Int-JavaScript)</small></small</p>
 
-Intermediate/advanced material
-•	JavaScript Design Patterns 
-•	Professor Frisby's Mostly Adequate Guide to Functional Programming 
-•	What the heck is the event loop anyway? – JS Conf talk about the event loop
-•	Deep JavaScript: Theory & Techniques 
-Key Concepts:
-•	Objects:
+<h2>Intermediate/advanced material</h2>
+  - JavaScript Design Patterns
+  - Professor Frisby's Mostly Adequate Guide to Functional Programming 
+  - What the heck is the event loop anyway? – JS Conf talk about the event loop
+  - Deep JavaScript: Theory & Techniques 
+  
+<h2>Key Concepts:</h2>
+  - Objects:
 Objects are the fundamental building blocks of JavaScript. They are collections of key-value pairs, where keys are properties (variables) and values can be any data type, including functions (methods).
-•	Prototypes:
+
+  - Prototypes:
 Every object in JavaScript has a prototype, which is another object from which it inherits properties and methods. This allows for efficient sharing of behavior and data between objects.
-•	Constructors:
+  - Constructors:
 Constructors are special functions used to create objects with specific properties and methods. They act as blueprints for objects.
-•	Classes (ES6):
+  - Classes (ES6):
 Introduced in ECMAScript 2015 (ES6), classes provide a more syntactically familiar way to define objects and their behavior. However, under the hood, they still utilize prototypes.
 
-1.	Advanced Data Types and Manipulation:
-•	Explore advanced data types like Sets, Maps, and Symbols.
-•	Learn how to manipulate arrays and objects using advanced techniques such as destructuring, spreading, and rest parameters.
-•	Understand how to use the Array methods like map, filter, reduce, and forEach effectively.
+  1.	Advanced Data Types and Manipulation:
+  - Explore advanced data types like Sets, Maps, and Symbols.
+  - Learn how to manipulate arrays and objects using advanced techniques such as destructuring, spreading, and rest parameters.
+  - Understand how to use the Array methods like map, filter, reduce, and forEach effectively.
 
-2.	Asynchronous JavaScript:
-•	Dive into asynchronous programming concepts like callbacks, promises, and async/await.
-•	Learn how to handle asynchronous operations using techniques like chaining promises and error handling.
-•	Understand how to make API calls and handle responses asynchronously.
+  2.	Asynchronous JavaScript:
+  - Dive into asynchronous programming concepts like callbacks, promises, and async/await.
+  - Learn how to handle asynchronous operations using techniques like chaining promises and error handling.
+  - Understand how to make API calls and handle responses asynchronously.
 
-3.	Object-Oriented Programming (OOP):
-•	Learn about OOP principles like encapsulation, inheritance, and polymorphism.
-•	Explore how to create and use classes, constructors, and prototypes in JavaScript.
-•	Understand the concept of "this" and how it behaves in different contexts.
+  3.	Object-Oriented Programming (OOP):
+  - Learn about OOP principles like encapsulation, inheritance, and polymorphism.
+  - Explore how to create and use classes, constructors, and prototypes in JavaScript.
+  - Understand the concept of "this" and how it behaves in different contexts.
 
-4.	Functional Programming: 
+  4.	Functional Programming: 
 Functional programming in JavaScript is all about treating your code as a set of independent, reusable functions that operate on data without side effects
-•	Explore functional programming concepts like higher-order functions, pure functions, and immutability.
-•	Learn how to use functional programming techniques like map, filter, and reduce to solve problems.
-•	Understand the benefits of functional programming and how it can improve code readability and maintainability.
+  - Explore functional programming concepts like higher-order functions, pure functions, and immutability.
+  - Learn how to use functional programming techniques like map, filter, and reduce to solve problems.
+  - Understand the benefits of functional programming and how it can improve code readability and maintainability.
 
-5.	Error Handling and Debugging:
-•	Learn how to handle and throw errors effectively in JavaScript.
-•	Explore debugging techniques using browser developer tools and console statements.
-•	Understand how to use try-catch blocks to handle exceptions and prevent application crashes.
+  5.	Error Handling and Debugging:
+  - Learn how to handle and throw errors effectively in JavaScript.
+  - Explore debugging techniques using browser developer tools and console statements.
+  - Understand how to use try-catch blocks to handle exceptions and prevent application crashes.
 
-6.	Modules and Bundlers:
-•	Learn how to organize your code into modules for better code organization and reusability.
-•	Explore popular module systems like CommonJS and ES modules.
-•	Understand how to use bundlers like Webpack or Rollup to bundle and optimize your JavaScript code.
+  6.	Modules and Bundlers:
+  - Learn how to organize your code into modules for better code organization and reusability.
+  - Explore popular module systems like CommonJS and ES modules.
+  - Understand how to use bundlers like Webpack or Rollup to bundle and optimize your JavaScript code.
 
-7.	Testing and Test-Driven Development (TDD):
-•	Learn how to write unit tests using frameworks like Jest or Mocha.
-•	Understand the principles of TDD and how to write tests before implementing functionality.
-•	Explore techniques like mocking and stubbing to isolate dependencies during testing.
+  7.	Testing and Test-Driven Development (TDD):
+  - Learn how to write unit tests using frameworks like Jest or Mocha.
+  - Understand the principles of TDD and how to write tests before implementing functionality.
+  - Explore techniques like mocking and stubbing to isolate dependencies during testing.
 
-8.	Browser APIs and DOM Manipulation:
-•	Learn how to interact with the Document Object Model (DOM) using JavaScript.
-•	Explore browser APIs like Fetch API, Local Storage, and Geolocation.
-•	Understand how to manipulate HTML elements, handle events, and create dynamic web applications.
+  8.	Browser APIs and DOM Manipulation:
+  - Learn how to interact with the Document Object Model (DOM) using JavaScript.
+  - Explore browser APIs like Fetch API, Local Storage, and Geolocation.
+  - Understand how to manipulate HTML elements, handle events, and create dynamic web applications.
 
 Remember, practice is key to mastering JavaScript. Work on small projects, solve coding challenges, and build real-world applications to solidify your understanding of these concepts. Good luck with your intermediate JavaScript education!
 Here are more details on each topic:
@@ -1055,15 +1057,16 @@ module.exports = {
 "scripts": {
     "build": "webpack"
   },
-4.	Finally, you can run the build script by running npm run build in your terminal, and webpack will create a bundle.js file in the dist directory.
+
+  4.	Finally, you can run the build script by running npm run build in your terminal, and webpack will create a bundle.js file in the dist directory.
 Naming Conflicts
 Module bundlers can potentially introduce naming conflicts. They occur when two or more modules use the same variable or function name. These conflicts can cause unexpected behavior and errors in your code. To resolve these conflicts, you can use a technique called "tree shaking", which is a way of removing unused code from the final bundle. Many module bundlers support the use of namespaces or scoping to reduce the chance of naming conflicts.
 Popular Module Bundlers
-•	Webpack.
-•	Esbuild.
-•	Rollup.
+  - Webpack.
+  - Esbuild.
+  - Rollup.
 
-7. Testing and Test-Driven Development (TDD):
+  7. Testing and Test-Driven Development (TDD):
 Test-Driven Development (TDD) is a software development method in which testing is done before coding is written. This means that development begins with writing tests that define how a particular function or module should work.
 In layman’s terms, Test Driven Development (TDD) is a software development practice that focuses on creating unit test cases before developing the actual code. It is an iterative approach combining programming, unit test creation, and refactoring.
 •	The TDD approach originates from the Agile manifesto principles and Extreme programming.
@@ -1080,61 +1083,71 @@ Three Phases of Test Driven Development
 3.	Refactor the Code: Once the test runs successfully, check for redundancy or any possible code optimizations to enhance overall performance. Ensure that refactoring does not affect the external behavior of the program.
 The image below represents a high-level TDD approach toward development:
  
-8. Browser APIs and DOM Manipulation:
+  8. Browser APIs and DOM Manipulation:
+
 JavaScript interacts with the browser and web pages through Browser APIs and DOM Manipulation.
 Browser APIs:
-•	These are built-in interfaces provided by the browser that allow you to access various functionalities like:
-o	DOM API: Manipulate the structure, content, and style of a web page (more details below).
-o	Fetch API: Make network requests to retrieve data from servers.
-o	Web Storage API: Store data locally in the browser (e.g., Local Storage, Session Storage).
-o	Geolocation API: Access the user's geographic location.
-o	Canvas API: Draw graphics and animations on the page.
-o	Web Audio API: Work with audio data in the browser.
-o	WebRTC API: Enable real-time communication (e.g., video calls).
-DOM Manipulation:
-•	The Document Object Model (DOM) represents the HTML structure of a web page as a tree-like structure, where each HTML element is a node in the tree.
-•	JavaScript can use the DOM API to:
-o	Select elements: Access specific elements using methods like getElementById, querySelector, and querySelectorAll.
-o	Modify content: Change the text content of an element using properties like innerText or textContent.
-o	Manipulate attributes: Add, remove, or modify attributes of elements (e.g., src, class, id).
-o	Change styles: Modify the visual appearance of elements by manipulating their CSS styles.
-o	Add/remove elements: Dynamically create new elements and insert them into the DOM, or remove existing elements.
-o	Handle events: Respond to user interactions like clicks, mouse movements, and keyboard presses.
-Example:
-JavaScript
-// Select an element by its ID
+  - These are built-in interfaces provided by the browser that allow you to access various functionalities like:
+	- DOM API: Manipulate the structure, content, and style of a web page (more details below).
+	- Fetch API: Make network requests to retrieve data from servers.
+	- Web Storage API: Store data locally in the browser (e.g., Local Storage, Session Storage).
+	- Geolocation API: Access the user's geographic location.
+	- Canvas API: Draw graphics and animations on the page.
+	- Web Audio API: Work with audio data in the browser.
+	- WebRTC API: Enable real-time communication (e.g., video calls).
+
+<h3>DOM Manipulation:</h3>
+  - The Document Object Model (DOM) represents the HTML structure of a web page as a tree-like structure, where each HTML element is a node in the tree.
+  - JavaScript can use the DOM API to:
+	* Select elements: Access specific elements using methods like getElementById, querySelector, and querySelectorAll.
+	* Modify content: Change the text content of an element using properties like innerText or textContent.
+	* Manipulate attributes: Add, remove, or modify attributes of elements (e.g., src, class, id).
+	* Change styles: Modify the visual appearance of elements by manipulating their CSS styles.
+	* Add/remove elements: Dynamically create new elements and insert them into the DOM, or remove existing elements.
+	* Handle events: Respond to user interactions like clicks, mouse movements, and keyboard presses.
+
+<h2>Example:</h2>
+
+<h3>JavaScript</h3>
+// <i>Select an element by its ID</i>
 const myElement = document.getElementById("myElement");
 
-// Change the text content of the element
+// <i>Change the text content of the element</i>
 myElement.textContent = "Hello, world!";
 
-// Add a new class to the element
+// <i>Add a new class to the element</i>
 myElement.classList.add("highlight");
 
-// Add an event listener to the element
+// <i>Add an event listener to the element</i>
 myElement.addEventListener("click", function() {
   alert("Element clicked!");
 });
+
 Important Points:
-•	DOM Manipulation can be expensive: Excessive DOM manipulation can negatively impact website performance.
-•	Modern JavaScript frameworks: Libraries like React, Vue, and Angular provide more efficient ways to manage the DOM by using a virtual DOM.
-•	Understanding CSS selectors: Being proficient in CSS selectors is crucial for effectively selecting elements in the DOM.
+  - DOM Manipulation can be expensive: Excessive DOM manipulation can negatively impact website performance.
+  - Modern JavaScript frameworks: Libraries like React, Vue, and Angular provide more efficient ways to manage the DOM by using a virtual DOM.
+  - Understanding CSS selectors: Being proficient in CSS selectors is crucial for effectively selecting elements in the DOM.
+
 Practical Examples Comparing the BOM and DOM:
-•	Accessing Window Properties with the BOM:
-// Get the width and height of the browser window
+
+  - Accessing Window Properties with the BOM:
+  
+// <i>Get the width and height of the browser window</i>
 const windowWidth = window.innerWidth || document.documentElement.clientWidth;
 const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 console.log(`Window dimensions: ${windowWidth} x ${windowHeight}`);
 
-// Scroll to a specific position
+// <i>Scroll to a specific position</i>
 window.scrollTo(0, 0);
-•	Manipulating DOM Elements with the DOM:
-// Change the background color of an element
+  - Manipulating DOM Elements with the DOM:
+
+// <i>Change the background color of an element</i>
 const element = document.getElementById("myElement");
 element.style.backgroundColor = "blue";
 
-// Create a new element and append it to the document
+// <i>Create a new element and append it to the document</i>
 const newElement = document.createElement("div");
 newElement.textContent = "New Element";
 document.body.appendChild(newElement);
 
+<!-- last updated 12/1/2024 8:07pm -->
