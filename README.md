@@ -95,6 +95,7 @@ coding challenges, and build real-world applications to solidify your understand
 of these concepts. Good luck with your intermediate JavaScript education!</p>
 
 <h3>Here are more details on each topic:</h3>
+
 <ol type="1">
   <li>Advanced Data Types and Manipulation:
     <ul>
@@ -139,37 +140,57 @@ of these concepts. Good luck with your intermediate JavaScript education!</p>
   </li>
   <li>Testing and Test-Driven Development (TDD):
     <ul>
-      <li>Unit Testing: Learn how to write tests for individual units of code to ensure they behave as expected.</li>
-	  <li>Test Frameworks: Explore popular test frameworks like Jest or Mocha, which provide utilities for writing and running tests.</li>
-	  <li>Mocking and Stubbing: Understand how to create mock objects or stub functions to isolate dependencies and test specific parts of your code.</li>
+      <li>Unit Testing: Learn how to write tests for individual units of code to ensure 
+	    they behave as expected.</li>
+	  <li>Test Frameworks: Explore popular test frameworks like Jest or Mocha, which 
+	    provide utilities for writing and running tests.</li>
+	  <li>Mocking and Stubbing: Understand how to create mock objects or stub functions 
+	    to isolate dependencies and test specific parts of your code.</li>
     </ul>
   </li>
   <li>Browser APIs and DOM Manipulation:
     <ul>
-	  <li>DOM Manipulation: Learn how to access and manipulate HTML elements using JavaScript to create dynamic and interactive web pages.</li>
-      <li>Browser APIs: Explore various browser APIs like Fetch API for making HTTP requests, Local Storage for client-side data storage, and Geolocation for retrieving user location.</li>
+	  <li>DOM Manipulation: Learn how to access and manipulate HTML elements using 
+	    JavaScript to create dynamic and interactive web pages.</li>
+      <li>Browser APIs: Explore various browser APIs like Fetch API for making HTTP 
+	    requests, Local Storage for client-side data storage, and Geolocation for 
+		retrieving user location.</li>
 	</ul>
   </li>
 </ol>
 
-Remember to practice each topic by building small projects or solving coding challenges. This hands-on experience will help solidify your understanding and improve your skills as an intermediate JavaScript developer.
-Certainly! Let's delve deeper into Advanced Data Types and Manipulation in JavaScript, specifically focusing on Sets, Maps, and Symbols. Additionally, I'll provide guidance on how to use GitHub for managing your code and collaborating on projects related to these topics.
+<p>Remember to practice each topic by building small projects or solving coding 
+challenges. This hands-on experience will help solidify your understanding and 
+improve your skills as an intermediate JavaScript developer.
+Certainly! Let's delve deeper into Advanced Data Types and Manipulation in JavaScript, 
+specifically focusing on Sets, Maps, and Symbols. Additionally, I'll provide guidance 
+on how to use GitHub for managing your code and collaborating on projects related to 
+these topics.</p>
 
-1. Advanced Data Types
-Sets
-•    Definition: A Set is a collection of values where each value must be unique. It can store any type of data (primitive values or object references).
-•    Key Methods:
-•    new Set(iterable): Creates a new Set. You can initialize it with an array or another iterable.
-•    add(value): Adds a new element to the Set.
-•    delete(value): Removes an element from the Set.
-•    has(value): Checks if a value exists in the Set.
-•    clear(): Removes all elements from the Set.
-•    size: Returns the number of elements in the Set.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>1. Advanced Data Types</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Sets</h4>
+<ul>
+  <li>Definition: A Set is a collection of values where each value must be unique. It can 
+    store any type of data (primitive values or object references).</li>
+  <li>Key Methods:
+    <ul>
+	  <li>new Set(iterable): Creates a new Set. You can initialize it with an array or 
+	    another iterable.</li>
+      <li>add(value): Adds a new element to the Set.</li>
+      <li>delete(value): Removes an element from the Set.</li>
+      <li>has(value): Checks if a value exists in the Set.</li>
+      <li>clear(): Removes all elements from the Set.</li>
+      <li>size: Returns the number of elements in the Set.</li>
+    </ul>
+  </li>
+</ul>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example:</h4>
 
-<h2>Example:</h2>
-
-<h3>javascript</h3>
+<h4>javascript</h4>
 
 ```
 const mySet = new Set([1, 2, 3, 4]);
@@ -180,19 +201,26 @@ console.log(mySet.size); // 4
 ```
 
 <h3>Maps</h3>
-•    Definition: A Map is a collection of key-value pairs where keys can be of any type (including objects), and each key must be unique.
-•    Key Methods:
-•    new Map(iterable): Creates a new Map. You can initialize it with an array of key-value pairs.
-•    set(key, value): Adds a new key-value pair to the Map.
-•    get(key): Retrieves the value associated with the key.
-•    delete(key): Removes the key-value pair from the Map.
-•    has(key): Checks if a key exists in the Map.
-•    clear(): Removes all key-value pairs from the Map.
-•    size: Returns the number of key-value pairs in the Map.
+<ul>
+  <li>Definition: A Map is a collection of key-value pairs where keys can be of any type 
+    (including objects), and each key must be unique.</li>
+  <li>Key Methods:
+    <ul>
+	  <li>new Map(iterable): Creates a new Map. You can initialize it with an array of 
+	    key-value pairs.</li>
+      <li>set(key, value): Adds a new key-value pair to the Map.</li>
+      <li>get(key): Retrieves the value associated with the key.</li>
+      <li>delete(key): Removes the key-value pair from the Map.</li>
+      <li>has(key): Checks if a key exists in the Map.</li>
+      <li>clear(): Removes all key-value pairs from the Map.</li>
+      <li>size: Returns the number of key-value pairs in the Map.</li>
+    </ul>
+  </li>
+</ul>
 
-Example:
+<h4>Example:</h4>
 
-javascript
+<h4>javascript</h4>
 
 ```
 const myMap = new Map();
@@ -202,16 +230,21 @@ console.log(myMap.get('name')); // Alice
 console.log(myMap.size); // 2
 ```
 
-Symbols
-•    Definition: A Symbol is a unique and immutable primitive value that can be used as an identifier for object properties.
-•    Key Characteristics:
-•    Symbols are created using the Symbol() function.
-•    Each Symbol is unique, even if they have the same description.
-•    They are often used to avoid name clashes in object properties.
+<h4>Symbols</h4>
+<ul>
+  <li>Definition: A Symbol is a unique and immutable primitive value that can be used as an identifier for object properties.</li>
+  <li>Key Characteristics:
+    <ul>
+	  <li>Symbols are created using the Symbol() function.</li>
+	  <li>Each Symbol is unique, even if they have the same description.</li>
+	  <li>They are often used to avoid name clashes in object properties.</li>
+	</ul>
+  </li>
+</ul>
 
-Example:
+<h4>Example:</h4>
 
-javascript
+<h4>javascript</h4>
 
 ```
 const sym1 = Symbol('description');
@@ -224,22 +257,28 @@ const obj = {
 console.log(obj[sym1]); // value1
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 2. Manipulating Advanced Data Types
-•    Using Sets: You can perform operations like union, intersection, and difference by combining Sets.
-•    Using Maps: Maps can be used to create dictionaries or associative arrays, allowing for efficient data retrieval.
-•    Using Symbols: Symbols can be used to create private properties in objects, enhancing encapsulation.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  - Using Sets: You can perform operations like union, intersection, and difference by combining Sets.
+  - Using Maps: Maps can be used to create dictionaries or associative arrays, allowing for efficient data retrieval.
+  - Using Symbols: Symbols can be used to create private properties in objects, enhancing encapsulation.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 3. Using GitHub for Code Management
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Creating a Repository
 
 1.    Sign in to GitHub: Go to GitHub and sign in or create an account.
 2.    Create a New Repository:
-•    Click on the "+" icon in the top right corner and select "New repository."
-•    Give your repository a name (e.g., advanced-data-types).
-•    Optionally, add a description and choose whether it should be public or private.
-•    Click "Create repository."
+  - Click on the "+" icon in the top right corner and select "New repository."
+  - Give your repository a name (e.g., advanced-data-types).
+  - Optionally, add a description and choose whether it should be public or private.
+  - Click "Create repository."
+
 Cloning the Repository
-•    Use Git to clone the repository to your local machine:
+
+  - Use Git to clone the repository to your local machine:
 
 ```bash
 git clone https://github.com/yourusername/advanced-data-types.git
@@ -247,58 +286,77 @@ cd advanced-data-types
 ```
 
 Adding Code
-•    Create a new JavaScript file (e.g., sets.js, maps.js, symbols.js) and implement examples of Sets, Maps, and Symbols.
-•    Use git add to stage your changes:
+  - Create a new JavaScript file (e.g., sets.js, maps.js, symbols.js) and implement examples of Sets, Maps, and Symbols.
+  - Use git add to stage your changes:
 
 ```bash
 git add sets.js maps.js symbols.js
 ```
 
 Committing Changes
-•    Commit your changes with a meaningful message:
+
+  - Commit your changes with a meaningful message:
 
 ```bash
 git commit -m "Add examples for Sets, Maps, and Symbols"
 ```
 
 Pushing to GitHub
-•    Push your changes to the remote repository:
+
+  - Push your changes to the remote repository:
 
 ```bash
 git push origin main
 ```
 
 Collaborating
-•    If you're working with others, you can create branches for new features or fixes:
+  - If you're working with others, you can create branches for new features or fixes:
 
 ```bash
 git checkout -b feature/sets-implementation
 ```
-•    After making changes, push the branch and create a pull request on GitHub for review.
 
+  - After making changes, push the branch and create a pull request on GitHub for review.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 4. Resources for Learning
-•    MDN Web Docs: Comprehensive documentation on Sets, Maps, and Symbols.
-•    JavaScript.info: A great resource for in-depth tutorials on advanced JavaScript topics.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  - MDN Web Docs: Comprehensive documentation on Sets, Maps, and Symbols.
+  - JavaScript.info: A great resource for in-depth tutorials on advanced JavaScript topics.
+  
 By using GitHub to manage your code, you can easily track changes, collaborate with others, and showcase your work. This approach will help you solidify your understanding of advanced data types in JavaScript while also gaining experience with version control and collaboration tools.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 5. Asynchronous JavaScript
-Asynchronous JavaScript is a programming paradigm that allows JavaScript to perform tasks without blocking the execution of other code. This is particularly important in web development, where you want to maintain a responsive user interface while performing tasks like fetching data from a server or reading files.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Asynchronous JavaScript is a programming paradigm that allows JavaScript to perform tasks 
+without blocking the execution of other code. This is particularly important in web 
+development, where you want to maintain a responsive user interface while performing tasks 
+like fetching data from a server or reading files.
 To understand asynchronous JavaScript, we can break it down into several sub-problems:
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 6. Understanding the Event Loop
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 What is the Event Loop?
 
-•    The event loop is a mechanism that allows JavaScript to perform non-blocking operations by using a single-threaded model.
+  - The event loop is a mechanism that allows JavaScript to perform non-blocking 
+    operations by using a single-threaded model.
 
 How does it work?
 
-•    JavaScript executes code in a call stack. When asynchronous operations are initiated (like fetching data), they are sent to the Web APIs (like the browser's networking layer).
-•    Once the operation completes, a callback function is placed in the message queue.
-•    The event loop continuously checks the call stack and the message queue, executing the callback when the call stack is empty.
+  - JavaScript executes code in a call stack. When asynchronous operations are initiated 
+    (like fetching data), they are sent to the Web APIs (like the browser's networking layer).
+  - Once the operation completes, a callback function is placed in the message queue.
+  - The event loop continuously checks the call stack and the message queue, executing the 
+    callback when the call stack is empty.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 7. Callback Functions
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 What are callbacks?
-•    A callback is a function passed as an argument to another function, which is then executed after some operation has been completed.
+  - A callback is a function passed as an argument to another function, which is then 
+    executed after some operation has been completed.
 
 Example of a callback:
 
@@ -317,12 +375,17 @@ fetchData((data) => {
 ```
 
 3. Promises
+
 What are Promises?
-•    A Promise is an object representing the eventual completion (or failure) of an asynchronous operation and its resulting value.
+
+  - A Promise is an object representing the eventual completion (or failure) of an 
+    asynchronous operation and its resulting value.
+	
 States of a Promise:
-•    Pending: The initial state, neither fulfilled nor rejected.
-•    Fulfilled: The operation completed successfully.
-•    Rejected: The operation failed.
+
+  - Pending: The initial state, neither fulfilled nor rejected.
+  - Fulfilled: The operation completed successfully.
+  - Rejected: The operation failed.
 
 Creating and using a Promise:
 
@@ -361,11 +424,17 @@ myPromise.then((result) => {
 4. Async/Await
 
 What is Async/Await?
-•    Async/Await is a syntactic sugar built on top of Promises that allows you to write asynchronous code in a more synchronous fashion.
+  - Async/Await is a syntactic sugar built on top of Promises that allows you to write 
+    asynchronous code in a more synchronous fashion.
+
 How to use Async/Await:
-•    You define a function with the async keyword, and within that function, you can use the await keyword to pause execution until the Promise is resolved.
+  - You define a function with the async keyword, and within that function, you can use 
+    the await keyword to pause execution until the Promise is resolved.
+
 Example:
+
 javascript
+
 ```
 const fetchData = () => {
     return new Promise((resolve) => {
@@ -387,21 +456,23 @@ getData();
 
 5. Error Handling
 
-•    Error handling in callbacks:
-•    Typically done by passing an error as the first argument to the callback.
-•    Error handling in Promises:
-•    Use .catch() to handle errors.
-•    Error handling with Async/Await:
-•    Use try...catch blocks to handle errors.
+  - Error handling in callbacks:
+  - Typically done by passing an error as the first argument to the callback.
+  - Error handling in Promises:
+  - Use .catch() to handle errors.
+  - Error handling with Async/Await:
+  - Use try...catch blocks to handle errors.
 
 6. Practical Use Cases
 
-•    Fetching data from APIs:
-•    Use fetch() or libraries like Axios to make HTTP requests.
-•    Handling user interactions:
-•    Use asynchronous code to respond to user actions without blocking the UI.
-•    Working with timers and intervals:
-•    Use setTimeout and setInterval for delayed or repeated execution.
+  - Fetching data from APIs:
+  - Use fetch() or libraries like Axios to make HTTP requests.
+  - Handling user interactions:
+  - Use asynchronous code to respond to user actions without blocking the UI.
+  
+  
+  - Working with timers and intervals:
+  - Use setTimeout and setInterval for delayed or repeated execution.
 
 Conclusion
 
@@ -414,9 +485,11 @@ Object-Oriented Programming (OOP) is a programming paradigm that uses "objects" 
 
 a. Objects
 
-•    Definition: An object is an instance of a class that contains properties (attributes) and methods (functions) that define its behavior.
-•    Example:
+  - Definition: An object is an instance of a class that contains properties (attributes) and methods (functions) that define its behavior.
+  - Example:
+  
 javascript
+
 ```
 const car = {
     make: 'Toyota',
@@ -429,8 +502,8 @@ const car = {
 ```
 
 b. Classes
-•    Definition: A class is a blueprint for creating objects. It defines properties and methods that the created objects will have.
-•    Example:
+  - Definition: A class is a blueprint for creating objects. It defines properties and methods that the created objects will have.
+  - Example:
 
 javascript
 ```
@@ -451,8 +524,8 @@ const myCar = new Car('Toyota', 'Corolla', 2020);
 
 2. OOP Principles
 a. Encapsulation
-•    Definition: Encapsulation is the bundling of data (attributes) and methods (functions) that operate on that data within a single unit (class). It restricts direct access to some of an object's components.
-•    Example: Using private properties in a class:
+  - Definition: Encapsulation is the bundling of data (attributes) and methods (functions) that operate on that data within a single unit (class). It restricts direct access to some of an object's components.
+  - Example: Using private properties in a class:
 
 javascript
 
@@ -476,8 +549,9 @@ console.log(account.getBalance()); // Outputs: 150
 
 b. Inheritance
 
-•    Definition: Inheritance allows a class (child class) to inherit properties and methods from another class (parent class). This promotes code reusability.
-•    Example:
+  - Definition: Inheritance allows a class (child class) to inherit properties and 
+    methods from another class (parent class). This promotes code reusability.
+  - Example:
 
 javascript
 
@@ -508,8 +582,8 @@ myCar.honk();  // Outputs: Honk! Honk!
 ```
 
 c. Polymorphism
-•    Definition: Polymorphism allows methods to do different things based on the object it is acting upon. It can be achieved through method overriding (inherited classes can provide a specific implementation of a method).
-•    Example:
+  - Definition: Polymorphism allows methods to do different things based on the object it is acting upon. It can be achieved through method overriding (inherited classes can provide a specific implementation of a method).
+  - Example:
 
 javascript
 
@@ -540,8 +614,8 @@ myCat.speak(); // Outputs: Meow!
 ```
 
 d. Abstraction
-•    Definition: Abstraction is the concept of hiding the complex implementation details and showing only the essential features of an object. It can be achieved through abstract classes or interfaces.
-•    Example:
+  - Definition: Abstraction is the concept of hiding the complex implementation details and showing only the essential features of an object. It can be achieved through abstract classes or interfaces.
+  - Example:
 
 javascript
 
@@ -567,17 +641,15 @@ console.log(myRectangle.area()); // Outputs: 50
 ```
 
 3. Benefits of OOP
-
-•    Modularity: Code is organized into classes and objects, making it easier to manage.
-•    Reusability: Classes can be reused across different parts of an application or in different projects.
-•    Maintainability: Changes to a class can be made without affecting other parts of the code.
-•    Flexibility: OOP allows for the creation of more flexible and adaptable code through inheritance and polymorphism.
+  - Modularity: Code is organized into classes and objects, making it easier to manage.
+  - Reusability: Classes can be reused across different parts of an application or in different projects.
+  - Maintainability: Changes to a class can be made without affecting other parts of the code.
+  - Flexibility: OOP allows for the creation of more flexible and adaptable code through inheritance and polymorphism.
 
 4. Practical Use Cases
-
-•    Game Development: OOP is widely used in game development to represent entities like players, enemies, and items.
-•    Web Development: Frameworks like React and Angular use OOP principles to create reusable components.
-•    Software Engineering: OOP is used in designing complex software systems, making them easier to understand and maintain.
+  - Game Development: OOP is widely used in game development to represent entities like players, enemies, and items.
+  - Web Development: Frameworks like React and Angular use OOP principles to create reusable components.
+  - Software Engineering: OOP is used in designing complex software systems, making them easier to understand and maintain.
 
 Conclusion
 
@@ -653,6 +725,7 @@ Functional programming is a paradigm of building computer programs using express
 By respecting these restrictions, functional programming aims to write code that is clearer to understand and more bug resistant. This is achieved by avoiding using flow-control statements (for, while, break, continue, goto) which make the code harder to follow. Also, functional programming requires us to write pure, deterministic functions which are less likely to be buggy.
 In this article, we will talk about doing functional programming using JavaScript. We will also explore various JavaScript methods and features that make it possible. In the end, we will explore different concepts associated with functional programming and see why they are so powerful.
 Before getting into functional programming, though, one needs to understand the difference between pure and impure functions.
+
 Pure vs. Impure Functions
 Pure functions take some input and give a fixed output. Also, they cause no side effects in the outside world.
 
@@ -681,18 +754,23 @@ What’s the current value of id_count? Which other functions are modifying id_c
 Because of these reasons, we only use pure functions in functional programming.
 Another benefit of pure functions is that they can be parallelized and memoized. Have a look at the previous two functions. It’s impossible to parallelize or memoize them. This helps in creating performant code.
 The Tenets of Functional Programming
+
 So far, we have learned that functional programming is dependent on a few rules. They are as follows.
-1.    Don’t mutate data
-2.    Use pure functions: fixed output for fixed inputs, and no side effects
-3.    Use expressions and declarations
+  1.    Don’t mutate data
+  2.    Use pure functions: fixed output for fixed inputs, and no side effects
+  3.    Use expressions and declarations
+
 When we satisfy these conditions, we can say our code is functional.
+
 Functional Programming in JavaScript
+
 JavaScript already has some functions that enable functional programming. Example: String.prototype.slice, Array.protoype.filter, Array.prototype.join.
 On the other hand, Array.prototype.forEach, Array.prototype.push are impure functions.
 One can argue that Array.prototype.forEach is not an impure function by design but think about it—it’s not possible to do anything with it except mutating non-local data or doing side effects. Thus, it’s okay to put it in the category of impure functions.
 Also, JavaScript has a const declaration, which is perfect for functional programming since we won’t be mutating any data.
 Pure Functions in JavaScript
 Let’s look at some of the pure functions (methods) given by JavaScript.
+
 Filter
 As the name suggests, this filters the array.
 array.filter(condition);
@@ -705,6 +783,7 @@ const filterEven = x => x%2 === 0;
 ```
 
 Notice that filterEven is a pure function. If it had been impure, then it would have made the entire filter call impure.
+
 Map
 map maps each item of array to a function and creates a new array based on the return values of the function calls.
 
@@ -717,8 +796,8 @@ const double = x => 2 * x;
 ```
 
 Reduce
-
 reduce reduces the array to a single value.
+
 ```
 array.reduce(reducer);
 reducer is a function that takes the accumulated value and the next item in the array and returns the new value. It is called like this for all values in the array, one after another.
@@ -1081,9 +1160,9 @@ Finally, there is a generic Error object which is most often used when implement
 Throwing Our Own Exceptions
 
 We can throw our own exceptions when an error occurs — or should occur. For example:
-•    our function isn’t passed valid parameters
-•    an Ajax request fails to return expected data
-•    a DOM update fails because a node doesn’t exist
+  - our function isn’t passed valid parameters
+  - an Ajax request fails to return expected data
+  - a DOM update fails because a node doesn’t exist
 
 The throw statement actually accepts any value or object. For example:
 
@@ -1101,18 +1180,23 @@ We can also use Error like a function without new. It returns an Error object id
 throw Error('An error has occurred');
 We can optionally pass a filename and a line number as the second and third parameters:
 throw new Error('An error has occurred', 'script.js', 99);
-This is rarely necessary, since they default to the file and line where we threw the Error object. (They’re also difficult to maintain as our files change!)
+This is rarely necessary, since they default to the file and line where we threw the 
+Error object. (They’re also difficult to maintain as our files change!)
 We can define generic Error objects, but we should use a standard Error type when possible. For example:
 throw new RangeError('Decimal places must be 0 or greater');
 All Error objects have the following properties, which we can examine in a catch block:
-•    .name: the name of the Error type — such as Error or RangeError
-•    .message: the error message
+  - .name: the name of the Error type — such as Error or RangeError
+  - .message: the error message
+  
 The following non-standard properties are also supported in Firefox:
-•    .fileName: the file where the error occurred
-•    .lineNumber: the line number where the error occurred
-•    .columnNumber: the column number on the line where the error occurred
-•    .stack: a stack trace listing the function calls made before the error occurred
-We can change the divide() function to throw a RangeError when the number of decimal places isn’t a number, is less than zero, or is greater than eight:
+
+  - .fileName: the file where the error occurred
+  - .lineNumber: the line number where the error occurred
+  - .columnNumber: the column number on the line where the error occurred
+  - .stack: a stack trace listing the function calls made before the error occurred
+
+We can change the divide() function to throw a RangeError when the number of decimal 
+places isn’t a number, is less than zero, or is greater than eight:
 
 ```
 // Division calculation
@@ -1125,7 +1209,8 @@ function divide(v1, v2, dp) {
 }
 ```
 
-Similarly, we could throw an Error or TypeError when the dividend value isn’t a number to prevent NaN results:
+Similarly, we could throw an Error or TypeError when the dividend value isn’t a 
+number to prevent NaN results:
 
 ```
   if (isNaN(v1)) {
@@ -1133,7 +1218,9 @@ Similarly, we could throw an Error or TypeError when the dividend value isn’t 
   }
 ```
 
-We can also cater for divisors that are non-numeric or zero. JavaScript returns Infinity when dividing by zero, but that could confuse users. Rather than raising a generic Error, we could create a custom DivByZeroError error type:
+We can also cater for divisors that are non-numeric or zero. JavaScript returns 
+Infinity when dividing by zero, but that could confuse users. Rather than raising 
+a generic Error, we could create a custom DivByZeroError error type:
 
 ```
 // New DivByZeroError Error type
@@ -1153,7 +1240,8 @@ if (isNaN(v2) || !v2) {
 }
 ```
 
-Now add a try...catch block to the calling showResult() function. It can receive any Error type and react accordingly — in this case, showing the error message:
+Now add a try...catch block to the calling showResult() function. It can receive any 
+Error type and react accordingly — in this case, showing the error message:
 
 ```
 // Show result of division
