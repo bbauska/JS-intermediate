@@ -8,53 +8,50 @@
   - Deep JavaScript: Theory & Techniques 
   
 <h2>Key Concepts:</h2>
-  - Objects:
-Objects are the fundamental building blocks of JavaScript. They are collections of key-value pairs, where keys are properties (variables) and values can be any data type, including functions (methods).
+<ul>
+  <li>Objects: Objects are the fundamental building blocks of JavaScript. They are collections of key-value pairs, where keys are properties (variables) and values can be any data type, including functions (methods).</li>
+  <li>Prototypes: Every object in JavaScript has a prototype, which is another object from which it inherits properties and methods. This allows for efficient sharing of behavior and data between objects.</li>
+  <li>Constructors: Constructors are special functions used to create objects with specific properties and methods. They act as blueprints for objects.</li>
+  <li>Classes (ES6): Introduced in ECMAScript 2015 (ES6), classes provide a more syntactically familiar way to define objects and their behavior. However, under the hood, they still utilize prototypes.</li>
+</ul>
 
-  - Prototypes:
-Every object in JavaScript has a prototype, which is another object from which it inherits properties and methods. This allows for efficient sharing of behavior and data between objects.
-  - Constructors:
-Constructors are special functions used to create objects with specific properties and methods. They act as blueprints for objects.
-  - Classes (ES6):
-Introduced in ECMAScript 2015 (ES6), classes provide a more syntactically familiar way to define objects and their behavior. However, under the hood, they still utilize prototypes.
-
-  1.	Advanced Data Types and Manipulation:
+<h3>1.	Advanced Data Types and Manipulation:</h3>
   - Explore advanced data types like Sets, Maps, and Symbols.
   - Learn how to manipulate arrays and objects using advanced techniques such as destructuring, spreading, and rest parameters.
   - Understand how to use the Array methods like map, filter, reduce, and forEach effectively.
 
-  2.	Asynchronous JavaScript:
+<h3>2.	Asynchronous JavaScript:</h3>
   - Dive into asynchronous programming concepts like callbacks, promises, and async/await.
   - Learn how to handle asynchronous operations using techniques like chaining promises and error handling.
   - Understand how to make API calls and handle responses asynchronously.
 
-  3.	Object-Oriented Programming (OOP):
+<h3>3.	Object-Oriented Programming (OOP):</h3>
   - Learn about OOP principles like encapsulation, inheritance, and polymorphism.
   - Explore how to create and use classes, constructors, and prototypes in JavaScript.
   - Understand the concept of "this" and how it behaves in different contexts.
 
-  4.	Functional Programming: 
+<h3>4.	Functional Programming:</h3>
 Functional programming in JavaScript is all about treating your code as a set of independent, reusable functions that operate on data without side effects
   - Explore functional programming concepts like higher-order functions, pure functions, and immutability.
   - Learn how to use functional programming techniques like map, filter, and reduce to solve problems.
   - Understand the benefits of functional programming and how it can improve code readability and maintainability.
 
-  5.	Error Handling and Debugging:
+<h3>5.	Error Handling and Debugging:</h3>
   - Learn how to handle and throw errors effectively in JavaScript.
   - Explore debugging techniques using browser developer tools and console statements.
   - Understand how to use try-catch blocks to handle exceptions and prevent application crashes.
 
-  6.	Modules and Bundlers:
+<h3>6.	Modules and Bundlers:</h3>
   - Learn how to organize your code into modules for better code organization and reusability.
   - Explore popular module systems like CommonJS and ES modules.
   - Understand how to use bundlers like Webpack or Rollup to bundle and optimize your JavaScript code.
 
-  7.	Testing and Test-Driven Development (TDD):
+<h3>7.	Testing and Test-Driven Development (TDD):</h3>
   - Learn how to write unit tests using frameworks like Jest or Mocha.
   - Understand the principles of TDD and how to write tests before implementing functionality.
   - Explore techniques like mocking and stubbing to isolate dependencies during testing.
 
-  8.	Browser APIs and DOM Manipulation:
+<h3>8.	Browser APIs and DOM Manipulation:</h3>
   - Learn how to interact with the Document Object Model (DOM) using JavaScript.
   - Explore browser APIs like Fetch API, Local Storage, and Geolocation.
   - Understand how to manipulate HTML elements, handle events, and create dynamic web applications.
