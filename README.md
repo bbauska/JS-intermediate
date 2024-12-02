@@ -103,7 +103,6 @@ of these concepts. Good luck with your intermediate JavaScript education!</p>
     <li>Symbols: Understand the Symbol data type, which is used to create unique identifiers.</li>
   </ul>
   </li>
-
   <li>Asynchronous JavaScript:
     <ul>
 	  <li>Callbacks: Learn how to use callbacks to handle asynchronous operations by passing functions as arguments.</li>
@@ -242,8 +241,7 @@ Creating a Repository
 Cloning the Repository
 •    Use Git to clone the repository to your local machine:
 
-bash
-```
+```bash
 git clone https://github.com/yourusername/advanced-data-types.git
 cd advanced-data-types
 ```
@@ -252,31 +250,28 @@ Adding Code
 •    Create a new JavaScript file (e.g., sets.js, maps.js, symbols.js) and implement examples of Sets, Maps, and Symbols.
 •    Use git add to stage your changes:
 
-bash
-```
+```bash
 git add sets.js maps.js symbols.js
 ```
 
 Committing Changes
 •    Commit your changes with a meaningful message:
-bash
-```
+
+```bash
 git commit -m "Add examples for Sets, Maps, and Symbols"
 ```
 
 Pushing to GitHub
 •    Push your changes to the remote repository:
 
-bash
-```
+```bash
 git push origin main
 ```
 
 Collaborating
 •    If you're working with others, you can create branches for new features or fixes:
 
-bash
-```
+```bash
 git checkout -b feature/sets-implementation
 ```
 •    After making changes, push the branch and create a pull request on GitHub for review.
@@ -292,8 +287,11 @@ To understand asynchronous JavaScript, we can break it down into several sub-pro
 
 6. Understanding the Event Loop
 What is the Event Loop?
+
 •    The event loop is a mechanism that allows JavaScript to perform non-blocking operations by using a single-threaded model.
+
 How does it work?
+
 •    JavaScript executes code in a call stack. When asynchronous operations are initiated (like fetching data), they are sent to the Web APIs (like the browser's networking layer).
 •    Once the operation completes, a callback function is placed in the message queue.
 •    The event loop continuously checks the call stack and the message queue, executing the callback when the call stack is empty.
@@ -301,7 +299,9 @@ How does it work?
 7. Callback Functions
 What are callbacks?
 •    A callback is a function passed as an argument to another function, which is then executed after some operation has been completed.
+
 Example of a callback:
+
 javascript
 
 ```
@@ -323,6 +323,7 @@ States of a Promise:
 •    Pending: The initial state, neither fulfilled nor rejected.
 •    Fulfilled: The operation completed successfully.
 •    Rejected: The operation failed.
+
 Creating and using a Promise:
 
 ```
@@ -1393,6 +1394,8 @@ We'll use Webpack as an example, to show you how to set up a module bundler for 
 1.    First, install Webpack and the necessary loaders and plugins by running the following command:
 npm install webpack webpack-cli --save-dev
 2.    Next, create a webpack.config.js file in the root of your project. This file will contain the configuration for Webpack. The example below contains a configuration file that tells Webpack to use the babel-loader to transpile JavaScript files:
+
+```
 const path = require('path');
 
 module.exports = {
@@ -1413,39 +1416,55 @@ module.exports = {
         ]
     }
 };
+```
+
 3.    Then, in your package.json, add a script to run Webpack:
+
+```
 "scripts": {
     "build": "webpack"
   },
+```
 
   4.    Finally, you can run the build script by running npm run build in your terminal, and webpack will create a bundle.js file in the dist directory.
 Naming Conflicts
 Module bundlers can potentially introduce naming conflicts. They occur when two or more modules use the same variable or function name. These conflicts can cause unexpected behavior and errors in your code. To resolve these conflicts, you can use a technique called "tree shaking", which is a way of removing unused code from the final bundle. Many module bundlers support the use of namespaces or scoping to reduce the chance of naming conflicts.
+
 Popular Module Bundlers
+
   - Webpack.
   - Esbuild.
   - Rollup.
 
   7. Testing and Test-Driven Development (TDD):
+
 Test-Driven Development (TDD) is a software development method in which testing is done before coding is written. This means that development begins with writing tests that define how a particular function or module should work.
+
 In layman’s terms, Test Driven Development (TDD) is a software development practice that focuses on creating unit test cases before developing the actual code. It is an iterative approach combining programming, unit test creation, and refactoring.
+
 •    The TDD approach originates from the Agile manifesto principles and Extreme programming.
 •    As the name suggests, the test process drives software development.
 •    Moreover, it’s a structuring practice that enables developers and testers to obtain optimized code that proves resilient in the long term.
 •    In TDD, developers create small test cases for every feature based on their initial understanding. The primary intention of this technique is to modify or write new code only if the tests fail. This prevents duplication of test scripts.
+
 Test Driven Development (TDD) Examples
+
 1.    Calculator Function: When building a calculator function, a TDD approach would involve writing a test case for the “add” function and then writing the code for the process to pass that test. Once the “add” function is working correctly, additional test cases would be written for other functions such as “subtract”, “multiply” and “divide”.
 2.    User Authentication: When building a user authentication system, a TDD approach would involve writing a test case for the user login functionality and then writing the code for the login process to pass that test. Once the login functionality works correctly, additional test cases will be written for registration, password reset, and account verification.
 3.    E-commerce Website: When building an e-commerce website, a TDD approach would involve writing test cases for various features such as product listings, shopping cart functionality, and checkout process. Tests would be written to ensure the system works correctly at each process stage, from adding items to the cart to completing the purchase.
+
 Three Phases of Test Driven Development
+
 1.    Create precise tests: Developers need to create exact unit tests to verify the functionality of specific features. They must ensure that the test compiles so that it can execute. In most cases, the test is bound to fail. This is a meaningful failure as developers create compact tests based on their assumptions of how the feature will behave.
 2.    Correcting the Code: Once a test fails, developers must make the minimal changes required to update the code to run successfully when re-executed.
 3.    Refactor the Code: Once the test runs successfully, check for redundancy or any possible code optimizations to enhance overall performance. Ensure that refactoring does not affect the external behavior of the program.
+
 The image below represents a high-level TDD approach toward development:
  
   8. Browser APIs and DOM Manipulation:
 
 JavaScript interacts with the browser and web pages through Browser APIs and DOM Manipulation.
+
 Browser APIs:
   - These are built-in interfaces provided by the browser that allow you to access various functionalities like:
     - DOM API: Manipulate the structure, content, and style of a web page (more details below).
@@ -1469,6 +1488,8 @@ Browser APIs:
 <h2>Example:</h2>
 
 <h3>JavaScript</h3>
+
+```
 // <i>Select an element by its ID</i>
 const myElement = document.getElementById("myElement");
 
@@ -1482,6 +1503,7 @@ myElement.classList.add("highlight");
 myElement.addEventListener("click", function() {
   alert("Element clicked!");
 });
+```
 
 Important Points:
   - DOM Manipulation can be expensive: Excessive DOM manipulation can negatively impact website performance.
@@ -1491,7 +1513,8 @@ Important Points:
 Practical Examples Comparing the BOM and DOM:
 
   - Accessing Window Properties with the BOM:
-  
+
+```
 // <i>Get the width and height of the browser window</i>
 const windowWidth = window.innerWidth || document.documentElement.clientWidth;
 const windowHeight = window.innerHeight || document.documentElement.clientHeight;
@@ -1509,5 +1532,6 @@ element.style.backgroundColor = "blue";
 const newElement = document.createElement("div");
 newElement.textContent = "New Element";
 document.body.appendChild(newElement);
+```
 
 <!-- last updated 12/1/2024 8:07pm -->
