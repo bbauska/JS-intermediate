@@ -2,62 +2,92 @@
 <p><small><small>(JS-Int-JavaScript)</small></small</p>
 
 <h2>Intermediate/advanced material</h2>
-  - JavaScript Design Patterns
-  - Professor Frisby's Mostly Adequate Guide to Functional Programming 
-  - What the heck is the event loop anyway? – JS Conf talk about the event loop
-  - Deep JavaScript: Theory & Techniques 
+<ul>
+  <li>JavaScript Design Patterns.</li>
+  <li>Professor Frisby's Mostly Adequate Guide to Functional Programming.</li>
+  <li>What the heck is the event loop anyway? – JS Conf talk about the event loop.</li>
+  <li>Deep JavaScript: Theory & Techniques.</li>
+</ul>
   
 <h2>Key Concepts:</h2>
 <ul>
-  <li>Objects: Objects are the fundamental building blocks of JavaScript. They are collections of key-value pairs, where keys are properties (variables) and values can be any data type, including functions (methods).</li>
-  <li>Prototypes: Every object in JavaScript has a prototype, which is another object from which it inherits properties and methods. This allows for efficient sharing of behavior and data between objects.</li>
-  <li>Constructors: Constructors are special functions used to create objects with specific properties and methods. They act as blueprints for objects.</li>
-  <li>Classes (ES6): Introduced in ECMAScript 2015 (ES6), classes provide a more syntactically familiar way to define objects and their behavior. However, under the hood, they still utilize prototypes.</li>
+  <li>Objects: Objects are the fundamental building blocks of JavaScript. They are 
+    collections of key-value pairs, where keys are properties (variables) and values 
+	can be any data type, including functions (methods).</li>
+  <li>Prototypes: Every object in JavaScript has a prototype, which is another object 
+    from which it inherits properties and methods. This allows for efficient sharing 
+	of behavior and data between objects.</li>
+  <li>Constructors: Constructors are special functions used to create objects with 
+    specific properties and methods. They act as blueprints for objects.</li>
+  <li>Classes (ES6): Introduced in ECMAScript 2015 (ES6), classes provide a more 
+    syntactically familiar way to define objects and their behavior. However, under 
+	the hood, they still utilize prototypes.</li>
 </ul>
 
 <h3>1.	Advanced Data Types and Manipulation:</h3>
-  - Explore advanced data types like Sets, Maps, and Symbols.
-  - Learn how to manipulate arrays and objects using advanced techniques such as destructuring, spreading, and rest parameters.
-  - Understand how to use the Array methods like map, filter, reduce, and forEach effectively.
+<ul>
+  <li>Explore advanced data types like Sets, Maps, and Symbols.</li>
+  <li>Learn how to manipulate arrays and objects using advanced techniques such as 
+    destructuring, spreading, and rest parameters.</li>
+  <li>Understand how to use the Array methods like map, filter, reduce, and forEach 
+    effectively.</li>
 
 <h3>2.	Asynchronous JavaScript:</h3>
-  - Dive into asynchronous programming concepts like callbacks, promises, and async/await.
-  - Learn how to handle asynchronous operations using techniques like chaining promises and error handling.
-  - Understand how to make API calls and handle responses asynchronously.
+  <li>Dive into asynchronous programming concepts like callbacks, promises, and 
+    async/await.</li>
+  <li>Learn how to handle asynchronous operations using techniques like chaining 
+    promises and error handling.</li>
+  <li>Understand how to make API calls and handle responses asynchronously.</li>
 
 <h3>3.	Object-Oriented Programming (OOP):</h3>
-  - Learn about OOP principles like encapsulation, inheritance, and polymorphism.
-  - Explore how to create and use classes, constructors, and prototypes in JavaScript.
-  - Understand the concept of "this" and how it behaves in different contexts.
+  <li>Learn about OOP principles like encapsulation, inheritance, and polymorphism.</li>
+  <li>Explore how to create and use classes, constructors, and prototypes in JavaScript.</li>
+  <li>Understand the concept of "this" and how it behaves in different contexts.</li>
 
 <h3>4.	Functional Programming:</h3>
-Functional programming in JavaScript is all about treating your code as a set of independent, reusable functions that operate on data without side effects
-  - Explore functional programming concepts like higher-order functions, pure functions, and immutability.
-  - Learn how to use functional programming techniques like map, filter, and reduce to solve problems.
-  - Understand the benefits of functional programming and how it can improve code readability and maintainability.
+<p>Functional programming in JavaScript is all about treating your code as a set of independent, 
+reusable functions that operate on data without side effects</p>
+
+<ul>
+  <li>Explore functional programming concepts like higher-order functions, pure 
+    functions, and immutability.</li>
+  <li>Learn how to use functional programming techniques like map, filter, and 
+    reduce to solve problems.</li>
+  <li>Understand the benefits of functional programming and how it can improve 
+    code readability and maintainability.</li>
+</ul>
 
 <h3>5.	Error Handling and Debugging:</h3>
-  - Learn how to handle and throw errors effectively in JavaScript.
-  - Explore debugging techniques using browser developer tools and console statements.
-  - Understand how to use try-catch blocks to handle exceptions and prevent application crashes.
+<ul>
+  <li>Learn how to handle and throw errors effectively in JavaScript.</li>
+  <li>Explore debugging techniques using browser developer tools and console statements.</li>
+  <li>Understand how to use try-catch blocks to handle exceptions and prevent application crashes.</li>
+</ul>
 
 <h3>6.	Modules and Bundlers:</h3>
-  - Learn how to organize your code into modules for better code organization and reusability.
-  - Explore popular module systems like CommonJS and ES modules.
-  - Understand how to use bundlers like Webpack or Rollup to bundle and optimize your JavaScript code.
+<ul>
+  <li>Learn how to organize your code into modules for better code organization and reusability.</li>
+  <li>Explore popular module systems like CommonJS and ES modules.</li>
+  <li>Understand how to use bundlers like Webpack or Rollup to bundle and optimize your JavaScript code.</li>
 
 <h3>7.	Testing and Test-Driven Development (TDD):</h3>
-  - Learn how to write unit tests using frameworks like Jest or Mocha.
-  - Understand the principles of TDD and how to write tests before implementing functionality.
-  - Explore techniques like mocking and stubbing to isolate dependencies during testing.
+<ul>
+  <li>Learn how to write unit tests using frameworks like Jest or Mocha.</li>
+  <li>Understand the principles of TDD and how to write tests before implementing functionality.</li>
+  <li>Explore techniques like mocking and stubbing to isolate dependencies during testing.</li>
+</ul>
 
 <h3>8.	Browser APIs and DOM Manipulation:</h3>
-  - Learn how to interact with the Document Object Model (DOM) using JavaScript.
-  - Explore browser APIs like Fetch API, Local Storage, and Geolocation.
-  - Understand how to manipulate HTML elements, handle events, and create dynamic web applications.
+<ul>
+  <li>Learn how to interact with the Document Object Model (DOM) using JavaScript.</li>
+  <li>Explore browser APIs like Fetch API, Local Storage, and Geolocation.</li>
+  <li>Understand how to manipulate HTML elements, handle events, and create dynamic web applications.</li>
+</ul>
 
-Remember, practice is key to mastering JavaScript. Work on small projects, solve coding challenges, and build real-world applications to solidify your understanding of these concepts. Good luck with your intermediate JavaScript education!
-Here are more details on each topic:
+<p>Remember, practice is key to mastering JavaScript. Work on small projects, solve 
+coding challenges, and build real-world applications to solidify your understanding 
+of these concepts. Good luck with your intermediate JavaScript education!<br/>
+Here are more details on each topic:</p>
 
 1.	Advanced Data Types and Manipulation:
 •	Sets: Learn about the Set data structure, which allows you to store unique values of any type.
@@ -110,14 +140,20 @@ Sets
 •	has(value): Checks if a value exists in the Set.
 •	clear(): Removes all elements from the Set.
 •	size: Returns the number of elements in the Set.
-Example:
-javascript
+
+
+<h2>Example:</h2>
+
+<h3>javascript</h3>
+```
 const mySet = new Set([1, 2, 3, 4]);
 mySet.add(5);
 mySet.delete(2);
 console.log(mySet.has(3)); // true
 console.log(mySet.size); // 4
-Maps
+```
+
+<h3>Maps</h3>
 •	Definition: A Map is a collection of key-value pairs where keys can be of any type (including objects), and each key must be unique.
 •	Key Methods:
 •	new Map(iterable): Creates a new Map. You can initialize it with an array of key-value pairs.
@@ -127,21 +163,29 @@ Maps
 •	has(key): Checks if a key exists in the Map.
 •	clear(): Removes all key-value pairs from the Map.
 •	size: Returns the number of key-value pairs in the Map.
+
 Example:
+
 javascript
+```
 const myMap = new Map();
 myMap.set('name', 'Alice');
 myMap.set('age', 25);
 console.log(myMap.get('name')); // Alice
 console.log(myMap.size); // 2
+```
+
 Symbols
 •	Definition: A Symbol is a unique and immutable primitive value that can be used as an identifier for object properties.
 •	Key Characteristics:
 •	Symbols are created using the Symbol() function.
 •	Each Symbol is unique, even if they have the same description.
 •	They are often used to avoid name clashes in object properties.
+
 Example:
+
 javascript
+```
 const sym1 = Symbol('description');
 const sym2 = Symbol('description');
 console.log(sym1 === sym2); // false
@@ -150,6 +194,7 @@ const obj = {
   [sym2]: 'value2'
 };
 console.log(obj[sym1]); // value1
+```
 
 2. Manipulating Advanced Data Types
 •	Using Sets: You can perform operations like union, intersection, and difference by combining Sets.
@@ -167,26 +212,39 @@ Creating a Repository
 •	Click "Create repository."
 Cloning the Repository
 •	Use Git to clone the repository to your local machine:
+
 bash
+```
 git clone https://github.com/yourusername/advanced-data-types.git
 cd advanced-data-types
+```
+
 Adding Code
 •	Create a new JavaScript file (e.g., sets.js, maps.js, symbols.js) and implement examples of Sets, Maps, and Symbols.
 •	Use git add to stage your changes:
+
 bash
+```
 git add sets.js maps.js symbols.js
+```
 Committing Changes
 •	Commit your changes with a meaningful message:
 bash
+```
 git commit -m "Add examples for Sets, Maps, and Symbols"
+```
 Pushing to GitHub
 •	Push your changes to the remote repository:
 bash
+```
 git push origin main
+```
 Collaborating
 •	If you're working with others, you can create branches for new features or fixes:
 bash
+```
 git checkout -b feature/sets-implementation
+```
 •	After making changes, push the branch and create a pull request on GitHub for review.
 
 4. Resources for Learning
@@ -211,16 +269,18 @@ What are callbacks?
 •	A callback is a function passed as an argument to another function, which is then executed after some operation has been completed.
 Example of a callback:
 javascript
+```
 function fetchData(callback) {
     setTimeout(() => {
         const data = 'Data received';
         callback(data);
     }, 1000);
 }
-
 fetchData((data) => {
     console.log(data); // Outputs: Data received
 });
+```
+
 3. Promises
 What are Promises?
 •	A Promise is an object representing the eventual completion (or failure) of an asynchronous operation and its resulting value.
@@ -229,6 +289,7 @@ States of a Promise:
 •	Fulfilled: The operation completed successfully.
 •	Rejected: The operation failed.
 Creating and using a Promise:
+```
 javascript
 const fetchData = () => {
     return new Promise((resolve, reject) => {
@@ -245,7 +306,10 @@ const fetchData = () => {
 fetchData()
     .then(data => console.log(data)) // Outputs: Data received
     .catch(error => console.error(error));
+```
+
 javascript, another example
+```
 let myPromise = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve ('Promise resolved');
@@ -254,13 +318,17 @@ let myPromise = new Promise((resolve, reject) => {
 myPromise.then((result) => {
     console.log(result); // Output after 2 seconds : 'Promise resolved'
 });
+```
+
 4. Async/Await
+
 What is Async/Await?
 •	Async/Await is a syntactic sugar built on top of Promises that allows you to write asynchronous code in a more synchronous fashion.
 How to use Async/Await:
 •	You define a function with the async keyword, and within that function, you can use the await keyword to pause execution until the Promise is resolved.
 Example:
 javascript
+```
 const fetchData = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
@@ -277,29 +345,41 @@ const getData = async () => {
     }
 };
 getData();
+```
+
 5. Error Handling
+
 •	Error handling in callbacks:
 •	Typically done by passing an error as the first argument to the callback.
 •	Error handling in Promises:
 •	Use .catch() to handle errors.
 •	Error handling with Async/Await:
 •	Use try...catch blocks to handle errors.
+
 6. Practical Use Cases
+
 •	Fetching data from APIs:
 •	Use fetch() or libraries like Axios to make HTTP requests.
 •	Handling user interactions:
 •	Use asynchronous code to respond to user actions without blocking the UI.
 •	Working with timers and intervals:
 •	Use setTimeout and setInterval for delayed or repeated execution.
+
 Conclusion
+
 Asynchronous JavaScript is essential for building responsive web applications. By understanding the event loop, callbacks, promises, async/await, and error handling, you can effectively manage asynchronous operations in your code.
+
 3. Object-Oriented Programming (OOP):
 Object-Oriented Programming (OOP) is a programming paradigm that uses "objects" to represent data and methods to manipulate that data. OOP is designed to improve code organization, reusability, and maintainability. To understand OOP, we can break it down into several key concepts and principles:
+
 1. Key Concepts of OOP
+
 a. Objects
+
 •	Definition: An object is an instance of a class that contains properties (attributes) and methods (functions) that define its behavior.
 •	Example:
 javascript
+```
 const car = {
     make: 'Toyota',
     model: 'Corolla',
@@ -308,10 +388,14 @@ const car = {
         console.log('Car started');
     }
 };
+```
+
 b. Classes
 •	Definition: A class is a blueprint for creating objects. It defines properties and methods that the created objects will have.
 •	Example:
+
 javascript
+```
 class Car {
     constructor(make, model, year) {
         this.make = make;
@@ -325,11 +409,14 @@ class Car {
 }
 
 const myCar = new Car('Toyota', 'Corolla', 2020);
+```
+
 2. OOP Principles
 a. Encapsulation
 •	Definition: Encapsulation is the bundling of data (attributes) and methods (functions) that operate on that data within a single unit (class). It restricts direct access to some of an object's components.
 •	Example: Using private properties in a class:
 javascript
+```
 class BankAccount {
     #balance; // Private property
     constructor(initialBalance) {
@@ -345,10 +432,14 @@ class BankAccount {
 const account = new BankAccount(100);
 account.deposit(50);
 console.log(account.getBalance()); // Outputs: 150
+```
+
 b. Inheritance
 •	Definition: Inheritance allows a class (child class) to inherit properties and methods from another class (parent class). This promotes code reusability.
 •	Example:
+
 javascript
+```
 class Vehicle {
   constructor(make, model) {
     this.make = make;
@@ -372,10 +463,13 @@ class Car extends Vehicle {
 const myCar = new Car('Toyota', 'Corolla', 2020);
 myCar.start(); // Outputs: Vehicle started
 myCar.honk();  // Outputs: Honk! Honk!
+```
+
 c. Polymorphism
 •	Definition: Polymorphism allows methods to do different things based on the object it is acting upon. It can be achieved through method overriding (inherited classes can provide a specific implementation of a method).
 •	Example:
 javascript
+```
 class Animal {
     speak() {
         console.log('Animal speaks');
@@ -399,10 +493,13 @@ const myCat = new Cat();
 
 myDog.speak(); // Outputs: Woof! Woof!
 myCat.speak(); // Outputs: Meow!
+```
+
 d. Abstraction
 •	Definition: Abstraction is the concept of hiding the complex implementation details and showing only the essential features of an object. It can be achieved through abstract classes or interfaces.
 •	Example:
 javascript
+```
 class Shape {
   area() {
     throw new Error('Method "area()" must be implemented');
@@ -421,18 +518,25 @@ class Rectangle extends Shape {
 }
 const myRectangle = new Rectangle(5, 10);
 console.log(myRectangle.area()); // Outputs: 50
+```
+
 3. Benefits of OOP
+
 •	Modularity: Code is organized into classes and objects, making it easier to manage.
 •	Reusability: Classes can be reused across different parts of an application or in different projects.
 •	Maintainability: Changes to a class can be made without affecting other parts of the code.
 •	Flexibility: OOP allows for the creation of more flexible and adaptable code through inheritance and polymorphism.
+
 4. Practical Use Cases
+
 •	Game Development: OOP is widely used in game development to represent entities like players, enemies, and items.
 •	Web Development: Frameworks like React and Angular use OOP principles to create reusable components.
 •	Software Engineering: OOP is used in designing complex software systems, making them easier to understand and maintain.
 Conclusion
 Object-Oriented Programming is a powerful paradigm that helps in organizing code, promoting reusability, and enhancing maintainability. By understanding the key concepts and principles of OOP, developers can create robust and scalable applications.
+
 4.Functional Programming:
+
 Introduction
 Functional programming is a powerful paradigm that has gained significant popularity in recent years, and it's a valuable approach to writing clean, maintainable, and bug-free code in JavaScript.
 In this article, we will explore the core concepts of functional programming and provide practical JavaScript examples to help you grasp these concepts more effectively.
@@ -441,6 +545,7 @@ Imagine your JavaScript code as a series of cooking instructions. In the traditi
 Functional programming, on the other hand, is more like cooking with functional ingredients. Each function takes some ingredients and transforms them into a new dish without altering the original ingredients. This immutability is a fundamental concept in functional programming.
 First-Class Functions and Higher-Order Functions
 In JavaScript, functions are first-class citizens, which means they can be assigned to variables, passed as arguments, and returned from other functions. This is a crucial concept in functional programming. Consider this analogy:
+```
 // Function as a first-class citizen
 const square = (x) => x * x;
 const add = (a, b) => a + b;
@@ -455,16 +560,21 @@ const add = (a, b) => a + b;
 const mathOperation = square;
 
 console.log(mathOperation(5)); // Output: 25
+```
+
 In this example, the calculate function takes an operation (a function) and two arguments. It's like creating a new dish by following the instructions of another recipe.
 Immutability and Pure Functions
 In functional programming, immutability is key. Think of your data as an unchangeable ingredient, and functions as your cooking instructions. Avoid modifying the original data; instead, create new data structures with the changes.
+```
 // Immutability
 const originalArray = [1, 2, 3];
 const newArray = originalArray.map((item) => item * 2);
 
 console.log(newArray); // Output: [2, 4, 6]
 console.log(originalArray); // Output: [1, 2, 3]
+```
 Pure functions are functions that always return the same output for the same input and have no side effects. They're like well-defined recipes that don't vary their outcome based on the chef's mood or external factors.
+```
 // Pure function
 const double = (x) => x * 2;
 console.log(double(3)); // Output: 6
@@ -480,7 +590,10 @@ const reducedIngredients = ingredients.reduce((acc, item) => acc + item, 0);
 console.log(transformedIngredients); // Output: [2, 4, 6, 8, 10]
 console.log(filteredIngredients); // Output: [2, 4]
 console.log(reducedIngredients); // Output: 15
+```
+
 Conclusion
+
 Functional programming in JavaScript is all about treating your code as a set of independent, reusable functions that operate on data without side effects. By understanding first-class functions, higher-order functions, immutability, pure functions, and using tools like map, filter, and reduce, you can write more readable, maintainable, and bug-free code.
 Just like a skilled chef, functional programmers use the right ingredients and techniques to create exquisite dishes. So, next time you write JavaScript code, think of it as crafting a gourmet meal with functional ingredients – your code will be not only delicious but also easy to maintain and extend.
 Functional programming is a paradigm of building computer programs using expressions and functions without mutating state and data.
@@ -519,77 +632,120 @@ Filter
 As the name suggests, this filters the array.
 array.filter(condition);
 The condition here is a function that gets each item of the array, and it should decide whether to keep the item or not and return the truthy boolean value for that.
+```
 const filterEven = x => x%2 === 0;  
 [1, 2, 3].filter(filterEven);  
 // [2]
+```
 Notice that filterEven is a pure function. If it had been impure, then it would have made the entire filter call impure.
 Map
 map maps each item of array to a function and creates a new array based on the return values of the function calls.
+```
 array.map(mapper)
 mapper is a function that takes an item of an array as input and returns the output.
 const double = x => 2 * x;  
 [1, 2, 3].map(double);  
 // [2, 4, 6]
+```
 Reduce
 reduce reduces the array to a single value.
+```
 array.reduce(reducer);
 reducer is a function that takes the accumulated value and the next item in the array and returns the new value. It is called like this for all values in the array, one after another.
 const sum = (accumulatedSum, arrayItem) => accumulatedSum + arrayItem  
 [1, 2, 3].reduce(sum);
 // 6
+```
  
 Concat
 concat adds new items to an existing array to create a new array. It’s different from push() in the sense that push() mutates data, which makes it impure.
+```
 [1, 2].concat([3, 4])  
 // [1, 2, 3, 4]
+```
 You can also do the same using the spread operator.
+```
 [1, 2, ...[3, 4]]
 Object.assign
+```
 Object.assign copies values from the provided object to a new object. Since functional programming is predicated on immutable data, we use it to make new objects based on existing objects.
+```
 const obj = {a : 2};  
 const newObj = Object.assign({}, obj);  
 newObj.a = 3;  
 obj.a;  
 // 2
+```
+
 With the advent of ES6, this can also be done using the spread operator.
 const newObj = {...obj};
 Creating Your Own Pure Function
 We can create our pure function as well. Let’s do one for duplicating a string n number of times.
+
+```
 const duplicate = (str, n) =>  
 	n < 1 ? '' : str + duplicate(str, n-1);
+```
+
 This function duplicates a string n times and returns a new string.
+
+```
 duplicate('hooray!', 3)  
 // hooray!hooray!hooray!
+```
+
 Higher-order Functions
 Higher-order functions are functions that accept a function as an argument and return a function. Often, they are used to add to the functionality of a function.
+
+```
 const withLog = (fn) => {  
 	return (...args) => {  
 		console.log(`calling ${fn.name}`);  
 		return fn(...args);  
 	};  
 };
+
+```
 In the above example, we create a withLog higher-order function that takes a function and returns a function that logs a message before the wrapped function runs.
+
+```
 const add = (a, b) => a + b;  
 const addWithLogging = withLog(add);  
 addWithLogging(3, 4);  
 // calling add  
 // 7
+```
+
 withLog HOF can be used with other functions as well and it works without any conflicts or writing extra code. This is the beauty of a HOF.
+
+```
 const addWithLogging = withLog(add);  
 const hype = s => s + '!!!';  
 const hypeWithLogging = withLog(hype);  
 hypeWithLogging('Sale');  
 // calling hype  
 // Sale!!!
+```
+
 One can also call it without defining a combining function.
+
+```
 withLog(hype)('Sale'); 
 // calling hype  
 // Sale!!!
+```
+
 Currying
 Currying means breaking down a function that takes multiple arguments into one or multiple levels of higher-order functions.
 Let’s take the add function.
+
+```
 const add = (a, b) => a + b;
+```
+
 When we are to curry it, we rewrite it distributing arguments into multiple levels as follows.
+
+```
 const add = a => {
 	return b => {
 		return a + b;
@@ -597,19 +753,31 @@ const add = a => {
 };
 add(3)(4);  
 // 7
+```
+
 The benefit of currying is memoization. We can now memoize certain arguments in a function call so that they can be reused later without duplication and re-computation.
+
+```
 // assume getOffsetNumer() call is expensive
 const addOffset = add(getOffsetNumber());
 addOffset(4);
 // 4 + getOffsetNumber()
 addOffset(6);
+```
+
 This is certainly better than using both arguments everywhere.
+
+```
 // (X) DON"T DO THIS  
 add(4, getOffsetNumber());  
 add(6, getOffsetNumber());  
 add(10, getOffsetNumber());
+```
 We can also reformat our curried function to look succinct. This is because each level of the currying function call is a single line return statement. Therefore, we can use arrow functions in ES6 to refactor it as follows.
+```
 const add = a => b => a + b;
+```
+
 Composition
 In mathematics, composition is defined as passing the output of one function into input of another so as to create a combined output. The same is possible in functional programming since we are using pure functions.
 To show an example, let’s create some functions.
@@ -618,16 +786,21 @@ const range = (a, b) => a > b ? [] : [a, ...range(a+1, b)];
 Then we have a function multiply that takes an array and multiplies all the numbers in it.
 const multiply = arr => arr.reduce((p, a) => p * a);
 We will use these functions together to calculate factorial.
+```
 const factorial = n => multiply(range(1, n));
 factorial(5);
 // 120
 factorial(6);
 // 720
+```
 The above function for calculating factorial is similar to f(x) = g(h(x)), thus demonstrating the composition property.
-5.Error Handling and Debugging:
+
+5. Error Handling and Debugging:
 Error handling and debugging are crucial aspects of JavaScript development that help identify and resolve issues in the code. Proper error handling ensures that unexpected errors are caught and gracefully handled, while effective debugging techniques help developers find and fix bugs during the development process.
 When any error occurs, JavaScript will stop and generate an error message. The throw statement lets you create your own custom error. Technically you can throw your custom exception (throw an error). The exception can be a JavaScript Number, String, Boolean, or Object.
+
 Debugging Techniques in Programming:
+
 1.	Breakpoints: By setting breakpoints in the code, you can pause the program at specific points, check variables, and closely examine the program's current state. ...
 2.	Step Through: Examining the code line by line aids in identifying the precise location of an error. ...
 3.	Watch Variables:
@@ -646,11 +819,15 @@ It’s therefore necessary to catch errors as they occur and determine the best 
 How JavaScript Processes Errors
 When a JavaScript statement results in an error, it’s said to throw an exception. JavaScript creates and throws an Error object describing the error. We can see this in action in this CodePen demo. If we set the decimal places to a negative number, we’ll see an error message in the console at the bottom. (Note that we’re not embedding the CodePens in this tutorial, because you need to be able to see the console output for them to make sense.)
 The result won’t update, and we’ll see a RangeError message in the console. The following function throws the error when dp is negative:
+```
 // Division calculation
 function divide(v1, v2, dp) {
   return (v1 / v2).toFixed(dp);
 }
+```
+
 After throwing the error, the JavaScript interpreter checks for exception handling code. None is present in the divide() function, so it checks the calling function:
+```
 // Show result of division
 function showResult() {
   result.value = divide(
@@ -659,11 +836,13 @@ function showResult() {
     parseFloat(dp.value)
   );
 }
+```
 The interpreter repeats the process for every function on the call stack until one of these things happens:
 •	it finds an exception handler
 •	it reaches the top level of code (which causes the program to terminate and show an error in the console, as demonstrated in the CodePen example above)
 Catching Exceptions
 We can add an exception handler to the divide() function with a try…catch block:
+```
 // Division calculation
 function divide(v1, v2, dp) {
   try {
@@ -677,10 +856,12 @@ function divide(v1, v2, dp) {
     return 'ERROR';
   }
 }
+```
 This executes the code in the try {} block but, when an exception occurs, the catch {} block executes and receives the thrown error object. As before, try setting the decimal places to a negative number in this CodePen demo.
 The result now shows ERROR. The console shows the error name and message, but this is output by the console.log statement and doesn’t terminate the program.
 Note: this demonstration of a try...catch block is overkill for a basic function such as divide(). It’s simpler to ensure dp is zero or higher, as we’ll see below.
 We can define an optional finally {} block if we require code to run when either the try or catch code executes:
+```
 function divide(v1, v2, dp) {
   try {
     return (v1 / v2).toFixed(dp);
@@ -692,10 +873,12 @@ function divide(v1, v2, dp) {
     console.log('done');
   }
 }
+```
 The console outputs "done", whether the calculation succeeds or raises an error. A finally block typically executes actions which we’d otherwise need to repeat in both the try and the catch block — such as cancelling an API call or closing a database connection.
 A try block requires either a catch block, a finally block, or both. Note that, when a finally block contains a return statement, that value becomes the return value for the whole function; other return statements in try or catch blocks are ignored.
 Nested Exception Handlers
 What happens if we add an exception handler to the calling showResult() function?
+```
 // Show result of division
 function showResult() {
 
@@ -711,8 +894,10 @@ function showResult() {
   }
 
 }
+```
 The answer is … nothing! This catch block is never reached, because the catch block in the divide() function handles the error.
 However, we could programmatically throw a new Error object in divide() and optionally pass the original error in a cause property of the second argument:
+```
 function divide(v1, v2, dp) {
   try {
     return (v1 / v2).toFixed(dp);
@@ -721,7 +906,9 @@ function divide(v1, v2, dp) {
     throw new Error('ERROR', { cause: e });
   }
 }
+```
 This will trigger the catch block in the calling function:
+```
 // Show result of division
 function showResult() {
   try {
@@ -733,19 +920,25 @@ function showResult() {
     result.value = 'FAIL!';
   }
 }
+```
 Standard JavaScript Error Types
 When an exception occurs, JavaScript creates and throws an object describing the error using one of the following types.
 SyntaxError
 An error thrown by syntactically invalid code such as a missing bracket:
+```
 if condition) { // SyntaxError
   console.log('condition is true');
 }
+```
 Note: languages such as C++ and Java report syntax errors during compilation. JavaScript is an interpreted language, so syntax errors aren’t identified until the code runs. Any good code editor or linter can spot syntax errors before we attempt to run code.
 ReferenceError
 An error thrown when accessing a non-existent variable:
+```
 function inc() {
   value++; // ReferenceError
 }
+```
+
 Again, good code editors and linters can spot these issues.
 TypeError
 An error thrown when a value isn’t of an expected type, such as calling a non-existent object method:
@@ -797,6 +990,7 @@ The following non-standard properties are also supported in Firefox:
 •	.columnNumber: the column number on the line where the error occurred
 •	.stack: a stack trace listing the function calls made before the error occurred
 We can change the divide() function to throw a RangeError when the number of decimal places isn’t a number, is less than zero, or is greater than eight:
+```
 // Division calculation
 function divide(v1, v2, dp) {
 
@@ -805,11 +999,16 @@ function divide(v1, v2, dp) {
   }
   return (v1 / v2).toFixed(dp);
 }
+```
 Similarly, we could throw an Error or TypeError when the dividend value isn’t a number to prevent NaN results:
+```
   if (isNaN(v1)) {
     throw new TypeError('Dividend must be a number');
   }
+```
+
 We can also cater for divisors that are non-numeric or zero. JavaScript returns Infinity when dividing by zero, but that could confuse users. Rather than raising a generic Error, we could create a custom DivByZeroError error type:
+```
 // New DivByZeroError Error type
 class DivByZeroError extends Error {
   constructor(message) {
@@ -817,11 +1016,15 @@ class DivByZeroError extends Error {
     this.name = 'DivByZeroError';
   }
 }
+```
 Then throw it in the same way:
+```
 if (isNaN(v2) || !v2) {
   throw new DivByZeroError('Divisor must be a non-zero number');
 }
+```
 Now add a try...catch block to the calling showResult() function. It can receive any Error type and react accordingly — in this case, showing the error message:
+```
 // Show result of division
 function showResult() {
 
@@ -840,6 +1043,7 @@ function showResult() {
   }
 
 }
+```
 Try entering invalid non-numeric, zero, and negative values into this CodePen demo.
 The final version of the divide() function checks all the input values and throws an appropriate Error when necessary:
 // Division calculation
