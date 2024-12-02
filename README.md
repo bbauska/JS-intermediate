@@ -171,6 +171,7 @@ Sets
 <h2>Example:</h2>
 
 <h3>javascript</h3>
+
 ```
 const mySet = new Set([1, 2, 3, 4]);
 mySet.add(5);
@@ -193,6 +194,7 @@ console.log(mySet.size); // 4
 Example:
 
 javascript
+
 ```
 const myMap = new Map();
 myMap.set('name', 'Alice');
@@ -211,6 +213,7 @@ Symbols
 Example:
 
 javascript
+
 ```
 const sym1 = Symbol('description');
 const sym2 = Symbol('description');
@@ -253,20 +256,25 @@ bash
 ```
 git add sets.js maps.js symbols.js
 ```
+
 Committing Changes
 •    Commit your changes with a meaningful message:
 bash
 ```
 git commit -m "Add examples for Sets, Maps, and Symbols"
 ```
+
 Pushing to GitHub
 •    Push your changes to the remote repository:
+
 bash
 ```
 git push origin main
 ```
+
 Collaborating
 •    If you're working with others, you can create branches for new features or fixes:
+
 bash
 ```
 git checkout -b feature/sets-implementation
@@ -295,6 +303,7 @@ What are callbacks?
 •    A callback is a function passed as an argument to another function, which is then executed after some operation has been completed.
 Example of a callback:
 javascript
+
 ```
 function fetchData(callback) {
     setTimeout(() => {
@@ -315,6 +324,7 @@ States of a Promise:
 •    Fulfilled: The operation completed successfully.
 •    Rejected: The operation failed.
 Creating and using a Promise:
+
 ```
 javascript
 const fetchData = () => {
@@ -335,6 +345,7 @@ fetchData()
 ```
 
 javascript, another example
+
 ```
 let myPromise = new Promise((resolve, reject) => {
   setTimeout(() => {
@@ -441,7 +452,9 @@ const myCar = new Car('Toyota', 'Corolla', 2020);
 a. Encapsulation
 •    Definition: Encapsulation is the bundling of data (attributes) and methods (functions) that operate on that data within a single unit (class). It restricts direct access to some of an object's components.
 •    Example: Using private properties in a class:
+
 javascript
+
 ```
 class BankAccount {
     #balance; // Private property
@@ -461,10 +474,12 @@ console.log(account.getBalance()); // Outputs: 150
 ```
 
 b. Inheritance
+
 •    Definition: Inheritance allows a class (child class) to inherit properties and methods from another class (parent class). This promotes code reusability.
 •    Example:
 
 javascript
+
 ```
 class Vehicle {
   constructor(make, model) {
@@ -494,7 +509,9 @@ myCar.honk();  // Outputs: Honk! Honk!
 c. Polymorphism
 •    Definition: Polymorphism allows methods to do different things based on the object it is acting upon. It can be achieved through method overriding (inherited classes can provide a specific implementation of a method).
 •    Example:
+
 javascript
+
 ```
 class Animal {
     speak() {
@@ -524,7 +541,9 @@ myCat.speak(); // Outputs: Meow!
 d. Abstraction
 •    Definition: Abstraction is the concept of hiding the complex implementation details and showing only the essential features of an object. It can be achieved through abstract classes or interfaces.
 •    Example:
+
 javascript
+
 ```
 class Shape {
   area() {
@@ -558,12 +577,15 @@ console.log(myRectangle.area()); // Outputs: 50
 •    Game Development: OOP is widely used in game development to represent entities like players, enemies, and items.
 •    Web Development: Frameworks like React and Angular use OOP principles to create reusable components.
 •    Software Engineering: OOP is used in designing complex software systems, making them easier to understand and maintain.
+
 Conclusion
+
 Object-Oriented Programming is a powerful paradigm that helps in organizing code, promoting reusability, and enhancing maintainability. By understanding the key concepts and principles of OOP, developers can create robust and scalable applications.
 
-4.Functional Programming:
+4. Functional Programming:
 
 Introduction
+
 Functional programming is a powerful paradigm that has gained significant popularity in recent years, and it's a valuable approach to writing clean, maintainable, and bug-free code in JavaScript.
 In this article, we will explore the core concepts of functional programming and provide practical JavaScript examples to help you grasp these concepts more effectively.
 Understanding Functional Programming
@@ -571,6 +593,7 @@ Imagine your JavaScript code as a series of cooking instructions. In the traditi
 Functional programming, on the other hand, is more like cooking with functional ingredients. Each function takes some ingredients and transforms them into a new dish without altering the original ingredients. This immutability is a fundamental concept in functional programming.
 First-Class Functions and Higher-Order Functions
 In JavaScript, functions are first-class citizens, which means they can be assigned to variables, passed as arguments, and returned from other functions. This is a crucial concept in functional programming. Consider this analogy:
+
 ```
 // Function as a first-class citizen
 const square = (x) => x * x;
@@ -591,6 +614,7 @@ console.log(mathOperation(5)); // Output: 25
 In this example, the calculate function takes an operation (a function) and two arguments. It's like creating a new dish by following the instructions of another recipe.
 Immutability and Pure Functions
 In functional programming, immutability is key. Think of your data as an unchangeable ingredient, and functions as your cooking instructions. Avoid modifying the original data; instead, create new data structures with the changes.
+
 ```
 // Immutability
 const originalArray = [1, 2, 3];
@@ -599,7 +623,9 @@ const newArray = originalArray.map((item) => item * 2);
 console.log(newArray); // Output: [2, 4, 6]
 console.log(originalArray); // Output: [1, 2, 3]
 ```
+
 Pure functions are functions that always return the same output for the same input and have no side effects. They're like well-defined recipes that don't vary their outcome based on the chef's mood or external factors.
+
 ```
 // Pure function
 const double = (x) => x * 2;
@@ -628,13 +654,25 @@ In this article, we will talk about doing functional programming using JavaScrip
 Before getting into functional programming, though, one needs to understand the difference between pure and impure functions.
 Pure vs. Impure Functions
 Pure functions take some input and give a fixed output. Also, they cause no side effects in the outside world.
+
+```
 const add = (a, b) => a + b;
+```
+
 Here, add is a pure function. This is because, for a fixed value of a and b, the output will always be the same.
+
+```
 const SECRET = 42;  
 const getId = (a) => SECRET * a;
+```
+
 getId is not a pure function. The reason being that it uses the global variable SECRET for computing the output. If SECRET were to change, the getId function will return a different value for the same input. Thus, it is not a pure function.
+
+```
 let id_count = 0;
 const getId = () => ++id_count;
+```
+
 This is also an impure function, and that too for a couple of reasons—(1) it uses a non-local variable for computing its output, and (2) it creates a side effect in the outside world by modifying a variable in that world.
  
 This can be troublesome if we had to debug this code.
@@ -658,14 +696,17 @@ Filter
 As the name suggests, this filters the array.
 array.filter(condition);
 The condition here is a function that gets each item of the array, and it should decide whether to keep the item or not and return the truthy boolean value for that.
+
 ```
 const filterEven = x => x%2 === 0;  
 [1, 2, 3].filter(filterEven);  
 // [2]
 ```
+
 Notice that filterEven is a pure function. If it had been impure, then it would have made the entire filter call impure.
 Map
 map maps each item of array to a function and creates a new array based on the return values of the function calls.
+
 ```
 array.map(mapper)
 mapper is a function that takes an item of an array as input and returns the output.
@@ -673,7 +714,9 @@ const double = x => 2 * x;
 [1, 2, 3].map(double);  
 // [2, 4, 6]
 ```
+
 Reduce
+
 reduce reduces the array to a single value.
 ```
 array.reduce(reducer);
@@ -685,16 +728,21 @@ const sum = (accumulatedSum, arrayItem) => accumulatedSum + arrayItem
  
 Concat
 concat adds new items to an existing array to create a new array. It’s different from push() in the sense that push() mutates data, which makes it impure.
+
 ```
 [1, 2].concat([3, 4])  
 // [1, 2, 3, 4]
 ```
+
 You can also do the same using the spread operator.
+
 ```
 [1, 2, ...[3, 4]]
 Object.assign
 ```
+
 Object.assign copies values from the provided object to a new object. Since functional programming is predicated on immutable data, we use it to make new objects based on existing objects.
+
 ```
 const obj = {a : 2};  
 const newObj = Object.assign({}, obj);  
@@ -732,6 +780,7 @@ const withLog = (fn) => {
 };
 
 ```
+
 In the above example, we create a withLog higher-order function that takes a function and returns a function that logs a message before the wrapped function runs.
 
 ```
@@ -812,6 +861,7 @@ const range = (a, b) => a > b ? [] : [a, ...range(a+1, b)];
 Then we have a function multiply that takes an array and multiplies all the numbers in it.
 const multiply = arr => arr.reduce((p, a) => p * a);
 We will use these functions together to calculate factorial.
+
 ```
 const factorial = n => multiply(range(1, n));
 factorial(5);
@@ -819,6 +869,7 @@ factorial(5);
 factorial(6);
 // 720
 ```
+
 The above function for calculating factorial is similar to f(x) = g(h(x)), thus demonstrating the composition property.
 
 5. Error Handling and Debugging:
@@ -845,6 +896,7 @@ It’s therefore necessary to catch errors as they occur and determine the best 
 How JavaScript Processes Errors
 When a JavaScript statement results in an error, it’s said to throw an exception. JavaScript creates and throws an Error object describing the error. We can see this in action in this CodePen demo. If we set the decimal places to a negative number, we’ll see an error message in the console at the bottom. (Note that we’re not embedding the CodePens in this tutorial, because you need to be able to see the console output for them to make sense.)
 The result won’t update, and we’ll see a RangeError message in the console. The following function throws the error when dp is negative:
+
 ```
 // Division calculation
 function divide(v1, v2, dp) {
@@ -853,6 +905,7 @@ function divide(v1, v2, dp) {
 ```
 
 After throwing the error, the JavaScript interpreter checks for exception handling code. None is present in the divide() function, so it checks the calling function:
+
 ```
 // Show result of division
 function showResult() {
@@ -863,11 +916,13 @@ function showResult() {
   );
 }
 ```
+
 The interpreter repeats the process for every function on the call stack until one of these things happens:
 •    it finds an exception handler
 •    it reaches the top level of code (which causes the program to terminate and show an error in the console, as demonstrated in the CodePen example above)
 Catching Exceptions
 We can add an exception handler to the divide() function with a try…catch block:
+
 ```
 // Division calculation
 function divide(v1, v2, dp) {
@@ -883,10 +938,12 @@ function divide(v1, v2, dp) {
   }
 }
 ```
+
 This executes the code in the try {} block but, when an exception occurs, the catch {} block executes and receives the thrown error object. As before, try setting the decimal places to a negative number in this CodePen demo.
 The result now shows ERROR. The console shows the error name and message, but this is output by the console.log statement and doesn’t terminate the program.
 Note: this demonstration of a try...catch block is overkill for a basic function such as divide(). It’s simpler to ensure dp is zero or higher, as we’ll see below.
 We can define an optional finally {} block if we require code to run when either the try or catch code executes:
+
 ```
 function divide(v1, v2, dp) {
   try {
@@ -900,10 +957,12 @@ function divide(v1, v2, dp) {
   }
 }
 ```
+
 The console outputs "done", whether the calculation succeeds or raises an error. A finally block typically executes actions which we’d otherwise need to repeat in both the try and the catch block — such as cancelling an API call or closing a database connection.
 A try block requires either a catch block, a finally block, or both. Note that, when a finally block contains a return statement, that value becomes the return value for the whole function; other return statements in try or catch blocks are ignored.
 Nested Exception Handlers
 What happens if we add an exception handler to the calling showResult() function?
+
 ```
 // Show result of division
 function showResult() {
@@ -921,8 +980,10 @@ function showResult() {
 
 }
 ```
+
 The answer is … nothing! This catch block is never reached, because the catch block in the divide() function handles the error.
 However, we could programmatically throw a new Error object in divide() and optionally pass the original error in a cause property of the second argument:
+
 ```
 function divide(v1, v2, dp) {
   try {
@@ -933,7 +994,9 @@ function divide(v1, v2, dp) {
   }
 }
 ```
+
 This will trigger the catch block in the calling function:
+
 ```
 // Show result of division
 function showResult() {
@@ -947,18 +1010,22 @@ function showResult() {
   }
 }
 ```
+
 Standard JavaScript Error Types
 When an exception occurs, JavaScript creates and throws an object describing the error using one of the following types.
 SyntaxError
 An error thrown by syntactically invalid code such as a missing bracket:
+
 ```
 if condition) { // SyntaxError
   console.log('condition is true');
 }
 ```
+
 Note: languages such as C++ and Java report syntax errors during compilation. JavaScript is an interpreted language, so syntax errors aren’t identified until the code runs. Any good code editor or linter can spot syntax errors before we attempt to run code.
 ReferenceError
 An error thrown when accessing a non-existent variable:
+
 ```
 function inc() {
   value++; // ReferenceError
@@ -968,35 +1035,64 @@ function inc() {
 Again, good code editors and linters can spot these issues.
 TypeError
 An error thrown when a value isn’t of an expected type, such as calling a non-existent object method:
+
+```
 const obj = {};
 obj.missingMethod(); // TypeError
+```
+
 RangeError
+
 An error thrown when a value isn’t in the set or range of allowed values. The toFixed() method used above generates this error, because it expects a value typically between 0 and 100:
+
+```
 const n = 123.456;
 console.log( n.toFixed(-1) ); // RangeError
+```
+
 URIError
+
 An error thrown by URI-handling functions such as encodeURI() and decodeURI() when they encounter malformed URIs:
 const u = decodeURIComponent('%'); // URIError
+
 EvalError
+
 An error thrown when passing a string containing invalid JavaScript code to the eval() function:
+
+```
 eval('console.logg x;'); // EvalError
+```
+
 Note: please don’t use eval()! Executing arbitrary code contained in a string possibly constructed from user input is far too dangerous!
+
 AggregateError
+
 An error thrown when several errors are wrapped in a single error. This is typically raised when calling an operation such as Promise.all(), which returns results from any number of promises.
+
 InternalError
+
 A non-standard (Firefox only) error thrown when an error occurs internally in the JavaScript engine. It’s typically the result of something taking too much memory, such as a large array or “too much recursion”.
+
 Error
+
 Finally, there is a generic Error object which is most often used when implementing our own exceptions … which we’ll cover next.
+
 Throwing Our Own Exceptions
+
 We can throw our own exceptions when an error occurs — or should occur. For example:
 •    our function isn’t passed valid parameters
 •    an Ajax request fails to return expected data
 •    a DOM update fails because a node doesn’t exist
+
 The throw statement actually accepts any value or object. For example:
+
+```
 throw 'A simple error string';
 throw 42;
 throw true;
 throw { message: 'An error', name: 'MyError' };
+```
+
 Exceptions are thrown to every function on the call stack until they’re intercepted by an exception (catch) handler. More practically, however, we’ll want to create and throw an Error object so they act identically to standard errors thrown by JavaScript.
 We can create a generic Error object by passing an optional message to the constructor:
 throw new Error('An error has occurred');
@@ -1016,6 +1112,7 @@ The following non-standard properties are also supported in Firefox:
 •    .columnNumber: the column number on the line where the error occurred
 •    .stack: a stack trace listing the function calls made before the error occurred
 We can change the divide() function to throw a RangeError when the number of decimal places isn’t a number, is less than zero, or is greater than eight:
+
 ```
 // Division calculation
 function divide(v1, v2, dp) {
@@ -1026,7 +1123,9 @@ function divide(v1, v2, dp) {
   return (v1 / v2).toFixed(dp);
 }
 ```
+
 Similarly, we could throw an Error or TypeError when the dividend value isn’t a number to prevent NaN results:
+
 ```
   if (isNaN(v1)) {
     throw new TypeError('Dividend must be a number');
@@ -1034,6 +1133,7 @@ Similarly, we could throw an Error or TypeError when the dividend value isn’t 
 ```
 
 We can also cater for divisors that are non-numeric or zero. JavaScript returns Infinity when dividing by zero, but that could confuse users. Rather than raising a generic Error, we could create a custom DivByZeroError error type:
+
 ```
 // New DivByZeroError Error type
 class DivByZeroError extends Error {
@@ -1043,13 +1143,17 @@ class DivByZeroError extends Error {
   }
 }
 ```
+
 Then throw it in the same way:
+
 ```
 if (isNaN(v2) || !v2) {
   throw new DivByZeroError('Divisor must be a non-zero number');
 }
 ```
+
 Now add a try...catch block to the calling showResult() function. It can receive any Error type and react accordingly — in this case, showing the error message:
+
 ```
 // Show result of division
 function showResult() {
@@ -1070,8 +1174,11 @@ function showResult() {
 
 }
 ```
+
 Try entering invalid non-numeric, zero, and negative values into this CodePen demo.
 The final version of the divide() function checks all the input values and throws an appropriate Error when necessary:
+
+```
 // Division calculation
 function divide(v1, v2, dp) {
 
@@ -1089,9 +1196,13 @@ function divide(v1, v2, dp) {
 
   return (v1 / v2).toFixed(dp);
 }
+```
+
 It’s no longer necessary to place a try...catch block around the final return, since it should never generate an error. If one did occur, JavaScript would generate its own error and have it handled by the catch block in showResult().
 Asynchronous Function Errors
 We can’t catch exceptions thrown by callback-based asynchronous functions, because an error is thrown after the try...catch block completes execution. This code looks correct, but the catch block will never execute and the console displays an Uncaught Error message after one second:
+
+```
 function asyncError(delay = 1000) {
 
   setTimeout(() => {
@@ -1117,8 +1228,13 @@ asyncError(1000, e => {
     throw new Error(`error: ${ e }`);
   }
 });
+```
+
 Promise-based Errors
+
 Callbacks can become unwieldy, so it’s preferable to use promises when writing asynchronous code. When an error occurs, the promise’s reject() method can return a new Error object or any other value:
+
+```
 function wait(delay = 1000) {
   return new Promise((resolve, reject) => {
     if (isNaN(delay) || delay > 0) {
@@ -1131,15 +1247,23 @@ function wait(delay = 1000) {
     }
   })
 }
+```
+
 Note: functions must be either 100% synchronous or 100% asynchronous. This is why it’s necessary to check the delay value inside the returned promise. If we checked the delay value and threw an error before returning the promise, the function would become synchronous when an error occurred.
 The Promise.catch() method executes when passing an invalid delay parameter and it receives to the returned Error object:
+
+```
 // Invalid delay value passed
 wait('INVALID')
   .then( res => console.log( res ))
   .catch( e => console.error( e.message ) )
   .finally( () => console.log('complete') );
+```
+
 Personally, I find promise chains a little difficult to read. Fortunately, we can use await to call any function which returns a promise. This must occur inside an async function, but we can capture errors using a standard try...catch block.
 The following (immediately invoked) async function is functionally identical to the promise chain above:
+
+```
 (async () => {
   try {
     console.log( await wait('INVALID') );
@@ -1151,19 +1275,26 @@ The following (immediately invoked) async function is functionally identical to 
     console.log('complete');
   }
 })();
+```
+
 Exceptional Exception Handling
 Throwing Error objects and handling exceptions is easy in JavaScript:
+
+```
 try {
   throw new Error('I am an error!');
 }
 catch (e) {
   console.log(`error ${ e.message }`)
 }
+```
+
 Building a resilient application that reacts appropriately to errors and makes life easy for users is more challenging. Always expect the unexpected.
 Further information:
 •    MDN Control Flow and Error Handling
 •    MDN try…catch
 •    MDN Error object
+
 Frequently Asked Questions (FAQs) on JavaScript Error Handling
 What are the different types of errors in JavaScript?
 JavaScript has three types of errors: Syntax Errors, Runtime Errors, and Logical Errors. Syntax Errors occur when there is an issue with the structure of your code, such as a missing bracket or semicolon. Runtime Errors happen when the code is syntactically correct but fails to execute due to unforeseen circumstances like referencing an undefined variable. Logical Errors are the most challenging to debug as they occur when the code runs without crashing, but it doesn’t produce the expected outcome.
@@ -1192,7 +1323,9 @@ try {
 catch (e) {
   console.log(`error ${ e.message }`)
 }
+
 6. Modules and Bundlers:
+
 In JavaScript, modules and bundlers play a crucial role in organizing and optimizing code for modern web development. Here's a breakdown:
 Modules:
 •    What they are:
