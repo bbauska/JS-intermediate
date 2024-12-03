@@ -1436,6 +1436,7 @@ export function greet(name) {
 // app.js
 import { greet } from './module1.js';
 greet('World');
+
 Bundlers:
 •    What they are:
 Bundlers are tools that take multiple JavaScript modules and combine them into a single file (or a few files) that can be efficiently loaded by a browser.
@@ -1448,7 +1449,9 @@ Bundlers are tools that take multiple JavaScript modules and combine them into a
 •    Rollup: A fast and efficient bundler focused on producing small, optimized bundles.
 •    Parcel: A zero-configuration bundler that aims to be simple and easy to use.
 •    Vite: A fast development server and build tool that leverages native ES modules for lightning-fast development. 
+
 What are Module Bundlers used for?
+
 Module bundlers are used for several other purposes, including:
 •    Transpiling, minifying, and optimizing code to improve performance.
 •    Resolving naming conflicts and removing unused code via tree shaking.
@@ -1456,32 +1459,43 @@ Module bundlers are used for several other purposes, including:
 •    Providing a development environment with features such as live reloading and hot module replacement for faster development iterations.
 •    Supporting the use of modern JavaScript features such as ES modules and JSX.
 •    Enabling the creation of libraries and frameworks that can be easily distributed and used in other projects.
+
 Popular Module Bundlers
+
 Webpack
 Webpack is one of the most popular module bundlers in the JavaScript community. It's highly configurable and can handle a wide variety of use cases. Additionally, it has a large community and a wide range of plugins available.
 •    Pros: Highly configurable, a wide range of plugins available, large community.
 •    Cons: May be difficult to set up and configure and can produce large bundle sizes.
+
 Esbuild
 Esbuild is a relatively new module bundler that aims to provide a very fast and efficient bundling. It's written in Go and focuses on providing great performance, even for large projects. It has a plugin system and can be used with other tools like Rollup.
 •    Pros: It's very fast, efficient, and lightweight.
 •    Cons: Relatively new and not as widely adopted as other options.
+
 Rollup
 Rollup is particularly well-suited for library development. It produces smaller bundle sizes than some other bundlers, which can be beneficial for libraries that are intended to be distributed widely. Additionally, Rollup has a plugin-based architecture that allows for a high degree of customization.
 •    Pros: Well-suited for library development, produces smaller bundle sizes.
 •    Cons: May not be as well-suited for large, complex projects.
+
 Parcel
 Parcel is a relatively new module bundler that aims to provide a simple and easy-to-use experience. It has a minimal configuration and can handle most common use cases out of the box. Moreover, Parcel has a built-in development server, which can be useful for testing and debugging.
 •    Pros: Minimal configuration, built-in development server.
 •    Cons: May fall short for some advanced use cases.
+
 Vite
 Vite is a lightweight module bundler that is designed for development speed. It uses native ES modules in the browser and has a hot module replacement feature that allows for fast development iterations.
 •    Pros: It's lightweight, has fast development iterations, and it's easy to set up.
 •    Cons: Limited in older browser support, and needs more community traction to become sustainable.
+
 Setting up a Module Bundler
+
 We'll use Webpack as an example, to show you how to set up a module bundler for a simple project:
+
 1.    First, install Webpack and the necessary loaders and plugins by running the following command:
-npm install webpack webpack-cli --save-dev
-2.    Next, create a webpack.config.js file in the root of your project. This file will contain the configuration for Webpack. The example below contains a configuration file that tells Webpack to use the babel-loader to transpile JavaScript files:
+      npm install webpack webpack-cli --save-dev
+2.    Next, create a webpack.config.js file in the root of your project. This file will 
+      contain the configuration for Webpack. The example below contains a configuration 
+	  file that tells Webpack to use the babel-loader to transpile JavaScript files:
 
 ```
 const path = require('path');
@@ -1514,9 +1528,17 @@ module.exports = {
   },
 ```
 
-  4.    Finally, you can run the build script by running npm run build in your terminal, and webpack will create a bundle.js file in the dist directory.
+  4.    Finally, you can run the build script by running npm run build in your terminal, 
+        and webpack will create a bundle.js file in the dist directory.
+
 Naming Conflicts
-Module bundlers can potentially introduce naming conflicts. They occur when two or more modules use the same variable or function name. These conflicts can cause unexpected behavior and errors in your code. To resolve these conflicts, you can use a technique called "tree shaking", which is a way of removing unused code from the final bundle. Many module bundlers support the use of namespaces or scoping to reduce the chance of naming conflicts.
+
+Module bundlers can potentially introduce naming conflicts. They occur when two or more 
+modules use the same variable or function name. These conflicts can cause unexpected 
+behavior and errors in your code. To resolve these conflicts, you can use a technique 
+called "tree shaking", which is a way of removing unused code from the final bundle. 
+Many module bundlers support the use of namespaces or scoping to reduce the chance of 
+naming conflicts.
 
 Popular Module Bundlers
 
@@ -1526,26 +1548,52 @@ Popular Module Bundlers
 
   7. Testing and Test-Driven Development (TDD):
 
-Test-Driven Development (TDD) is a software development method in which testing is done before coding is written. This means that development begins with writing tests that define how a particular function or module should work.
+Test-Driven Development (TDD) is a software development method in which testing is done before 
+coding is written. This means that development begins with writing tests that define how a 
+particular function or module should work.
 
-In layman’s terms, Test Driven Development (TDD) is a software development practice that focuses on creating unit test cases before developing the actual code. It is an iterative approach combining programming, unit test creation, and refactoring.
+In layman’s terms, Test Driven Development (TDD) is a software development practice that 
+focuses on creating unit test cases before developing the actual code. It is an iterative 
+approach combining programming, unit test creation, and refactoring.
 
 •    The TDD approach originates from the Agile manifesto principles and Extreme programming.
 •    As the name suggests, the test process drives software development.
-•    Moreover, it’s a structuring practice that enables developers and testers to obtain optimized code that proves resilient in the long term.
-•    In TDD, developers create small test cases for every feature based on their initial understanding. The primary intention of this technique is to modify or write new code only if the tests fail. This prevents duplication of test scripts.
+•    Moreover, it’s a structuring practice that enables developers and testers to obtain 
+     optimized code that proves resilient in the long term.
+•    In TDD, developers create small test cases for every feature based on their initial 
+     understanding. The primary intention of this technique is to modify or write new code 
+	 only if the tests fail. This prevents duplication of test scripts.
 
 Test Driven Development (TDD) Examples
 
-1.    Calculator Function: When building a calculator function, a TDD approach would involve writing a test case for the “add” function and then writing the code for the process to pass that test. Once the “add” function is working correctly, additional test cases would be written for other functions such as “subtract”, “multiply” and “divide”.
-2.    User Authentication: When building a user authentication system, a TDD approach would involve writing a test case for the user login functionality and then writing the code for the login process to pass that test. Once the login functionality works correctly, additional test cases will be written for registration, password reset, and account verification.
-3.    E-commerce Website: When building an e-commerce website, a TDD approach would involve writing test cases for various features such as product listings, shopping cart functionality, and checkout process. Tests would be written to ensure the system works correctly at each process stage, from adding items to the cart to completing the purchase.
+1.    Calculator Function: When building a calculator function, a TDD approach would 
+      involve writing a test case for the “add” function and then writing the code for 
+	  the process to pass that test. Once the “add” function is working correctly, 
+	  additional test cases would be written for other functions such as “subtract”, 
+	  “multiply” and “divide”.
+2.    User Authentication: When building a user authentication system, a TDD approach 
+      would involve writing a test case for the user login functionality and then writing 
+	  the code for the login process to pass that test. Once the login functionality works 
+	  correctly, additional test cases will be written for registration, password reset, 
+	  and account verification.
+3.    E-commerce Website: When building an e-commerce website, a TDD approach would involve 
+      writing test cases for various features such as product listings, shopping cart 
+	  functionality, and checkout process. Tests would be written to ensure the system 
+	  works correctly at each process stage, from adding items to the cart to completing 
+	  the purchase.
 
 Three Phases of Test Driven Development
 
-1.    Create precise tests: Developers need to create exact unit tests to verify the functionality of specific features. They must ensure that the test compiles so that it can execute. In most cases, the test is bound to fail. This is a meaningful failure as developers create compact tests based on their assumptions of how the feature will behave.
-2.    Correcting the Code: Once a test fails, developers must make the minimal changes required to update the code to run successfully when re-executed.
-3.    Refactor the Code: Once the test runs successfully, check for redundancy or any possible code optimizations to enhance overall performance. Ensure that refactoring does not affect the external behavior of the program.
+1.    Create precise tests: Developers need to create exact unit tests to verify the 
+      functionality of specific features. They must ensure that the test compiles so 
+	  that it can execute. In most cases, the test is bound to fail. This is a meaningful 
+	  failure as developers create compact tests based on their assumptions of how the 
+	  feature will behave.
+2.    Correcting the Code: Once a test fails, developers must make the minimal changes 
+      required to update the code to run successfully when re-executed.
+3.    Refactor the Code: Once the test runs successfully, check for redundancy or any 
+      possible code optimizations to enhance overall performance. Ensure that refactoring 
+	  does not affect the external behavior of the program.
 
 The image below represents a high-level TDD approach toward development:
  
@@ -1554,7 +1602,8 @@ The image below represents a high-level TDD approach toward development:
 JavaScript interacts with the browser and web pages through Browser APIs and DOM Manipulation.
 
 Browser APIs:
-  - These are built-in interfaces provided by the browser that allow you to access various functionalities like:
+  - These are built-in interfaces provided by the browser that allow you to access various 
+    functionalities like:
     - DOM API: Manipulate the structure, content, and style of a web page (more details below).
     - Fetch API: Make network requests to retrieve data from servers.
     - Web Storage API: Store data locally in the browser (e.g., Local Storage, Session Storage).
@@ -1564,14 +1613,21 @@ Browser APIs:
     - WebRTC API: Enable real-time communication (e.g., video calls).
 
 <h3>DOM Manipulation:</h3>
-  - The Document Object Model (DOM) represents the HTML structure of a web page as a tree-like structure, where each HTML element is a node in the tree.
+  - The Document Object Model (DOM) represents the HTML structure of a web page as a 
+    tree-like structure, where each HTML element is a node in the tree.
   - JavaScript can use the DOM API to:
-    * Select elements: Access specific elements using methods like getElementById, querySelector, and querySelectorAll.
-    * Modify content: Change the text content of an element using properties like innerText or textContent.
-    * Manipulate attributes: Add, remove, or modify attributes of elements (e.g., src, class, id).
-    * Change styles: Modify the visual appearance of elements by manipulating their CSS styles.
-    * Add/remove elements: Dynamically create new elements and insert them into the DOM, or remove existing elements.
-    * Handle events: Respond to user interactions like clicks, mouse movements, and keyboard presses.
+    * Select elements: Access specific elements using methods like getElementById, 
+	  querySelector, and querySelectorAll.
+    * Modify content: Change the text content of an element using properties like 
+	  innerText or textContent.
+    * Manipulate attributes: Add, remove, or modify attributes of elements (e.g., 
+	  src, class, id).
+    * Change styles: Modify the visual appearance of elements by manipulating their 
+	  CSS styles.
+    * Add/remove elements: Dynamically create new elements and insert them into the 
+	  DOM, or remove existing elements.
+    * Handle events: Respond to user interactions like clicks, mouse movements, and 
+	  keyboard presses.
 
 <h2>Example:</h2>
 
@@ -1594,9 +1650,12 @@ myElement.addEventListener("click", function() {
 ```
 
 Important Points:
-  - DOM Manipulation can be expensive: Excessive DOM manipulation can negatively impact website performance.
-  - Modern JavaScript frameworks: Libraries like React, Vue, and Angular provide more efficient ways to manage the DOM by using a virtual DOM.
-  - Understanding CSS selectors: Being proficient in CSS selectors is crucial for effectively selecting elements in the DOM.
+  - DOM Manipulation can be expensive: Excessive DOM manipulation can negatively impact 
+    website performance.
+  - Modern JavaScript frameworks: Libraries like React, Vue, and Angular provide more 
+    efficient ways to manage the DOM by using a virtual DOM.
+  - Understanding CSS selectors: Being proficient in CSS selectors is crucial for 
+    effectively selecting elements in the DOM.
 
 Practical Examples Comparing the BOM and DOM:
 
