@@ -214,13 +214,13 @@ managing your code and collaborating on projects related to these topics.</p>
 
 <h4>javascript</h4>
 
-```
+<pre>
 const mySet = new Set([1, 2, 3, 4]);
 mySet.add(5);
 mySet.delete(2);
-console.log(mySet.has(3)); // true
-console.log(mySet.size); // 4
-```
+console.log(mySet.has(3)); // <i>true</i>
+console.log(mySet.size); // <i>4</i>
+</pre>
 
 <h3>Maps</h3>
 <ul>
@@ -244,13 +244,13 @@ console.log(mySet.size); // 4
 
 <h4>javascript</h4>
 
-```
+<pre>
 const myMap = new Map();
 myMap.set('name', 'Alice');
 myMap.set('age', 25);
 console.log(myMap.get('name')); // Alice
 console.log(myMap.size); // 2
-```
+</pre>
 
 <h4>Symbols</h4>
 <ul>
@@ -269,7 +269,7 @@ console.log(myMap.size); // 2
 
 <h4>javascript</h4>
 
-```
+<pre>
 const sym1 = Symbol('description');
 const sym2 = Symbol('description');
 console.log(sym1 === sym2); // false
@@ -278,7 +278,7 @@ const obj = {
   [sym2]: 'value2'
 };
 console.log(obj[sym1]); // value1
-```
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 2. Manipulating Advanced Data Types
@@ -306,10 +306,10 @@ console.log(obj[sym1]); // value1
 
   - Use Git to clone the repository to your local machine:
 
-```bash
+<pre>
 git clone https://github.com/yourusername/advanced-data-types.git
 cd advanced-data-types
-```
+</pre>
 
 <h4>Adding Code</h4>
 
@@ -317,33 +317,33 @@ cd advanced-data-types
     examples of Sets, Maps, and Symbols.
   - Use git add to stage your changes:
 
-```bash
+<pre>
 git add sets.js maps.js symbols.js
-```
+</pre>
 
 <h4>Committing Changes</h4>
 
   - Commit your changes with a meaningful message:
 
-```bash
+<pre>
 git commit -m "Add examples for Sets, Maps, and Symbols"
-```
+</pre>
 
 <h4>Pushing to GitHub</h4>
 
   - Push your changes to the remote repository:
 
-```bash
+<pre>
 git push origin main
-```
+</pre>
 
 <h4>Collaborating</h4>
 
   - If you're working with others, you can create branches for new features or fixes:
 
-```bash
+<pre>
 git checkout -b feature/sets-implementation
-```
+</pre>
 
   - After making changes, push the branch and create a pull request on GitHub for review.
 
@@ -395,7 +395,7 @@ How does it work?
 
 <h4>javascript</h4>
 
-```
+<pre>
 function fetchData(callback) {
     setTimeout(() => {
         const data = 'Data received';
@@ -405,7 +405,7 @@ function fetchData(callback) {
 fetchData((data) => {
     console.log(data); // Outputs: Data received
 });
-```
+</pre>
 
 3. Promises
 
@@ -1476,17 +1476,17 @@ function divide(v1, v2, dp) {
 Similarly, we could throw an Error or TypeError when the dividend value isn’t a 
 number to prevent NaN results:
 
-```
+<pre>
   if (isNaN(v1)) {
     throw new TypeError('Dividend must be a number');
   }
-```
+</pre>
 
 We can also cater for divisors that are non-numeric or zero. JavaScript returns 
 Infinity when dividing by zero, but that could confuse users. Rather than raising 
 a generic Error, we could create a custom DivByZeroError error type:
 
-```
+<pre>
 // <i>New DivByZeroError Error type</i>
 class DivByZeroError extends Error {
   constructor(message) {
@@ -1494,20 +1494,20 @@ class DivByZeroError extends Error {
     this.name = 'DivByZeroError';
   }
 }
-```
+</pre>
 
 Then throw it in the same way:
 
-```
+<pre>
 if (isNaN(v2) || !v2) {
   throw new DivByZeroError('Divisor must be a non-zero number');
 }
-```
+</pre>
 
 Now add a try...catch block to the calling showResult() function. It can receive any 
 Error type and react accordingly — in this case, showing the error message:
 
-```
+<pre>
 // <i>Show result of division</i>
 function showResult() {
 
@@ -1525,13 +1525,13 @@ function showResult() {
     console.log( e.name );
   }
 }
-```
+</pre>
 
 Try entering invalid non-numeric, zero, and negative values into this CodePen demo.
 The final version of the divide() function checks all the input values and throws an 
 appropriate Error when necessary:
 
-```
+<pre>
 // <i>Division calculation</i>
 function divide(v1, v2, dp) {
   if (isNaN(v1)) {
@@ -1545,7 +1545,7 @@ function divide(v1, v2, dp) {
   }
   return (v1 / v2).toFixed(dp);
 }
-```
+</pre>
 
 It’s no longer necessary to place a try...catch block around the final return, since it 
 should never generate an error. If one did occur, JavaScript would generate its own 
@@ -1556,7 +1556,7 @@ error is thrown after the try...catch block completes execution. This code looks
 correct, but the catch block will never execute and the console displays an Uncaught 
 Error message after one second:
 
-```
+<pre>
 function asyncError(delay = 1000) {
   setTimeout(() => {
     throw new Error('I am never caught!');
@@ -1569,13 +1569,13 @@ try {
 catch(e) {
   console.error('This will never run');
 }
-```
+</pre>
 
 The convention presumed in most frameworks and server runtimes such as Node.js is to 
 return an error as the first parameter to a callback function. That won’t raise an 
 exception, although we could manually throw an Error if necessary:
 
-```
+<pre>
 function asyncError(delay = 1000, callback) {
   setTimeout(() => {
     callback('This is an error message');
@@ -1586,7 +1586,7 @@ asyncError(1000, e => {
     throw new Error(`error: ${ e }`);
   }
 });
-```
+</pre>
 
 Promise-based Errors
 
@@ -1594,7 +1594,7 @@ Callbacks can become unwieldy, so it’s preferable to use promises when writing
 asynchronous code. When an error occurs, the promise’s reject() method can return 
 a new Error object or any other value:
 
-```
+<pre>
 function wait(delay = 1000) {
   return new Promise((resolve, reject) => {
     if (isNaN(delay) || delay > 0) {
@@ -1607,7 +1607,7 @@ function wait(delay = 1000) {
     }
   })
 }
-```
+</pre>
 
 Note: functions must be either 100% synchronous or 100% asynchronous. This is why it’s 
 necessary to check the delay value inside the returned promise. If we checked the delay 
@@ -1616,13 +1616,13 @@ synchronous when an error occurred.
 The Promise.catch() method executes when passing an invalid delay parameter and it 
 receives to the returned Error object:
 
-```
+<pre>
 // <i>Invalid delay value passed</i>
 wait('INVALID')
   .then( res => console.log( res ))
   .catch( e => console.error( e.message ) )
   .finally( () => console.log('complete') );
-```
+</pre>
 
 Personally, I find promise chains a little difficult to read. Fortunately, we can use 
 await to call any function which returns a promise. This must occur inside an async 
@@ -1630,7 +1630,7 @@ function, but we can capture errors using a standard try...catch block.
 The following (immediately invoked) async function is functionally identical to the 
 promise chain above:
 
-```
+<pre>
 (async () => {
   try {
     console.log( await wait('INVALID') );
@@ -1642,19 +1642,19 @@ promise chain above:
     console.log('complete');
   }
 })();
-```
+</pre>
 
 Exceptional Exception Handling
 Throwing Error objects and handling exceptions is easy in JavaScript:
 
-```
+<pre>
 try {
   throw new Error('I am an error!');
 }
 catch (e) {
   console.log(`error ${ e.message }`)
 }
-```
+</pre>
 
 Building a resilient application that reacts appropriately to errors and makes life 
 easy for users is more challenging. Always expect the unexpected.
@@ -1716,14 +1716,14 @@ The ‘onerror’ event handler is a global event handler in JavaScript that cat
 
 Throwing Error objects and handling exceptions is easy in JavaScript:
 
-```
+<pre>
 try {
   throw new Error('I am an error!');
 }
 catch (e) {
   console.log(`error ${ e.message }`)
 }
-```
+</pre>
 
 6. Modules and Bundlers:
 
@@ -1753,7 +1753,7 @@ code for modern web development. Here's a breakdown:
 <h4>Example (ES Modules):</h4>
 <h4>JavaScript</h4>
 
-```
+<pre>
 // module1.js
 export function greet(name) {
   console.log(`Hello, ${name}!`);
@@ -1761,7 +1761,7 @@ export function greet(name) {
 // app.js
 import { greet } from './module1.js';
 greet('World');
-```
+</pre>
 
 <h4>Bundlers:</h4>
   - What they are:
@@ -1849,7 +1849,7 @@ project:
       contain the configuration for Webpack. The example below contains a configuration 
 	  file that tells Webpack to use the babel-loader to transpile JavaScript files:
 
-```
+<pre>
 const path = require('path');
 
 module.exports = {
@@ -1870,15 +1870,15 @@ module.exports = {
         ]
     }
 };
-```
+</pre>
 
   3.    Then, in your package.json, add a script to run Webpack:
 
-```
+<pre>
 "scripts": {
     "build": "webpack"
   },
-```
+</pre>
 
   4.    Finally, you can run the build script by running npm run build in your terminal, 
         and webpack will create a bundle.js file in the dist directory.
