@@ -374,7 +374,7 @@ To understand asynchronous JavaScript, we can break it down into several sub-pro
   - The event loop is a mechanism that allows JavaScript to perform non-blocking 
     operations by using a single-threaded model.
 
-How does it work?
+<h4>How does it work?</h4>
 
   - JavaScript executes code in a call stack. When asynchronous operations are initiated 
     (like fetching data), they are sent to the Web APIs (like the browser's networking 
@@ -422,8 +422,8 @@ fetchData((data) => {
 
 <h4>Creating and using a Promise:</h4>
 
+<h4>javascript</h4>
 <pre>
-javascript
 const fetchData = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -456,11 +456,11 @@ myPromise.then((result) => {
 
 4. Async/Await
 
-What is Async/Await?
+<h4>What is Async/Await?</h4>
   - Async/Await is a syntactic sugar built on top of Promises that allows you to write 
     asynchronous code in a more synchronous fashion.
 
-How to use Async/Await:
+<h4>How to use Async/Await:</h4>
   - You define a function with the async keyword, and within that function, you can use 
     the await keyword to pause execution until the Promise is resolved.
 
@@ -819,6 +819,7 @@ independent, reusable functions that operate on data without side effects. By
 understanding first-class functions, higher-order functions, immutability, pure 
 functions, and using tools like map, filter, and reduce, you can write more readable, 
 maintainable, and bug-free code.
+
 Just like a skilled chef, functional programmers use the right ingredients and techniques 
 to create exquisite dishes. So, next time you write JavaScript code, think of it as 
 crafting a gourmet meal with functional ingredients – your code will be not only 
@@ -901,6 +902,7 @@ since we won’t be mutating any data.
 Let’s look at some of the pure functions (methods) given by JavaScript.
 
 <h4>Filter</h4>
+
 As the name suggests, this filters the array.
 
 ```
@@ -920,6 +922,7 @@ Notice that filterEven is a pure function. If it had been impure, then it would 
 made the entire filter call impure.
 
 <h4>Map</h4>
+
 map maps each item of array to a function and creates a new array based on the return 
 values of the function calls.
 
@@ -949,6 +952,7 @@ const sum = (accumulatedSum, arrayItem) => accumulatedSum + arrayItem
 ```
  
 <h4>Concat</h4>
+
 concat adds new items to an existing array to create a new array. It’s different 
 from push() in the sense that push() mutates data, which makes it impure.
 
@@ -1135,12 +1139,14 @@ statement lets you create your own custom error. Technically you can throw your 
 exception (throw an error). The exception can be a JavaScript Number, String, Boolean, 
 or Object.
 
-Debugging Techniques in Programming:
+<h4>Debugging Techniques in Programming:</h4>
+
 1.    Breakpoints: By setting breakpoints in the code, you can pause the program at specific 
       points, check variables, and closely examine the program's current state. ...
 2.    Step Through: Examining the code line by line aids in identifying the precise location 
       of an error. ...
 3.    Watch Variables:
+
 There are three main types of errors that can occur while compiling a JavaScript program: 
 syntax errors, runtime errors, and logical errors. The most common type of errors are 
 syntax errors, in which something incorrect in the syntax of the program body raises 
@@ -1172,7 +1178,7 @@ It’s therefore necessary to catch errors as they occur and determine the best 
 Raising and catching errors in a JavaScript application can be daunting at first, but 
 it’s possibly easier than you expect.
 
-How JavaScript Processes Errors
+<h4>How JavaScript Processes Errors</h4>
 
 When a JavaScript statement results in an error, it’s said to throw an exception. 
 JavaScript creates and throws an Error object describing the error. We can see this in 
@@ -1262,7 +1268,8 @@ A try block requires either a catch block, a finally block, or both. Note that, 
 a finally block contains a return statement, that value becomes the return value for 
 the whole function; other return statements in try or catch blocks are ignored.
 
-Nested Exception Handlers
+<h4>Nested Exception Handlers</h4>
+
 What happens if we add an exception handler to the calling showResult() function?
 
 <pre>
@@ -1314,11 +1321,13 @@ function showResult() {
 }
 </pre>
 
-Standard JavaScript Error Types
+<h4>Standard JavaScript Error Types</h4>
+
 When an exception occurs, JavaScript creates and throws an object describing the error 
 using one of the following types.
 
-SyntaxError
+<h4>SyntaxError</h4>
+
 An error thrown by syntactically invalid code such as a missing bracket:
 
 <pre>
@@ -1331,7 +1340,8 @@ Note: languages such as C++ and Java report syntax errors during compilation. Ja
 is an interpreted language, so syntax errors aren’t identified until the code runs. Any 
 good code editor or linter can spot syntax errors before we attempt to run code.
 
-ReferenceError
+<h4>ReferenceError</h4>
+
 An error thrown when accessing a non-existent variable:
 
 ```
@@ -1341,7 +1351,9 @@ function inc() {
 ```
 
 Again, good code editors and linters can spot these issues.
-TypeError
+
+<h4>TypeError</h4>
+
 An error thrown when a value isn’t of an expected type, such as calling a non-existent 
 object method:
 
@@ -1350,7 +1362,7 @@ const obj = {};
 obj.missingMethod(); // <i>TypeError</i>
 ```
 
-RangeError
+<h4>RangeError</h4>
 
 An error thrown when a value isn’t in the set or range of allowed values. The 
 toFixed() method used above generates this error, because it expects a value 
@@ -1361,7 +1373,7 @@ const n = 123.456;
 console.log( n.toFixed(-1) ); // <i>RangeError</i>
 ```
 
-URIError
+<h4>URIError</h4>
 
 An error thrown by URI-handling functions such as encodeURI() and decodeURI() when they 
 encounter malformed URIs:
@@ -1370,7 +1382,7 @@ encounter malformed URIs:
 const u = decodeURIComponent('%'); // <i>URIError</i>
 ```
 
-EvalError
+<h4>EvalError</h4>
 
 An error thrown when passing a string containing invalid JavaScript code to the eval() 
 function:
@@ -1382,24 +1394,24 @@ eval('console.logg x;'); // <i>EvalError</i>
 Note: please don’t use eval()! Executing arbitrary code contained in a string possibly 
 constructed from user input is far too dangerous!
 
-AggregateError
+<h4>AggregateError</h4>
 
 An error thrown when several errors are wrapped in a single error. This is typically 
 raised when calling an operation such as Promise.all(), which returns results from any 
 number of promises.
 
-InternalError
+<h4>InternalError</h4>
 
 A non-standard (Firefox only) error thrown when an error occurs internally in the 
 JavaScript engine. It’s typically the result of something taking too much memory, 
 such as a large array or “too much recursion”.
 
-Error
+<h4>Error</h4>
 
 Finally, there is a generic Error object which is most often used when implementing 
 our own exceptions … which we’ll cover next.
 
-Throwing Our Own Exceptions
+<h4>Throwing Our Own Exceptions</h4>
 
 We can throw our own exceptions when an error occurs — or should occur. For example:
   - our function isn’t passed valid parameters
@@ -1550,7 +1562,8 @@ function divide(v1, v2, dp) {
 It’s no longer necessary to place a try...catch block around the final return, since it 
 should never generate an error. If one did occur, JavaScript would generate its own 
 error and have it handled by the catch block in showResult().
-Asynchronous Function Errors
+
+<h4>Asynchronous Function Errors</h4>
 We can’t catch exceptions thrown by callback-based asynchronous functions, because an 
 error is thrown after the try...catch block completes execution. This code looks 
 correct, but the catch block will never execute and the console displays an Uncaught 
@@ -1588,7 +1601,7 @@ asyncError(1000, e => {
 });
 </pre>
 
-Promise-based Errors
+<h4>Promise-based Errors</h4>
 
 Callbacks can become unwieldy, so it’s preferable to use promises when writing 
 asynchronous code. When an error occurs, the promise’s reject() method can return 
@@ -1644,7 +1657,8 @@ promise chain above:
 })();
 </pre>
 
-Exceptional Exception Handling
+<h4>Exceptional Exception Handling</h4>
+
 Throwing Error objects and handling exceptions is easy in JavaScript:
 
 <pre>
@@ -1666,7 +1680,7 @@ Further information:
 
 Frequently Asked Questions (FAQs) on JavaScript 
 
-Error Handling
+<h4>Error Handling</h4>
 
 What are the different types of errors in JavaScript?
 
@@ -1883,7 +1897,7 @@ module.exports = {
   4.    Finally, you can run the build script by running npm run build in your terminal, 
         and webpack will create a bundle.js file in the dist directory.
 
-Naming Conflicts
+<h4>Naming Conflicts</h4>
 
 Module bundlers can potentially introduce naming conflicts. They occur when two or more 
 modules use the same variable or function name. These conflicts can cause unexpected 
@@ -1916,7 +1930,7 @@ approach combining programming, unit test creation, and refactoring.
     understanding. The primary intention of this technique is to modify or write new code 
 	only if the tests fail. This prevents duplication of test scripts.
 
-Test Driven Development (TDD) Examples
+<h4>Test Driven Development (TDD) Examples</h4>
 
 1.    Calculator Function: When building a calculator function, a TDD approach would 
       involve writing a test case for the “add” function and then writing the code for 
@@ -1934,7 +1948,7 @@ Test Driven Development (TDD) Examples
 	  works correctly at each process stage, from adding items to the cart to completing 
 	  the purchase.
 
-Three Phases of Test Driven Development
+<h4>Three Phases of Test Driven Development</h4>
 
 1.    Create precise tests: Developers need to create exact unit tests to verify the 
       functionality of specific features. They must ensure that the test compiles so 
